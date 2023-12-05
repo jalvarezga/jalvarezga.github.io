@@ -77,6 +77,15 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
   });
 {% endhighlight %}
 
+
+{% highlight R %}
+  #this is a comment in R
+  for(i in 1:2){
+    a=1
+    print(a+1)
+  }
+{% endhighlight %}
+
 ***
 
 ### Videos

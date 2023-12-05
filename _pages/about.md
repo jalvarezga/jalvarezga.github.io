@@ -4,8 +4,13 @@ title: About
 permalink: /about/
 image: marius-christensen-newport-unsplash.jpg
 ---
-Update!
-Hi, my name is Joaquin. I like being at the center of events, being free and enjoying every moment. Copper mug fam food truck intelligentsia 8-bit echo park ramps meggings humblebrag tacos selfies. Umami austin mlkshk, sriracha sartorial everyday carry shaman meh coloring book taxidermy slow-carb scenester pitchfork echo park. Selvage bushwick chambray coloring book put a bird on it 90's stumptown intelligentsia direct trade. Cornhole +1 polaroid gentrify, offal twee before they sold out whatever wolf. By courtesy of https://unsplash.com/@mariuschristensen, Marius Christensen.
+Alo! Thank you for visiting my website! My name is Joaquin. I enjoy doing yoga. Uncertainty is all we got. When we feel uncertainty in our lives there's two possible reactions: anxiety or curiosity. We must choose the second one to enjoy life.
+
+Feel free to reach out! I love getting to know people with authentic ways of thinking.
+
+
+
+ Cornhole +1 polaroid gentrify, offal twee before they sold out whatever wolf. By courtesy of https://unsplash.com/@mariuschristensen, Marius Christensen.
 
 
 ***

@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  Time to give gifts to everyone
+title:  Predicting traffic in the New York City Subway
 date:   2018-07-17 15:01:35 +0300
-image:  04.jpg
+image:  caio-silva-NYC-unsplash.jpg
 tags:   Life
 ---
+
+Courtesy of Ciao Silva, from Unsplash https://unsplash.com/@caaaaaaaaaio.
+
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
 You lived before you met me?! Ow, my spirit! Humans dating robots is sick. __You people wonder why I'm still single?__ *It's 'cause all the fine robot sisters are dating humans!* I guess if you want children beaten, you have to do it yourself.

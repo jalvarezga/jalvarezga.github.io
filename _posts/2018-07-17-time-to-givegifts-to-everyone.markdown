@@ -5,7 +5,7 @@ date:   2018-07-17 15:01:35 +0300
 image:  caio-silva-NYC-unsplash.jpg
 tags:   Life
 ---
-<small>joint with Julieta Rivero and Rodrigo Villela</small>
+<small>joint work with Julieta Rivero and Rodrigo Villela</small>
 
 Courtesy of Ciao Silva, from Unsplash https://unsplash.com/@caaaaaaaaaio.
 

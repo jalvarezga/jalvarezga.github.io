@@ -82,7 +82,7 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
   #this is a comment in R
   for(i in 1:2){
     a=1
-    print(a+1)
+    print(a+1) #now let's see how does it handle text where a single line is very very long. Ideally it splits the code into various lines instead of cutting it but let's see. It shoudl adapt to the screen's size.
   }
 {% endhighlight %}
 

@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 image: marius-christensen-newport-unsplash.jpg
 ---
-Alo! Thank you for visiting my website! My name is Joaquin. I enjoy doing yoga. Uncertainty is all we got. When we feel uncertainty in our lives there's two possible reactions: anxiety or curiosity. We must choose to be curious in order to enjoy life.
-
-Feel free to reach out! I love getting to know people with authentic ways of thinking. 
+Alo! Thank you for visiting my website! My name is Joaquin. I enjoy doing yoga. Uncertainty is all we got. When we feel uncertainty in our lives there's two possible reactions: anxiety or curiosity. We must choose to be curious in order to enjoy life.Feel free to reach out! I love getting to know people with authentic ways of thinking. 
 
 
 <!---  By courtesy of https://unsplash.com/@mariuschristensen, Marius Christensen. -->

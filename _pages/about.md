@@ -6,7 +6,7 @@ image: marius-christensen-newport-unsplash.jpg
 ---
 Alo! Thank you for visiting my website! My name is Joaquin Alvarez. When looking for inspiration I like to walk. Predict addict, I enjoy doing yoga and doing research about uncertainty quantification. Uncertainty is all we got for granted. When we feel uncertainty in our lives there's usually two possible reactions: anxiety or curiosity. We must choose to be curious and grateful in order to enjoy life. Feel free to reach out! I love getting to know people with authentic ways of thinking.
 
-Over the last decade AI has experienced an unprecedented growth. Despite this, many challenges remain. When do AI algorithms mess up? Should we trust AI algorithms? What should we do if the algorithm doesn't have interpretability? How can we make AI algorithms safer and trustworthy? I'm intrigued to find answers to these questions.
+Over the last decade AI has experienced an unprecedented growth. Despite the [AI hype](https://www.nbcnews.com/data-graphics/wide-gap-ais-hype-use-business-rcna127210), many challenges remain. When do AI algorithms mess up? Should we trust AI algorithms? How can we make AI algorithms safer and trustworthy? I'm intrigued to find answers to these questions.
 
 
 <!---  By courtesy of https://unsplash.com/@mariuschristensen, Marius Christensen. -->

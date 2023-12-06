@@ -35,21 +35,25 @@ $$\pi\approx 3.1415$$
 $$\mathbb{P}\Big(X=x\Big)$$.
 
 
-\paragraph{Setting and notation}
-
-
+### Setting and notation
 
 In this section we will explore the construction of a rejection region based on a test statistic originated form Bentkus' celebrated theorem from 2004. The emphasis is on giving accessible, yet rigorous arguments that lead to the proposed test statistic from LTT (2021). We will dive into a proof of the  Bentkus inequality, with some slight modifications, making arguments as self-contained as possible.
 
-Let $X_1,X_2,\dots, X_n$ be the differences of a martingale defined by $M_n\coloneqq \sum_{i=1}^{n}X_i$ and suppose that each satisfy the boundedness condition $$\mathbb{P}\{-p_k\leq X_k \leq 1-p_k \}, \quad k\in \{1, \dots, n \}, $$
-where $0\leq p_k\leq 1 \quad \forall k \in \{1,\dots, n \}$ is non-random.
+Let $$X_1,X_2,\dots, X_n$$ be the differences of a martingale defined by $$M_n\coloneqq \sum_{i=1}^{n}X_i$$ and suppose that each satisfy the boundedness condition
 
-\begin{definition}
-Let $b\in \mathbb{R} -  \{0\}$ and $\sigma>0$. We say that a random variable $\epsilon=\epsilon(\sigma^2,b)$ is a Bernoulli random variable if it takes at most two possible  real values, and satisfies the following conditions\footnote{Acuérdate de lo que dijo Mota: muchas veces es irrelevante si una propiedad se sigue de una definicion o mas bien si esa propiedad es parte de la definicción. Como dijo esa vez "who cares?" jajajaja. Si no es tan relevente, mete todo coo parte de la definción y ya. Da igual si alguna de esas propiedades se podia poner como consecuencia de una definición con menos requisitos. No puedo creer que hace más de un año que lleve la clase de Logica con el y me sigo acordando de eso :))). Esto lo digo porque la def que da Bentkus no es muy claro que es def y que es consecuencia de la def. Pero justo por esto de Mota, es irrelevante esa ambiguedad.}:
+ $$\mathbb{P}\{-p_k\leq X_k \leq 1-p_k \}, \quad k\in \{1, \dots, n \}, $$
+
+
+where $$0\leq p_k\leq 1 \quad \forall k \in \{1,\dots, n \}$$ is non-random.
+
+
+
+#### Definition
+
+Let $$b\in \mathbb{R} -  \{0\}$ and $\sigma>0$$. We say that a random variable $$\epsilon=\epsilon(\sigma^2,b)$$ is a Bernoulli random variable if it takes at most two possible  real values, and satisfies the following conditions:
 
 $$\Prob\{\epsilon= b\}=\frac{\sigma^2}{\sigma^2+b^2}\quad \Prob\Big\{ \epsilon=\frac{-\sigma^2}{b}\Big\}=\frac{b^2}{b^2+\sigma^2}$$
 
-\end{definition}
 
 
 

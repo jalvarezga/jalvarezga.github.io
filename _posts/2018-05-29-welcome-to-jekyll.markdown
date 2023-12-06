@@ -9,7 +9,8 @@ tags:   Jekyll
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
   type="text/javascript">
 </script>
-In 2005 Vidmantas Bentkus an innovative concentration inequality. Yet, the result is not easy to wrap at first glance. Also, the proof is somehow unintuitive. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative than Bentkus' original result.
+In 2005 Vidmantas Bentkus an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
+However, the result is not easy to wrap at first glance.  Also, the proof is quite unintuitive. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative than Bentkus' original result.
 
 
 

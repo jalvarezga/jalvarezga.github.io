@@ -5,7 +5,11 @@ date:   2018-05-29 18:05:55 +0300
 image:  10.jpg
 tags:   Jekyll
 ---
-
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+We add code to get mathjax and support to integrate LaTeX within .md files. 
 Interacting with LaTeX $\alpha$. 
 $$\pi\approx 3.1415$$
 

@@ -44,7 +44,7 @@ Let $$X_1,X_2,\dots, X_n$$ be the differences of a martingale defined by $$M_n\o
  $$\mathbb{P}\{-p_k\leq X_k \leq 1-p_k \}, \quad k\in \{1, \dots, n \}, $$
 
 
-where $$0\leq p_k\leq 1 \quad \forall k \in \{1,\dots, n \}$$ is non-random.
+where $$0\leq p_k\leq 1 $$  is non-random  $$\forall k \in \{1,\dots, n \}$$.
 
 
 
@@ -57,24 +57,28 @@ $$\begin{equation} \mathbb{P}\{\epsilon= b\}=\frac{\sigma^2}{\sigma^2+b^2}, \qua
 
 #### Definition
 
-Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative values. We say that the mapping is a log-concave function if and only if $$\begin{equation}p_{n+1}p_{n-1}\leq p_{n}^2\quad \forall n\in \mathbb{Z}\end{equation}$$
+Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative values. We say that the mapping is a log-concave function if and only if $$\begin{equation}\begin{equation}p_{n+1}p_{n-1}\leq p_{n}^2\quad \forall n\in \mathbb{Z}\end{equation}\end{equation}$$
 
 
 
 #### Lemma
- Let $$p:\mathbb{Z}\longrightarrow [0,\infty)$$, $$q:\mathbb{Z}\longrightarrow [0,\infty)$$ be log-concave functions.Then the following functions are also log-concave:
+ Let $$p:\mathbb{Z}\longrightarrow [0,\infty)$$, $$q:\mathbb{Z}\longrightarrow [0,\infty)$$ be log-concave functions. Then the following functions are also log-concave:
 
 (i) The convolution
-$$(p*q)_{n}\coloneqq\sum_{k=-\infty}^{\infty}p_{n-k}q_{k}$$
+$$(p*q)_{n}\overset{\triangle}{=}\sum_{k=-\infty}^{\infty}p_{n-k}q_{k}$$
 
 
 (ii)$$n\mapsto t_n$$, where $$t_n\overset{\triangle}{=}\sum_{k\geq n}p_k$$
 
 (iii)Bernoulli probability mass functions.
 
-(iv) Binomial survival functions(as discrete functions).
+(iv) Binomial survival functions (as discrete functions).
+
+$$\begin{proof}$$
+bla bla bla 
 
 
+$$\end{proof}$$
 
 
 As a consequence, it follows that if $$\epsilon=\epsilon(\sigma^2, b)$$ is a Bernoulli random variable, then $$\mathbb{E}(\epsilon)=0$$ and $$\mathbb{V}(\epsilon)=\sigma^2$$. This is a slightly different definition from the usual definition of a Bernoulli random variable where the two possible values that the random variable takes are $0$ and $1$. We will deviate from the usual definition in some situations as we prove Benkus' Inequality.

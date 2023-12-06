@@ -4,7 +4,10 @@ title: About
 permalink: /about/
 image: marius-christensen-newport-unsplash.jpg
 ---
-Alo! Thank you for visiting my website! My name is Joaquin. I enjoy doing yoga and doing research about uncertainty quantification. Uncertainty is all we got for granted. When we feel uncertainty in our lives there's usually two possible reactions: anxiety or curiosity. We must choose to be curious and grateful in order to enjoy life. Feel free to reach out! I love getting to know people with authentic ways of thinking.
+Alo! Thank you for visiting my website! My name is Joaquin Alvarez. When looking for inspiration I like to walk. Predict addict, I enjoy doing yoga and doing research about uncertainty quantification. Uncertainty is all we got for granted. When we feel uncertainty in our lives there's usually two possible reactions: anxiety or curiosity. We must choose to be curious and grateful in order to enjoy life. Feel free to reach out! I love getting to know people with authentic ways of thinking.
+
+Over the last decade AI has experienced an un precedented growth. Despite this, many challenges remain. When do AI algorithms mess up? Should we trust AI algorithms? What if the algorithm has non-existing interpretability? How can we make AI algorithms safer and trustworthy? I'm intrigued to find answers to these questions.
+
 
 <!---  By courtesy of https://unsplash.com/@mariuschristensen, Marius Christensen. -->
 

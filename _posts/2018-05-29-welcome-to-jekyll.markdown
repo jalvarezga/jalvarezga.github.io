@@ -12,9 +12,9 @@ tags:   Jekyll
 
 <small>In honor to Vidmantas Bentkus.</small>
 
-$\require{\amsmath}$
-$\require{\mathtools}$
-$\require{\amssymb}$
+$$\require{\amsmath}$$
+$$\require{\mathtools}$$
+$$\require{\amssymb}$$
 
 
 [comment]: <> (Picture courtesy of unsplash, Louis Hansel, https://unsplash.com/photos/stainless-steel-espresso-machine-on-brown-wooden-table-9v3nL6pAxjw)

@@ -62,7 +62,7 @@ As a consequence, it follows that if $$\epsilon=\epsilon(\sigma^2, b)$$ is a Ber
 
 #### Definition
 
-Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative values. We say that the mapping is a log-concave function if and only if $$\begin{equation}p_{n+1}p_{n-1}\leq p_{n}^2\quad \forall n\in \mathbb{Z}\end{equation}\end{equation}$$
+Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative values. We say that the mapping is a log-concave function if and only if $$\begin{equation}p_{n+1}p_{n-1}\leq p_{n}^2\quad \forall n\in \mathbb{Z}\end{equation}$$
 
 
 
@@ -79,7 +79,7 @@ $$(p*q)_{n}\overset{\triangle}{=}\sum\limits_{k=-\infty}^{\infty}p_{n-k}q_{k}$$
 
 (iv) Binomial survival functions (as discrete functions).
 
-#### Proof
+##### Proof
 bla bla bla 
 
 

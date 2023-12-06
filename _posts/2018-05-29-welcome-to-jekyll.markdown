@@ -17,7 +17,7 @@ tags:   Jekyll
 
 
 In 2005 Vidmantas Bentkus an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
-However, the result is not easy to grasp at first glance.  Also, the proof is quite unintuitive. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative than Bentkus' original result.
+However, the result is not easy to grasp at first glance.  Also, the proof is quite unintuitive. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative assumption than Bentkus' original result.
 
 
 
@@ -39,7 +39,7 @@ $$\mathbb{P}\Big(X=x\Big)$$.
 
 In this section we will explore the construction of a rejection region based on a test statistic originated form Bentkus' celebrated theorem from 2004. The emphasis is on giving accessible, yet rigorous arguments that lead to the proposed test statistic from LTT (2021). We will dive into a proof of the  Bentkus inequality, with some slight modifications, making arguments as self-contained as possible.
 
-Let $$X_1,X_2,\dots, X_n$$ be the differences of a martingale defined by $$M_n\coloneqq \sum_{i=1}^{n}X_i$$ and suppose that each satisfy the boundedness condition
+Let $$X_1,X_2,\dots, X_n$$ be the differences of a martingale defined by $$M_n\overset{\triangle}{=} \sum_{i=1}^{n}X_i$$ and suppose that each satisfy the boundedness condition
 
  $$\mathbb{P}\{-p_k\leq X_k \leq 1-p_k \}, \quad k\in \{1, \dots, n \}, $$
 
@@ -52,7 +52,7 @@ where $$0\leq p_k\leq 1 \quad \forall k \in \{1,\dots, n \}$$ is non-random.
 
 Let $$b\in \mathbb{R} -  \{0\}$ and $\sigma>0$$. We say that a random variable $$\epsilon=\epsilon(\sigma^2,b)$$ is a Bernoulli random variable if it takes at most two possible  real values, and satisfies the following conditions:
 
-$$\Prob\{\epsilon= b\}=\frac{\sigma^2}{\sigma^2+b^2}\quad \Prob\Big\{ \epsilon=\frac{-\sigma^2}{b}\Big\}=\frac{b^2}{b^2+\sigma^2}$$
+$$\begin{equation} \mathbb{P}\{\epsilon= b\}=\frac{\sigma^2}{\sigma^2+b^2}\quad \mathbb{P}\Big\{ \epsilon=\frac{-\sigma^2}{b}\Big\}=\frac{b^2}{b^2+\sigma^2} \end{equation}$$
 
 
 

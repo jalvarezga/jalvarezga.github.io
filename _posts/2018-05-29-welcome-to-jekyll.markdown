@@ -2,7 +2,7 @@
 layout: post
 title:  "What was Bentkus trying to say!?"
 date:   2023-05-29 18:05:55 +0300
-image:  tyler-nix-coffee-unsplash.jpg
+image:  louis-hansel-coffee-unsplash.jpg
 tags:   Jekyll
 ---
 <script
@@ -13,7 +13,7 @@ tags:   Jekyll
 <small>In honor to Vidmantas Bentkus.</small>
 
 
-[comment]: <> (Picture courtesy of unsplash,Tyler Nix, https://unsplash.com/photos/person-pouring-liquid-on-drinking-glass-yKalliZTaQU)
+[comment]: <> (Picture courtesy of unsplash, Louis Hansel, https://unsplash.com/photos/stainless-steel-espresso-machine-on-brown-wooden-table-9v3nL6pAxjw)
 
 
 In 2005 Vidmantas Bentkus an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
@@ -57,12 +57,12 @@ $$\begin{equation} \mathbb{P}\{\epsilon= b\}=\frac{\sigma^2}{\sigma^2+b^2}, \qua
 
 
 
-As a consequence, it follows that if $$\epsilon=\epsilon(\sigma^2, b)$$ is a Bernoulli random variable, then $$\mathbb{E}(\epsilon)=0$$ and $$\mathbb{V}(\epsilon)=\sigma^2$$. This is a slightly different definition from the usual definition of a Bernoulli random variable where the two possible values that the random variable takes are $0$ and $1$. We will deviate from the usual definition in some situations as we prove Benkus' Inequality.
+As a consequence, it follows that if $$\epsilon=\epsilon(\sigma^2, b)$$ is a Bernoulli random variable, then $$\mathbb{E}(\epsilon)=0$$ and $$\mathbb{V}(\epsilon)=\sigma^2$$. This is a slightly different definition from the usual definition of a Bernoulli random variable where the two possible values that the random variable takes are $$0$$ and $$1$$. We will deviate from the usual definition in some situations as we prove Benkus' Inequality.
 
 
 #### Definition
 
-Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative values. We say that the mapping is a log-concave function if and only if $$\begin{equation}p_{n+1}p_{n-1}\leq p_{n}^2\quad \forall n\in \mathbb{Z}\end{equation}$$
+Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative values. We say that the mapping is a log-concave function if and only if $$\begin{equation}p_{n+1}p_{n-1}\leq p_{n}^2\quad \forall n\in \mathbb{Z}\end{equation}$$.
 
 
 
@@ -70,10 +70,10 @@ Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative v
  Let $$p:\mathbb{Z}\longrightarrow [0,\infty)$$, $$q:\mathbb{Z}\longrightarrow [0,\infty)$$ be log-concave functions. Then the following functions are also log-concave:
 
 (i) The convolution
-$$(p*q)_{n}\overset{\triangle}{=}\sum\limits_{k=-\infty}^{\infty}p_{n-k}q_{k}$$
+$$(p*q)_{n}\overset{\triangle}{=}\sum\limits_{k=-\infty}^{\infty}p_{n-k}q_{k}$$.
 
 
-(ii)$$n\mapsto t_n$$, where $$t_n\overset{\triangle}{=}\sum_{k\geq n}p_k$$
+(ii)$$n\mapsto t_n$$, where $$t_n\overset{\triangle}{=}\sum_{k\geq n}p_k$$.
 
 (iii)Bernoulli probability mass functions.
 

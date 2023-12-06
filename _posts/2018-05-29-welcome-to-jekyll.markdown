@@ -12,6 +12,10 @@ tags:   Jekyll
 
 <small>In honor to Vidmantas Bentkus.</small>
 
+$\require{\amsmath}$
+$\require{\mathtools}$
+$\require{\amssymb}$
+
 
 [comment]: <> (Picture courtesy of unsplash, Louis Hansel, https://unsplash.com/photos/stainless-steel-espresso-machine-on-brown-wooden-table-9v3nL6pAxjw)
 
@@ -83,7 +87,7 @@ $$(p*q)_{n}\overset{\triangle}{=}\sum\limits_{k=-\infty}^{\infty}p_{n-k}q_{k}$$.
 
  We want to prove that $$(p*q)_{n-1}(p*q)_{n+1}\leq (p*q)_{n}^2,$$   
 
- which is equivalent to proving that $$\delta\geq 0$$, where $$\delta \overset{\triangle}{=}(p*q)_{n}^2-(p*q)_{n-1}(p*q)_{n+1}\geq 0$$. And $$\delta\geq 0\iff 2\delta\geq 0$$
+ which is equivalent to proving that $$\delta\geq 0$$, where $$\delta \overset{\triangle}{=}(p*q)_{n}^2-(p*q)_{n-1}(p*q)_{n+1}\geq 0$$. And $$\delta\geq 0\iff 2\delta\geq 0.$$
 
 This last equivalence is useful since $$2\delta =\sum_{k,r=-\infty}^{\infty}\alpha\beta$$ with 
 
@@ -96,7 +100,11 @@ $$
     \end{split}
 \end{equation*}
 $$
+
+
 In order to prove this equality we develop the right side of the equation.
+
+
 $$
 \begin{equation*}
     \begin{split}
@@ -111,11 +119,13 @@ $$
       &-\underbrace{\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k}}_{S_7}\underbrace{\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r}}_{S_8}\\
       &+ 
 \underbrace{\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k-1}}_{S_3\overset{\triangle}{=}} \underbrace{\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r+1}}_{S_4\overset{\triangle}{=} }\\
-&=(\#)
-    \end{split}
+&=(\#),
+\end{split}
 \end{equation*}
 $$
+with
 
+$$S_1\overset{\triangle}{=}$$
 
 
 

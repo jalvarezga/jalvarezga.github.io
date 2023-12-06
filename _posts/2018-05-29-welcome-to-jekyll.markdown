@@ -10,7 +10,10 @@ tags:   Jekyll
   type="text/javascript">
 </script>
 We add code to get mathjax and support to integrate LaTeX within .md files. 
-Interacting with LaTeX $\alpha$. 
+Interacting with LaTeX $$\alpha, \beta$$. 
+
+
+$$\frac{a}{b}$$
 $$\pi\approx 3.1415$$
 
 

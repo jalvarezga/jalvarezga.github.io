@@ -16,8 +16,8 @@ tags:   Jekyll
 [comment]: <> (Picture courtesy of unsplash, Louis Hansel, https://unsplash.com/photos/stainless-steel-espresso-machine-on-brown-wooden-table-9v3nL6pAxjw)
 
 
-In 2005 Vidmantas Bentkus an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
-However, the result is not easy to grasp at first glance.  Also, the proof is quite unintuitive. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative assumption than Bentkus' original result.
+In 2005 Vidmantas Bentkus introduced an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
+However, the result is not easy to grasp at first glance.  Also, the proof can be unintuitive (it certainly was for me) when you don't have the author's background in probability theory. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative assumption than Bentkus' original result.
 
 
 
@@ -73,14 +73,50 @@ Let $$n\mapsto p_n, \quad n \in \mathbb{Z}$$ be a function taking non-negative v
 $$(p*q)_{n}\overset{\triangle}{=}\sum\limits_{k=-\infty}^{\infty}p_{n-k}q_{k}$$.
 
 
-(ii)$$n\mapsto t_n$$, where $$t_n\overset{\triangle}{=}\sum_{k\geq n}p_k$$.
+(ii) $$n\mapsto t_n$$, where $$t_n\overset{\triangle}{=}\sum_{k\geq n}p_k$$.
 
-(iii)Bernoulli probability mass functions.
+(iii) Bernoulli probability mass functions.
 
 (iv) Binomial survival functions (as discrete functions).
 
 ##### Proof
-bla bla bla 
+
+ We want to prove that $$(p*q)_{n-1}(p*q)_{n+1}\leq (p*q)_{n}^2,$$   
+
+ which is equivalent to proving that $$\delta\geq 0$$, where $$\delta \overset{\triangle}{=}(p*q)_{n}^2-(p*q)_{n-1}(p*q)_{n+1}\geq 0$$. And $$\delta\geq 0\iff 2\delta\geq 0$$
+
+This last equivalence is useful since $$2\delta =\sum_{k,r=-\infty}^{\infty}\alpha\beta$$ with 
+
+
+$$
+\begin{equation*}
+    \begin{split}
+        &\alpha\coloneqq p_kp_r-p_{k+1}p_{r-1}\\
+        &\beta\coloneqq q_{n-k}q_{n-r}-q_{n-k-1}q_{n-r+1}.
+    \end{split}
+\end{equation*}
+$$
+In order to prove this equality we develop the right side of the equation.
+$$
+\begin{equation*}
+    \begin{split}
+      \sum_{k,r=-\infty}^{\infty}\alpha\beta&=
+      \sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}( p_kp_r-p_{k+1}p_{r-1})(q_{n-k}q_{n-r}-q_{n-k-1}q_{n-r+1})\\
+      &=\sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}\Big\{ p_{k}p_{r}q_{n-k}q_{n-r}-p_{k}p_{r}q_{n-k-1}q_{n-r+1}\\
+      &-p_{k+1}p_{r-1}q_{n-k}q_{n-r}+p_{k+1}p_{r-1}q_{n-k-1}q_{n-r+1}\Big\}\\
+      &=\sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}p_{k}p_{r}q_{n-k}q_{n-r}-\sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}p_{k}p_{r}q_{n-k-1}q_{n-r+1}\\
+      &-\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k}\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r}\\
+      &+    \sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}p_{k+1}p_{r-1}q_{n-k-1}q_{n-r+1}  \\
+      &=\underbrace{\sum_{k=-\infty}^{\infty}p_{k}q_{n-k}}_{S_1}\underbrace{\sum_{r=-\infty}^{\infty}p_{r}q_{n-r}}_{S_2}-\underbrace{\sum_{k=-\infty}^{\infty}p_{k}q_{n-k-1}}_{S_5\coloneqq}\underbrace{\sum_{r=-\infty}^{\infty}p_{r}q_{n-r+1}}_{S_6}\\
+      &-\underbrace{\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k}}_{S_7}\underbrace{\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r}}_{S_8}\\
+      &+ 
+\underbrace{\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k-1}}_{S_3\coloneqq} \underbrace{\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r+1}}_{S_4\coloneqq }\\
+&=(\#)
+    \end{split}
+\end{equation*}
+$$
+
+
 
 
 $$\blacksquare$$

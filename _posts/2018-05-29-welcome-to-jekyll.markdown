@@ -91,8 +91,8 @@ This last equivalence is useful since $$2\delta =\sum_{k,r=-\infty}^{\infty}\alp
 $$
 \begin{equation*}
     \begin{split}
-        &\alpha\coloneqq p_kp_r-p_{k+1}p_{r-1}\\
-        &\beta\coloneqq q_{n-k}q_{n-r}-q_{n-k-1}q_{n-r+1}.
+        &\alpha\overset{\triangle}{=} p_kp_r-p_{k+1}p_{r-1}\\
+        &\beta\overset{\triangle}{=} q_{n-k}q_{n-r}-q_{n-k-1}q_{n-r+1}.
     \end{split}
 \end{equation*}
 $$
@@ -107,10 +107,10 @@ $$
       &=\sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}p_{k}p_{r}q_{n-k}q_{n-r}-\sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}p_{k}p_{r}q_{n-k-1}q_{n-r+1}\\
       &-\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k}\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r}\\
       &+    \sum_{k=-\infty}^{\infty}\sum_{r=-\infty}^{\infty}p_{k+1}p_{r-1}q_{n-k-1}q_{n-r+1}  \\
-      &=\underbrace{\sum_{k=-\infty}^{\infty}p_{k}q_{n-k}}_{S_1}\underbrace{\sum_{r=-\infty}^{\infty}p_{r}q_{n-r}}_{S_2}-\underbrace{\sum_{k=-\infty}^{\infty}p_{k}q_{n-k-1}}_{S_5\coloneqq}\underbrace{\sum_{r=-\infty}^{\infty}p_{r}q_{n-r+1}}_{S_6}\\
+      &=\underbrace{\sum_{k=-\infty}^{\infty}p_{k}q_{n-k}}_{S_1}\underbrace{\sum_{r=-\infty}^{\infty}p_{r}q_{n-r}}_{S_2}-\underbrace{\sum_{k=-\infty}^{\infty}p_{k}q_{n-k-1}}_{S_5\overset{\triangle}{=}}\underbrace{\sum_{r=-\infty}^{\infty}p_{r}q_{n-r+1}}_{S_6}\\
       &-\underbrace{\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k}}_{S_7}\underbrace{\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r}}_{S_8}\\
       &+ 
-\underbrace{\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k-1}}_{S_3\coloneqq} \underbrace{\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r+1}}_{S_4\coloneqq }\\
+\underbrace{\sum_{k=-\infty}^{\infty}p_{k+1}q_{n-k-1}}_{S_3\overset{\triangle}{=}} \underbrace{\sum_{r=-\infty}^{\infty}p_{r-1}q_{n-r+1}}_{S_4\overset{\triangle}{=} }\\
 &=(\#)
     \end{split}
 \end{equation*}

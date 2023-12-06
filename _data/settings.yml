@@ -7,18 +7,18 @@ description: Zolan is modern minimal theme for Jekyll
 
 #-------------------------------
 # Author Settings
-
-name: Joaquin Alvarez
-image: 01.jpg
-say-hello: <strong>Welcome!<strong> Thank you for visiting!
-bio: My name is Joaquin Alvarez. I'm a passionate <strong>yoga<strong> practitioner and <strong>coffee<strong> enthusiast. I also enjoy <strong>art</strong>. When looking for inspiration, I walk. <a href="#">Music</a> puts everything into perspective. Predict addict.
+author:
+  name: Joaquin Alvarez
+  image: 01.jpg
+  say-hello: <strong>Welcome!<strong> Thank you for visiting!
+  bio: My name is Joaquin Alvarez. I'm a passionate <strong>yoga<strong> practitioner and <strong>coffee<strong> enthusiast. I also enjoy <strong>art</strong>. When looking for inspiration, I walk. <a href="#">Music</a> puts everything into perspective. Predict addict.
 
 
 #-------------------------------
 # Contact links
 #twitter: https://twitter.com/ # Add your Twitter handle
 #facebook: https://facebook.com/ # Add your Facebook handle
-#dribbble: https://dribbble.com/ # Add your Dribbble handle
+dribbble: https://dribbble.com/ # Add your Dribbble handle
 #instagram: https://instagram.com/ # Add your Instagram handle
 #pinterest: https://pinterest.com/ # Add your Pinterest handle
 

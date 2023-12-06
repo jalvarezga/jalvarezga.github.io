@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-05-29 18:05:55 +0300
+title:  "What was Bentkus trying to say!?"
+date:   2023-05-29 18:05:55 +0300
 image:  10.jpg
 tags:   Jekyll
 ---
@@ -9,6 +9,11 @@ tags:   Jekyll
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
   type="text/javascript">
 </script>
+In 2005 Vidmantas Bentkus an innovative concentration inequality. Yet, the result is not easy to wrap at first glance. Also, the proof is somehow unintuitive. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative than Bentkus' original result.
+
+
+
+
 We add code to get mathjax and support to integrate LaTeX within .md files. 
 Interacting with LaTeX $$\alpha, \beta$$. 
 

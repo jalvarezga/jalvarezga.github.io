@@ -10,17 +10,17 @@ description: Zolan is modern minimal theme for Jekyll
 author:
   name: Joaquin Alvarez
   image: 01.jpg
-  say-hello: Hello, I’m <strong>Joaquin Alvarez</strong>
-  bio: With a passion for <strong>yoga</strong>, <strong>art</strong>, and  <strong>coffee</strong>. I walk for inspiration. <a href="#">Music</a> puts everything into perspective. Predict addict.
+  say-hello: <strong>Welcome!<strong> Thank tou for visiting!, I’m Joaquin Alvarez.
+  bio: With a passion for <strong>yoga</strong>, <strong>art</strong>, and  <strong>coffee</strong>. When looking for inspiration I walk. <a href="#">Music</a> puts everything into perspective. Predict addict.
 
 
 #-------------------------------
 # Contact links
-twitter: https://twitter.com/ # Add your Twitter handle
-facebook: https://facebook.com/ # Add your Facebook handle
-dribbble: https://dribbble.com/ # Add your Dribbble handle
-instagram: https://instagram.com/ # Add your Instagram handle
-pinterest: https://pinterest.com/ # Add your Pinterest handle
+#twitter: https://twitter.com/ # Add your Twitter handle
+#facebook: https://facebook.com/ # Add your Facebook handle
+#dribbble: https://dribbble.com/ # Add your Dribbble handle
+#instagram: https://instagram.com/ # Add your Instagram handle
+#pinterest: https://pinterest.com/ # Add your Pinterest handle
 
 
 #-------------------------------
@@ -28,15 +28,15 @@ pinterest: https://pinterest.com/ # Add your Pinterest handle
 
 #-------------------------------
 # Instagram Feed
-instafeed: # To enable the instafeed, use the value true. To turn off use the value false.
-instagram-profile: artemsheludko_ # Add instagram username
+#instafeed: # To enable the instafeed, use the value true. To turn off use the value false.
+#instagram-profile: artemsheludko_ # Add instagram username
 
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+#google-analytics: # Add your identifier. For example UA-99631805-1.
 
 
 #-------------------------------
 # Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+#mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e

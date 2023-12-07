@@ -10,7 +10,7 @@ tags:   Jekyll
   type="text/javascript">
 </script>
 
-<small>In honor to Vidmantas Bentkus.</small>
+<small>In honor to Vidmantas Bentkus, Lithuania.</small>
 
 
 
@@ -23,30 +23,6 @@ In 2005 Vidmantas Bentkus introduced an innovative [concentration inequality](ht
 However, the result is not easy to grasp at first glance. It uses uncommon notation across the whole paper.  Also, the proof can be unintuitive (it certainly was for me) when you don't have the author's background in probability theory. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article.
 
 
-
-### Setting and notation
-
-In this section we will explore the construction of a rejection region based on a test statistic originated form Bentkus' celebrated theorem from 2004. The emphasis is on giving accessible, yet rigorous arguments that lead to the proposed test statistic from LTT (2021). We will dive into a proof of the  Bentkus inequality, with some slight modifications, making arguments as self-contained as possible.
-
-Let $$X_1,X_2,\dots, X_n$$ be the differences of a martingale defined by $$M_n\overset{\triangle}{=} \sum\limits_{i=1}^{n}X_i$$ and suppose that each satisfy the boundedness condition
-
- $$\mathbb{P}\{-p_k\leq X_k \leq 1-p_k \}, \quad k\in \{1, \dots, n \}, $$
-
-
-where $$0\leq p_k\leq 1 $$  is non-random  $$\forall k \in \{1,\dots, n \}$$.
-
-
-
-#### Definition
-
-Let $$b\in \mathbb{R} -  \{0\}$$ and $$\sigma>0$$. We say that a random variable $$\epsilon=\epsilon(\sigma^2,b)$$ is a Bernoulli random variable if it takes at most two possible  real values, and satisfies the following conditions:
-
-$$\begin{equation} \mathbb{P}\{\epsilon= b\}=\frac{\sigma^2}{\sigma^2+b^2}, \quad \mathbb{P}\Big\{ \epsilon=\frac{-\sigma^2}{b}\Big\}=\frac{b^2}{b^2+\sigma^2} \end{equation}.$$
-
-
-
-
-As a consequence, it follows that if $$\epsilon=\epsilon(\sigma^2, b)$$ is a Bernoulli random variable, then $$\mathbb{E}(\epsilon)=0$$ and $$\mathbb{V}(\epsilon)=\sigma^2$$. This is a slightly different definition from the usual definition of a Bernoulli random variable where the two possible values that the random variable takes are $$0$$ and $$1$$. We will deviate from the usual definition in some situations as we prove Benkus' Inequality.
 
 
 #### Definition

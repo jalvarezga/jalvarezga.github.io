@@ -119,6 +119,7 @@ making an analogous change of variables for each series.
 Hence $$(\#)=2((p*q)_{n})^2-2\sum_{k=-\infty}^{\infty}p_{n-1-k}q_{k}\sum_{k=-\infty}^{\infty}p_{n+1-k}q_{k}$$
 
 On the other hand, we have that 
+
 $$
 \begin{equation*}
     \begin{split}
@@ -164,32 +165,32 @@ Which lead to $$\begin{equation*}k\geq r  \implies \alpha, \beta \geq 0\end{equa
 Now switching the roles of $r$ and $k$ in that argument, we get that
 $$k<r\implies[ \alpha\leq 0 \quad \& \quad \beta\leq 0]$$ Thus,
 $$k<r\implies \alpha\beta\geq0$$
-By cases 1 and 2, $2\delta=\sum_{k,r=-\infty}^{\infty}\alpha\beta\geq0$, because $2\delta$ is just a series in which the terms are always non-negative. Therefore $\delta\geq 0$.
+By cases 1 and 2, $$2\delta=\sum_{k,r=-\infty}^{\infty}\alpha\beta\geq0$$, because $$2\delta$$ is just a series in which the terms are always non-negative. Therefore $$\delta\geq 0$$.
 
 
-Next we prove (ii). We are going to prove that $t_{n-1}t_{n+1}\leq t_{n}^2\quad \forall n\in \mathbb{Z}$.
-First, since $n\mapsto p_n$ is log-concave, $p_n\geq 0\forall n\in \mathbb{Z}$. Thus $t_n\coloneqq\sum_{k\geq n}p_k\geq 0\forall n\in \mathbb{Z}$.
-Define $w_n\coloneqq I\{ n\leq0\}, \quad\forall n\in \mathbb{Z}$.
+Next we prove (ii). We are going to prove that $$t_{n-1}t_{n+1}\leq t_{n}^2\quad \forall n\in \mathbb{Z}$$.
+First, since $$n\mapsto p_n$$ is log-concave, $$p_n\geq 0\forall n\in \mathbb{Z}$$. Thus $$t_n\coloneqq\sum_{k\geq n}p_k\geq 0\forall n\in \mathbb{Z}$$.
+Define $$w_n\coloneqq I\{ n\leq0\}, \quad\forall n\in \mathbb{Z}$$.
 
-We claim that $n \mapsto w_n$ is a log-concave function: clearly, $w_n\geq 0\forall n\in \mathbb{Z}$, since $w_n \in \{ 0,1\}$. Moreover, $w_{n-1}w_{n+1} \leq  w_{n}^2 \forall n\in \mathbb{Z}$.
+We claim that $$n \mapsto w_n$$ is a log-concave function: clearly, $$w_n\geq 0\forall n\in \mathbb{Z}$$, since $$w_n \in \{ 0,1\}$$. Moreover, $$w_{n-1}w_{n+1} \leq  w_{n}^2 \forall n\in \mathbb{Z}$$.
 This is verified by cases.
 
-Let $n\in \mathbb{Z}$ be an arbitrary integer.
+Let $$n\in \mathbb{Z}$$ be an arbitrary integer.
 
 
-Case a: $n\leq0$. Then by definition of the indicator function, $w_n=1$ and by definition of the mapping $n\mapsto w_n$, 
+Case a: $$n\leq0$$. Then by definition of the indicator function, $w_n=1$ and by definition of the mapping $$n\mapsto w_n$$, 
 
-$w_{n-1 }w_{n+1} \leq 1 =w_{n}^2$.
+$$w_{n-1 }w_{n+1} \leq 1 =w_{n}^2$$.
 
 
-Case b: $n>0$. Then by definition, $w_n=0$, but since $n>0$, then $n+1>0$, so $w_{n+1}=0$
- and we get $w_{n-1 }w_{n+1} \leq 0 =w_{n}^2$, since we have an inequality of the form $ 0\leq 0$, which trivially holds.
+Case b: $$n>0$$. Then by definition, $$w_n=0$$, but since $$n>0$$, then $$n+1>0$$, so $$w_{n+1}=0$$
+ and we get $$w_{n-1 }w_{n+1} \leq 0 =w_{n}^2$$, since we have an inequality of the form $$ 0\leq 0$$, which trivially holds.
 
-So now we have that $w_n$ is a log concave function, and by the hypothesis of the Lemma, $p_n$ is a log-concave function. Next we will prove that actually, $t_n=(p*w)_n$. Let $n\in \mathbb{Z}$ be an arbitrary integer.
+So now we have that $w_n$ is a log concave function, and by the hypothesis of the Lemma, $$p_n$$ is a log-concave function. Next we will prove that actually, $$t_n=(p*w)_n$$. Let $$n\in \mathbb{Z}$$ be an arbitrary integer.
 
 Then 
 
-
+$$
 \begin{equation*}
     \begin{split}
      (p*w)_n&=\sum_{k=-\infty}^{\infty}p_{n-k}w_k\\
@@ -199,6 +200,7 @@ Then
      &=t_n
     \end{split}
 \end{equation*}
+$$
 
 By (i), we conclude that $n\mapsto t_n\coloneqq\sum_{k\geq n}p_k$ is log-concave.
 

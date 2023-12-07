@@ -20,7 +20,7 @@ tags:   Jekyll
 
 
 In 2005 Vidmantas Bentkus introduced an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
-However, the result is not easy to grasp at first glance.  Also, the proof can be unintuitive (it certainly was for me) when you don't have the author's background in probability theory. Here we will develop a self-contained proof working in an i.d.d. setting, which is a little bit more conservative assumption than Bentkus' original result.
+However, the result is not easy to grasp at first glance. It uses uncommon notation across the whole paper.  Also, the proof can be unintuitive (it certainly was for me) when you don't have the author's background in probability theory. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article.
 
 
 
@@ -124,13 +124,13 @@ $$
 \begin{equation*}
     \begin{split}
       2\delta&=2\{(p*q)_{n}^2-(p*q)_{n-1}(p*q)_{n+1} \}  \\  
-      &=2\{ \big(\sum_{k=-\infty}^{\infty}p_{n-k}q_{k} \big)^2 -(\sum_{k=-\infty}^{\infty}p_{n-1-k}q_{k})(\sum_{k=-\infty}^{\infty}p_{n+1-k}q_{k}) \}
+      &=2\{ \big(\sum_{k=-\infty}^{\infty}p_{n-k}q_{k} \big)^2 -(\sum_{k=-\infty}^{\infty}p_{n-1-k}q_{k})(\sum_{k=-\infty}^{\infty}p_{n+1-k}q_{k}) \}.
     \end{split}
 \end{equation*}
 $$
 
 
-So $$2\delta =\sum_{k,r=-\infty}^{\infty}\alpha\beta$$
+So $$2\delta =\sum_{k,r=-\infty}^{\infty}\alpha\beta$$.
 
 Recalling that we want to prove that $$\delta\geq 0$$, we study 2 cases
 
@@ -141,7 +141,7 @@ In order to notice why this is true, suppose without loss of generality that the
 
 
 
-$$\begin{equation*}p_{k+1}p_{r-1}\leq p_{k}p_{r}\iff \frac{p_{r-1}}{p_r}\leq \frac{p_{k}}{p_{k+1}}\end{equation*}$$
+$$\begin{equation*}p_{k+1}p_{r-1}\leq p_{k}p_{r}\iff \frac{p_{r-1}}{p_r}\leq \frac{p_{k}}{p_{k+1}}.\end{equation*}$$
 
 In terms of fractions, our hypothesis states that $$\frac{p_{k-1}}{p_k}\leq \frac{p_{k}}{p_{k+1}}$$. Hence  applying the hypothesis as many times as needed (a finite number of times) $$\frac{p_{r-1}}{p_{r}}\leq \frac{p_{r}}{p_{r+1}} \leq\dots \leq \frac{p_{k-2}}{p_{k-1}}\leq \frac{p_{k-1}}{p_{k}}\leq \frac{p_{k}}{p_{k+1}}$$ leading to the result. The exact same ideas can be applied to $$n\mapsto q_n$$ by the hypothesis that the mapping is also log-concave.
 

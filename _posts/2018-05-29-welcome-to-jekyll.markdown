@@ -10,7 +10,7 @@ tags:   Jekyll
   type="text/javascript">
 </script>
 
-<small>In honor to Vidmantas Bentkus, Lithuania.</small>
+<small>In honor to Vidmantas Bentkus.</small>
 
 
 
@@ -18,6 +18,7 @@ tags:   Jekyll
 
 [comment]: <> (Picture courtesy of unsplash, seyfettin dincturk, https://unsplash.com/photos/a-vase-of-flowers-on-a-counter-vzYixWSCqLM, https://unsplash.com/@dincturk)
 
+### Context
 
 In 2005 Vidmantas Bentkus introduced an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
 However, the result is not easy to grasp at first glance. It uses uncommon notation across the whole paper.  Also, the proof can be unintuitive (it certainly was for me) when you don't have the author's background in probability theory. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article.
@@ -108,7 +109,7 @@ $$
 
 So $$2\delta =\sum_{k,r=-\infty}^{\infty}\alpha\beta$$.
 
-Recalling that we want to prove that $$\delta\geq 0$$, we study 2 cases
+Recalling that we want to prove that $$\delta\geq 0$$, we study 2 cases.
 
 Case $$1$$: $$k\geq r$$.
 
@@ -178,35 +179,36 @@ $$
 \end{equation*}
 $$
 
-By (i), we conclude that $n\mapsto t_n\coloneqq\sum_{k\geq n}p_k$ is log-concave.
+By (i), we conclude that $$n\mapsto t_n\overset{\triangle}{=}\sum_{k\geq n}p_k$$ is log-concave.
 
 
 
-Now we prove (iii). Let $X\sim Bernoulli(p),\quad p\in (0,1)$. Then its probability mass function is given by $f_X(x)=p^{x}(1-p)^{1-x}\mathbb{I}_{\{0,1\}}(x)$.
-Clearly, $f_X(x)\geq 0\quad \forall x\in \mathbb{R}$, in particular in $\mathbb{Z}$.
+Now we prove (iii). Let $$X\sim Bernoulli(p),\quad p\in (0,1)$$. Then its probability mass function is given by $$f_X(x)=p^{x}(1-p)^{1-x}\mathbb{I}_{\{0,1\}}(x)$$.
+Clearly, $$f_X(x)\geq 0\quad \forall x\in \mathbb{R}$$, in particular in $$\mathbb{Z}$$.
 
-It is easy to verify that $f_X(x-1)f_X(x+1)\leq f_X(x)^2\quad \forall x\in \mathbb{Z}$ by cases, in a similar fashion as the one previously done.
+It is easy to verify that $$f_X(x-1)f_X(x+1)\leq f_X(x)^2\quad \forall x\in \mathbb{Z}$$ by cases, in a similar fashion as the one previously done.
 
 Hence the probability mass function of a Bernoulli random variable is log-concave.
 
 Next we prove (iv).
 First we prove that as a consequence of (i) and (iii), Binomial probability mass functions are log-concave.
-That is, if $X_m\sim Bin(m,p)$, then $f_{X_m}(x)= \binom{m}{x}p^{x}(1-p)^{m-x}I_{\{0,1,\dots, m\}}(x)$ is a log-concave function for each $m\in \mathbb{N}$. 
-The proof is done by induction on $m$.
+That is, if $$X_m\sim Bin(m,p)$, then $f_{X_m}(x)= \binom{m}{x}p^{x}(1-p)^{m-x}I_{\{0,1,\dots, m\}}(x)$$ is a log-concave function for each $$m\in \mathbb{N}$$. 
+The proof is done by induction on $$m$$.
 
-The basis of the induction ($m=1$) follows from the fact that a Binomial distribution with $m=1$ is a Bernoulli distribution.
-Since we are considering the log concave functions as functions in $\mathbb{Z}$, we will adopt the following notation for the probability mass functions as restricted to $\mathbb{Z}$: $t_x\coloneqq f_{X_m}(x)$.
+The basis of the induction ($$m=1$$) follows from the fact that a Binomial distribution with $$m=1$$ is a Bernoulli distribution.
+Since we are considering the log concave functions as functions in $$\mathbb{Z}$$, we will adopt the following notation for the probability mass functions as restricted to $$\mathbb{Z}$$: $$t_x\overset{\triangle}{=} f_{X_m}(x)$$.
 
-$m=2$
+$$m=2$$
 
-We claim that $t_n=(z*w)_n\quad \forall n\in \mathbb{Z}$, where $z$ and $w$ are Bernoulli probability mass functions. 
+We claim that $$t_n=(z*w)_n\quad \forall n\in \mathbb{Z}$$, where $$z$$ and $$w$$ are Bernoulli probability mass functions. 
 
-$t_x=\binom{2}{x}p^x(1-p)^{2-x}I_{\{0,1,2\}}(x)$ so 
+$$t_x=\binom{2}{x}p^x(1-p)^{2-x}I_{\{0,1,2\}}(x)$$ so 
 
-$t_0=(1-p)^2, \quad t_1=2p(1-p) , \quad t_2=p^2$
+$$t_0=(1-p)^2, \quad t_1=2p(1-p) , \quad t_2=p^2.$$
 
 And 
-$$w_k=\begin{cases}
+
+$$\begin{equation}w_k=\begin{cases}
   p,& \text{if $ k=1$} \\
   1-p, & \text{if $ k=0$}
   \end{cases}$$
@@ -214,29 +216,30 @@ $$w_k=\begin{cases}
   $$z_k=\begin{cases}
     p,& \text{if $ k=1$} \\
     1-p, & \text{if $ k=0$}
-    \end{cases}$$
+    \end{cases}\end{equation}.$$
 So,
 
-$(z*w)_{0}=\sum_{k=-\infty}^{\infty}z_{0-k}w_k=z_0w_0=(1-p)^2=t_0$
+$$(z*w)_{0}=\sum_{k=-\infty}^{\infty}z_{0-k}w_k=z_0w_0=(1-p)^2=t_0$$
 
-$(z*w)_{1}=\sum_{k=-\infty}^{\infty}z_{1-k}w_k=z_1w_0+z_0w_1=2p(1-p)=t_1$
-
-
-$(z*w)_{2}=\sum_{k=-\infty}^{\infty}z_{2-k}w_k=z_1w_1=p^2=t_2$
+$$(z*w)_{1}=\sum_{k=-\infty}^{\infty}z_{1-k}w_k=z_1w_0+z_0w_1=2p(1-p)=t_1$$
 
 
-$(z*w)_n=t_n=0\quad\forall n\in \mathbb{Z}-\{0,1,2\}$
-
-\underline{Hypothesis of induction}: $Bin(m,p)$ is log concave for any $p\in (0,1)$, and some $m\in \mathbb{N}$.
-
-We will prove that $Bin(m+1,p)$  mass probability function is also log concave for any $p\in (0,1)$.
+$$(z*w)_{2}=\sum_{k=-\infty}^{\infty}z_{2-k}w_k=z_1w_1=p^2=t_2$$
 
 
-Denote $t$ the probability mass function of a $Bin(m+1,p)$ random variable, $w$ the density of a Bernoulli random variable and $z$ the density of a $Bin(m,p)$ random variable, which by or basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
-Now, we are going to prove that $t=(z*w)$
+$$(z*w)_n=t_n=0\quad\forall n\in \mathbb{Z}-\{0,1,2\}$$
 
-Let $x\in \{0,1, \dots, m+1\}$. Then 
+$$\underline{Hypothesis of induction}$$: $$Bin(m,p)$$ is log concave for any $$p\in (0,1)$$, and some $$m\in \mathbb{N}$$.
 
+We will prove that $$Bin(m+1,p)$$  mass probability function is also log concave for any $$p\in (0,1)$$.
+
+
+Denote $$t$$ the probability mass function of a $$Bin(m+1,p)$$ random variable, $w$ the density of a Bernoulli random variable and $z$ the density of a $$Bin(m,p)$$ random variable, which by or basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
+Now, we are going to prove that $$t=(z*w)$$.
+
+Let $$x\in \{0,1, \dots, m+1\}$$. Then 
+
+$$
 \begin{equation*}
     \begin{split}
        (z*w)_x&= \sum_{k=-\infty}^{\infty}z_{x-k}w_k\\
@@ -246,18 +249,14 @@ Let $x\in \{0,1, \dots, m+1\}$. Then
        &=p^{x}(1-p)^{m+1-x}\binom{m+1}{x}
     \end{split}
 \end{equation*}
+$$
 
-since  $\binom{m}{x} +\binom{m}{x-1}=\binom{m+1}{x}\forall x\in \{0,1\dots, m+1\}$
+since  $$\binom{m}{x} +\binom{m}{x-1}=\binom{m+1}{x}\forall x\in \{0,1\dots, m+1\}$$
 
-$(z*w)_x=0=t_x\forall x\in \mathbb{Z}-\{0,1,\dots, m+1\}$
+$$(z*w)_x=0=t_x\forall x\in \mathbb{Z}-\{0,1,\dots, m+1\}.$$
 
 
 Finally, once that we have that Binomial probability mass functions are log concave, we apply (ii) to conclude that the Binomial survival function is log concave, and conclude the proof.
-
-\end{proof}
-
-
-
 
 $$\blacksquare$$
 

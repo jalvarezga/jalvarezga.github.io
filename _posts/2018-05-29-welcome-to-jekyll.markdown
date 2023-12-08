@@ -20,8 +20,8 @@ tags:   Jekyll
 
 ### Context
 
-In 2005 Vidmantas Bentkus introduced an innovative [concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical implications in machine learning as shown by Angelopoulos, Bates et. al. in [Learn then Test](https://arxiv.org/abs/2110.01052).
-However, the result is not easy to grasp at first glance. It uses uncommon notation across the whole paper.  Also, the proof can be unintuitive (it certainly was for me) when you don't have the author's background in probability theory. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article.
+In 2005 Vidmantas Bentkus introduced an innovative [probability concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical applications in machine learning as shown by Angelopoulos, Bates et. al. in [2021](https://arxiv.org/abs/2110.01052).
+However, the result is not easy to grasp at first glance. It uses unconventional notation across the whole paper.  Also, the proof can be unintuitive (it certainly was for me) when you don't have the author's background in probability theory. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article.
 
 
 

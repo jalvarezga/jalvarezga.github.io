@@ -229,7 +229,7 @@ $$\underline{Hypothesis of induction}$$: $$Bin(m,p)$$ is log concave for any $$p
 We will prove that $$Bin(m+1,p)$$  mass probability function is also log concave for any $$p\in (0,1)$$.
 
 
-Denote $$t$$ the probability mass function of a $$Bin(m+1,p)$$ random variable, $$w$$ the density of a Bernoulli random variable and $z$ the density of a $$Bin(m,p)$$ random variable, which by or basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
+Denote $$t$$ the probability mass function of a $$Bin(m+1,p)$$ random variable, $$w$$ the density of a Bernoulli random variable and $$z$$ the density of a $$Bin(m,p)$$ random variable, which by or basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
 Now, we are going to prove that $$t=(z*w)$$.
 
 Let $$x\in \{0,1, \dots, m+1\}$$. Then 

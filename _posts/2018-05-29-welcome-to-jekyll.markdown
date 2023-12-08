@@ -146,8 +146,8 @@ By cases 1 and 2, $$2\delta=\sum_{k,r=-\infty}^{\infty}\alpha\beta\geq0$$, becau
 
 
 Next we prove (ii). We are going to prove that $$t_{n-1}t_{n+1}\leq t_{n}^2\quad \forall n\in \mathbb{Z}$$.
-First, since $$n\mapsto p_n$$ is log-concave, $$p_n\geq 0\forall n\in \mathbb{Z}$$. Thus $$t_n\coloneqq\sum_{k\geq n}p_k\geq 0\forall n\in \mathbb{Z}$$.
-Define $$w_n\coloneqq I\{ n\leq0\}, \quad\forall n\in \mathbb{Z}$$.
+First, since $$n\mapsto p_n$$ is log-concave, $$p_n\geq 0\forall n\in \mathbb{Z}$$. Thus $$t_n\overset{\triangle}{=}\sum_{k\geq n}p_k\geq 0\forall n\in \mathbb{Z}$$.
+Define $$w_n\overset{\triangle}{=} I\{ n\leq0\}, \quad\forall n\in \mathbb{Z}$$.
 
 We claim that $$n \mapsto w_n$$ is a log-concave function: clearly, $$w_n\geq 0\forall n\in \mathbb{Z}$$, since $$w_n \in \{ 0,1\}$$. Moreover, $$w_{n-1}w_{n+1} \leq  w_{n}^2 \forall n\in \mathbb{Z}$$.
 This is verified by cases.
@@ -208,15 +208,10 @@ $$t_0=(1-p)^2, \quad t_1=2p(1-p) , \quad t_2=p^2.$$
 
 And 
 
-$$\begin{equation}w_k=\begin{cases}
-  p,& \text{if $ k=1$} \\
-  1-p, & \text{if $ k=0$}
-  \end{cases}$$
-  
-  $$z_k=\begin{cases}
-    p,& \text{if $ k=1$} \\
-    1-p, & \text{if $ k=0$}
-    \end{cases}\end{equation}.$$
+$$\begin{equation}w_k=p I\{k=1\}+(1-p)I\{k=0\},\end{equation}$$
+
+$$\begin{equation}z_k=pI\{k=1\}+(1-p)I\{k=0 \}.\end{equation}$$
+
 So,
 
 $$(z*w)_{0}=\sum_{k=-\infty}^{\infty}z_{0-k}w_k=z_0w_0=(1-p)^2=t_0$$

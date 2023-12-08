@@ -139,7 +139,7 @@ By the above argument (Case 1), we know that $$k\begin{equation*}\geq r\implies 
 
 Which lead to $$\begin{equation*}k\geq r  \implies \alpha, \beta \geq 0\end{equation*}.$$
 
-Now switching the roles of $r$ and $k$ in that argument, we get that
+Now switching the roles of $$r$$ and $$k$$ in that argument, we get that
 $$k<r\implies[ \alpha\leq 0 \quad \& \quad \beta\leq 0]$$ Thus,
 $$k<r\implies \alpha\beta\geq0$$
 By cases 1 and 2, $$2\delta=\sum_{k,r=-\infty}^{\infty}\alpha\beta\geq0$$, because $$2\delta$$ is just a series in which the terms are always non-negative. Therefore $$\delta\geq 0$$.
@@ -155,7 +155,7 @@ This is verified by cases.
 Let $$n\in \mathbb{Z}$$ be an arbitrary integer.
 
 
-Case a: $$n\leq0$$. Then by definition of the indicator function, $w_n=1$ and by definition of the mapping $$n\mapsto w_n$$, 
+Case a: $$n\leq0$$. Then by definition of the indicator function, $$w_n=1$$ and by definition of the mapping $$n\mapsto w_n$$, 
 
 $$w_{n-1 }w_{n+1} \leq 1 =w_{n}^2$$.
 
@@ -163,7 +163,7 @@ $$w_{n-1 }w_{n+1} \leq 1 =w_{n}^2$$.
 Case b: $$n>0$$. Then by definition, $$w_n=0$$, but since $$n>0$$, then $$n+1>0$$, so $$w_{n+1}=0$$
  and we get $$w_{n-1 }w_{n+1} \leq 0 =w_{n}^2$$, since we have an inequality of the form $$ 0\leq 0$$, which trivially holds.
 
-So now we have that $w_n$ is a log concave function, and by the hypothesis of the Lemma, $$p_n$$ is a log-concave function. Next we will prove that actually, $$t_n=(p*w)_n$$. Let $$n\in \mathbb{Z}$$ be an arbitrary integer.
+So now we have that $$w_n$$ is a log concave function, and by the hypothesis of the Lemma, $$p_n$$ is a log-concave function. Next we will prove that actually, $$t_n=(p*w)_n$$. Let $$n\in \mathbb{Z}$$ be an arbitrary integer.
 
 Then 
 
@@ -192,7 +192,7 @@ Hence the probability mass function of a Bernoulli random variable is log-concav
 
 Next we prove (iv).
 First we prove that as a consequence of (i) and (iii), Binomial probability mass functions are log-concave.
-That is, if $$X_m\sim Bin(m,p)$, then $f_{X_m}(x)= \binom{m}{x}p^{x}(1-p)^{m-x}I_{\{0,1,\dots, m\}}(x)$$ is a log-concave function for each $$m\in \mathbb{N}$$. 
+That is, if $$X_m\sim Bin(m,p)$$, then $$f_{X_m}(x)= \binom{m}{x}p^{x}(1-p)^{m-x}I_{\{0,1,\dots, m\}}(x)$$ is a log-concave function for each $$m\in \mathbb{N}$$. 
 The proof is done by induction on $$m$$.
 
 The basis of the induction ($$m=1$$) follows from the fact that a Binomial distribution with $$m=1$$ is a Bernoulli distribution.
@@ -229,7 +229,7 @@ $$\underline{Hypothesis of induction}$$: $$Bin(m,p)$$ is log concave for any $$p
 We will prove that $$Bin(m+1,p)$$  mass probability function is also log concave for any $$p\in (0,1)$$.
 
 
-Denote $$t$$ the probability mass function of a $$Bin(m+1,p)$$ random variable, $w$ the density of a Bernoulli random variable and $z$ the density of a $$Bin(m,p)$$ random variable, which by or basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
+Denote $$t$$ the probability mass function of a $$Bin(m+1,p)$$ random variable, $$w$$ the density of a Bernoulli random variable and $z$ the density of a $$Bin(m,p)$$ random variable, which by or basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
 Now, we are going to prove that $$t=(z*w)$$.
 
 Let $$x\in \{0,1, \dots, m+1\}$$. Then 

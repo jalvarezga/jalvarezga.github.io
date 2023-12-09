@@ -254,3 +254,8 @@ $$(z*w)_x=0=t_x\forall x\in \mathbb{Z}-\{0,1,\dots, m+1\}.$$
 Finally, once that we have that Binomial probability mass functions are log concave, we apply (ii) to conclude that the Binomial survival function is log concave, and conclude the proof.$$\blacksquare$$
 
 
+### Final Remarks
+
+Why does this seemingly irrelevant lemma actually matter? The answer to this is that, when we want to prove Bentkus inequality for the special case of the binomial random variable, this result allows us to justify that the log concave-hull for the binomial random variable is indeed a log-concave function, that is, on a logarithmic scale, the log-concave hull is a convex function. We need convexity as a part of the proof provided by Bentkus. 
+
+

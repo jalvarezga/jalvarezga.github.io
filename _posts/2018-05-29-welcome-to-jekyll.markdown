@@ -229,7 +229,7 @@ $$\underline{Hypothesis of induction}$$: $$Bin(m,p)$$ is log concave for any $$p
 We will prove that $$Bin(m+1,p)$$  mass probability function is also log concave for any $$p\in (0,1)$$.
 
 
-Denote $$t$$ the probability mass function of a $$Bin(m+1,p)$$ random variable, $$w$$ the density of a Bernoulli random variable and $$z$$ the density of a $$Bin(m,p)$$ random variable, which by or basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
+Denote $$t$$ the probability mass function of a $$Bin(m+1,p)$$ random variable, $$w$$ the density of a Bernoulli random variable and $$z$$ the density of a $$Bin(m,p)$$ random variable, which by our basis of induction and our hypothesis of induction, respectively, both functions are log-concave. 
 Now, we are going to prove that $$t=(z*w)$$.
 
 Let $$x\in \{0,1, \dots, m+1\}$$. Then 
@@ -251,8 +251,6 @@ since  $$\binom{m}{x} +\binom{m}{x-1}=\binom{m+1}{x}\forall x\in \{0,1\dots, m+1
 $$(z*w)_x=0=t_x\forall x\in \mathbb{Z}-\{0,1,\dots, m+1\}.$$
 
 
-Finally, once that we have that Binomial probability mass functions are log concave, we apply (ii) to conclude that the Binomial survival function is log concave, and conclude the proof.
-
-$$\blacksquare$$
+Finally, once that we have that Binomial probability mass functions are log concave, we apply (ii) to conclude that the Binomial survival function is log concave, and conclude the proof.$$\blacksquare$$
 
 

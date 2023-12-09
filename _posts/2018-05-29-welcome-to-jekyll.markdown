@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "To get used to the uncomfortable with Vidmantas Bentkus"
+title:  "Reflections about Bentkus inequality"
 date:   2023-05-29 18:05:55 +0300
 image:  seyfettin-coffee-unsplash.jpg
 tags:   Jekyll

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Predicting crimes in Boston
-date:   2018-06-25 15:01:35 +0300
+date:   2023-06-25 15:01:35 +0300
 image:  todd-kent-Boston-unsplash.jpg
 tags:   Urban planning
 ---
@@ -11,14 +11,14 @@ tags:   Urban planning
 
 
 
-![]({{ site.baseurl }}/images/bostonCrimes.png)
-*A map of Boston divided by neighborhoods in Bosotn*
+![]({{ site.baseurl }}/images/bostonMap.png)
+*A map of Boston divided by neighborhoods.*
 
 
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
 ![]({{ site.baseurl }}/images/BayesianKriging.png)
-*Bayesian Kriging: we will make crime predictions for the orange neighborhoods*
+*Bayesian Kriging: we will make crime predictions for the orange neighborhoods.*
 
 
 

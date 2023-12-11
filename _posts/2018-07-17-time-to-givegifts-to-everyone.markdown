@@ -12,10 +12,10 @@ Courtesy of Ciao Silva, from Unsplash https://unsplash.com/@caaaaaaaaaio.
 ![]({{ site.baseurl }}/images/nycSubwayMap.png)
 *A map of the NYC subway system*
 
-![]({{ site.baseurl }}/images/mapa_calor_res.png){width=40%}
+![]({{ site.baseurl }}/images/mapa_calor_res.png width=40%)
 *Heat map of the change in the use of the subway system after the pandemic.*
 
-![]({{ site.baseurl }}/images/map_test_pred.png){width=40%}
+![]({{ site.baseurl }}/images/map_test_pred.png)
 *Training the model and prediction strategy. We identified that Queens Village's use of the subway was an outlier observation.*
 
 

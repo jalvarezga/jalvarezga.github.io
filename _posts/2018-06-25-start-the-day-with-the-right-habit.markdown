@@ -7,6 +7,17 @@ tags:   Urban planning
 ---
 <small>joint work with Diego Velazquez and Marcelino Sanchez</small>
 
+![]({{ site.baseurl }}/images/cover.png)
+*A map of Boston's streets generated with R.*
+
+
+
+
+![]({{ site.baseurl }}/images/backBay.png)
+*Crimes in the Back Bay area by the location in which they occured.*
+
+
+
 
 
 

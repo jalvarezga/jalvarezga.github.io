@@ -10,6 +10,8 @@ tags:   Urban planning
 ### Exploratory data analysis
 
 
+![]({{ site.baseurl }}/images/mapa_calor_res.png)
+*Heat map of the change in the use of the subway system after the pandemic.*
 
 ![]({{ site.baseurl }}/images/eda_zonas.png)
 *Change in the use of the subway divided by zones in NYC.*
@@ -19,9 +21,6 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 
 ### Prediction strategy
-![]({{ site.baseurl }}/images/mapa_calor_res.png)
-*Heat map of the change in the use of the subway system after the pandemic.*
-
 ![]({{ site.baseurl }}/images/map_test_pred.png)
 *Training the model and prediction strategy. We identified that Queens Village's change in the use of the subway was an outlier observation.*
 

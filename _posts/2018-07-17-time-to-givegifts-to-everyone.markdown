@@ -12,7 +12,7 @@ Courtesy of Ciao Silva, from Unsplash https://unsplash.com/@caaaaaaaaaio.
 ![]({{ site.baseurl }}/images/nycSubwayMap.png)
 *A map of the NYC subway system*
 
-![]({{ site.baseurl }}/images/mapa_calor_res.png width=40%)
+![]({{ site.baseurl }}/images/mapa_calor_res.png)
 *Heat map of the change in the use of the subway system after the pandemic.*
 
 ![]({{ site.baseurl }}/images/map_test_pred.png)

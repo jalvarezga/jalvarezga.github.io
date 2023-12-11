@@ -2,8 +2,8 @@
 layout: post
 title:  Simulation with the Bootstrap
 date:   2022-06-19 15:01:35 +0300
-image:  03.jpg
-tags:   Simulation
+image:  violinPlot.png
+tags:   Art
 author: Joaquin
 ---
 

@@ -2,15 +2,12 @@
 layout: post
 title:  Predicting traffic in the New York City Subway
 date:   2022-07-17 15:01:35 +0300
-image:  caio-silva-NYC-unsplash.jpg
+image:  nycSubwayMap.png
 tags:   Urban planning
 ---
 <small>joint work with Julieta Rivero and Rodrigo Villela</small>
 
-Courtesy of Ciao Silva, from Unsplash https://unsplash.com/@caaaaaaaaaio.
 
-![]({{ site.baseurl }}/images/nycSubwayMap.png)
-*A map of the NYC subway system*
 
 ![]({{ site.baseurl }}/images/mapa_calor_res.png)
 *Heat map of the change in the use of the subway system after the pandemic.*

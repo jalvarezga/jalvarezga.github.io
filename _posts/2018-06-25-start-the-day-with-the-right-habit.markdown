@@ -5,7 +5,7 @@ date:   2023-06-25 15:01:35 +0300
 image:  todd-kent-Boston-unsplash.jpg
 tags:   Urban planning
 ---
-<small>joint work with Diego Velazquez and Marcelino Sanchez</small>
+<small>This is joint work with Diego Velazquez and Marcelino Sanchez.</small>
 
 ![]({{ site.baseurl }}/images/cover.png)
 *A map of Boston's streets.*

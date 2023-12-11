@@ -5,7 +5,7 @@ date:   2022-07-17 15:01:35 +0300
 image:  nycSubwayMap.png
 tags:   Urban planning
 ---
-<small>joint work with Julieta Rivero and Rodrigo Villela</small>
+<small>This is joint work with Julieta Rivero and Rodrigo Villela.</small>
 
 ### Exploratory data analysis
 

@@ -8,9 +8,12 @@ tags:   Urban planning
 <small>joint work with Diego Velazquez and Marcelino Sanchez</small>
 
 ![]({{ site.baseurl }}/images/cover.png)
-*A map of Boston's streets generated with R.*
+*A map of Boston's streets.*
 
 
+
+![]({{ site.baseurl }}/images/density.png)
+*Distribution of crimes per day in Boston during 2022.*
 
 
 ![]({{ site.baseurl }}/images/backBay.png)

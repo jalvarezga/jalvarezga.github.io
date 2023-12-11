@@ -1,51 +1,57 @@
 ---
 layout: post
-title:  Why a brand is often important
-date:   2018-07-19 15:01:35 +0300
+title:  Simulation with the Bootstrap
+date:   2022-06-19 15:01:35 +0300
 image:  03.jpg
-tags:   Style
+tags:   Simulation
+author: Joaquin
 ---
-Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
-You lived before you met me?! Ow, my spirit! Humans dating robots is sick. __You people wonder why I'm still single?__ *It's 'cause all the fine robot sisters are dating humans!* I guess if you want children beaten, you have to do it yourself.
 
-## Are you crazy? I can't swallow that.
+# The context of what we are doing to do
 
-Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain. Meh. So, how 'bout them Knicks? Also Zoidberg.
+The purpose is to illustrate the Bootstrap through an example. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the ISLR book. 
 
-1. We need rest. The spirit is willing, but the flesh is spongy and bruised.
-2. Fry, we have a crate to deliver.
-3. Have you ever tried just turning off the TV, sitting down with your children, and hitting them?
+Suppose we want to invest in two different stocks in the market. We have access to historical data of the daily returns (joint returns) of those two assets, $$(X_i,Y_i) \stackrel{i.i.d.}{\sim} \mathbb{P}_{X,Y},\quad i=1,\dots,n$$. $$\mathbb{P}_{X,Y}$$ denotes a joint probability distribution. For simplicity we assume these observations are independent, however, we could make more relaxed assumptions (or use a more sophisticated Time Series Model) and Bootstrap still provides the magic. We are going to allocate a proportion of $\alpha\in (0,1)$ of our total money we want to invest to the stock X and the rest ($1-\alpha$) to asset Y. We want to make the allocation in such a way that we minimize the variance of the return of the portfolio.
 
-### Why not indeed!
+In this context, the total return in terms of the proportion we invest to each asset is given by $$f(\alpha, X, Y):= \alpha X+(1-\alpha)Y, \quad \forall \alpha \in (0,1)$$ , where $$(X,Y) \sim \mathbb{P}_{X,Y}$$ is an observation of the daily joint returns of the asset. We want to minimize $$\mathbb{V}ar(f(\alpha, X, Y))$$ with respect to alpha, picking the $$\alpha \in (0,1)$$ that minimizes that expression. That is, we want to minimize the  variance of the daily return of a portfolio consisting of two assets, with daily returns for each asset denoted by X and Y, respectively. We use the following notation: $$\sigma_X^2 \coloneqq \mathbb{V}(X),\quad \sigma_Y^2:=\mathbb{V}ar(Y), \quad \sigma_{X,Y}:=Cov(X,Y)$$. We assume that we $$\underline{don't}$$ know this quantities, and we assume that they exist.
 
-Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. I don't 'need' to drink. I can quit anytime I want! Soothe us with sweet lies. Bender?! You stole the atom. You don't know how to do any of those.
 
-* Shinier than yours, meatbag.
-* This is the worst part. The calm before the battle.
-* Ooh, name it after me!
 
-Say what? Throw her in the brig. Hey, you add a one and two zeros to that or we walk! You guys aren't Santa! You're not even robots. How dare you lie in front of Jesus? Ow, my spirit! Who's brave enough to fly into something we all keep calling a death sphere?
+Notice that $$\mathbb{V}ar(f(\alpha, X, Y))=\mathbb{V}(\alpha X+(1-\alpha)Y)= \alpha^2\mathbb{V}(X)+(1-\alpha)^2\mathbb{V}(Y)+2\alpha(1-\alpha)Cov(X,Y)= \alpha^2\sigma_X^2+(1-\alpha)^2\sigma_Y^2+2\alpha(1-\alpha)\sigma_{X,Y}$$ is a polynomial in $$\alpha$$. We can use simple calculus to verify that 
 
-Hey, you add a one and two zeros to that or we walk! You won't have time for sleeping, soldier, not with all the bed making you'll be doing. It's okay, Bender. I like cooking too. Hey, what kinda party is this? There's no booze and only one hooker.
 
-![]({{ site.baseurl }}/images/07.jpg)
-*Minimalism*
+$$\begin{equation}\alpha^*:=\frac{\sigma_Y^2-\sigma_{X,Y}}{\sigma_X^2+\sigma_Y^2-2\sigma_{X,Y}}\end{equation}$$
 
-Ummm…to eBay? But I know you in the future. I cleaned your poop. I'm just glad my fat, ugly mama isn't alive to see this day. My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards.
 
-Your best is an idiot! Fry, you can't just sit here in the dark listening to classical music. And remember, don't do anything that affects anything, unless it turns out you were supposed to, in which case, for the love of God, don't not do it!
+is a global minimum of $$F(\alpha):=\mathbb{V}ar(f(\alpha, X, Y))$$.  Now, given that $$\sigma_X^2, \sigma_Y^2$$ and $$\sigma_{X,Y}$$ are unknown quantities, we can construct a $$\emph{plug-in}$$ estimator of $$\alpha^*$$, denoted by $$\widehat{\alpha^*}$$,
+using the data and the unbiased estimators of $$\sigma_X^2, \sigma_Y^2$$ and $$\sigma_{X,Y}$$, denoted by $$\widehat{\sigma_X^2}, \widehat{\sigma_Y^2}, \widehat{\sigma_{X,Y}}$$ and get:
 
-You, a bobsleder!? That I'd like to see! I'm Santa Claus! There's no part of that sentence I didn't like! Noooooo! I can explain. It's very valuable.
+$$\begin{equation}\widehat{\alpha^*}\coloneqq \frac{\widehat{\sigma_Y^2}-\widehat{\sigma_{X,Y}}}{\widehat{\sigma_X^2}+\widehat{\sigma_Y^2}-2\widehat{\sigma_{X,Y}}}\end{equation}.$$
 
-I'm Santa Claus! Is the Space Pope reptilian!? Who's brave enough to fly into something we all keep calling a death sphere? I had more, but you go ahead.
 
-It doesn't look so shiny to me. Kif might! You guys aren't Santa! You're not even robots. How dare you lie in front of Jesus? Oh, but you can. But you may have to metaphorically make a deal with the devil. And by "devil", I mean Robot Devil. And by "metaphorically", I mean get your coat.
 
-Check it out, y'all. Everyone who was invited is here. Anyone who laughs is a communist! You're going to do his laundry? Michelle, I don't regret this, but I both rue and lament it.
 
-Bender, we're trying our best. I daresay that Fry has discovered the smelliest object in the known universe! Oh, you're a dollar naughtier than most. Hi, I'm a naughty nurse, and I really need someone to talk to. $9.95 a minute.
+Our objective is to  know (or in statistical terms, to estimate)  $$\alpha^*$$, and we are going to do that through $$\widehat{\alpha^*}$$ and the available data.
 
-You, a bobsleder!? That I'd like to see! No! The kind with looting and maybe starting a few fires! Good news, everyone! There's a report on TV with some very bad news! When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film!
+# Theory: we have access to a data generator
 
-Eeeee! Now say "nuclear wessels"! Why did you bring us here? Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." That's the ONLY thing about being a slave.
+We first generate some data.
+
+
+{% highlight r %}
+alphas=rep(0,1000)# to store the data
+set.seed(1)#set a seed to keep reproducibility
+mu=c(0.3,0.9) #average daily returns
+Sigma=matrix(c(2,-2,-2,4), nrow=2,  byrow = T) #positive definite matrix
+mu
+Sigma
+library(MASS) #we load a library to generate samples from a multivariate normal distribution
+returns=mvrnorm(n = 100, mu, Sigma) #simulate 100 observations of a bivariate normal.
+#we plot the resulting generated samples
+plot(returns, xlab = 'X',ylab='Y', main='Joint Returns', col='red', pch=16)
+#the scatter plot of the data  suggests a mean near (0.3,0.9), the center of the elipse and a negative correlation between the variables, since the principal axis of the elipse has a negative slope.
+{% endhighlight %}
+
+
+

@@ -7,7 +7,7 @@ tags:   Urban planning
 ---
 <small>This is joint work with Julieta Rivero and Rodrigo Villela.</small>
 
-### Exploratory data analysis
+### Data analysis
 
 
 ![]({{ site.baseurl }}/images/mapa_calor_res.png)

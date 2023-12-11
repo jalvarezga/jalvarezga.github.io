@@ -14,11 +14,11 @@ Courtesy of Ciao Silva, from Unsplash https://unsplash.com/@caaaaaaaaaio.
 
 
 
-![]({{ site.baseurl }}/images/mapa_test_pred.png)
+![]({{ site.baseurl }}/images/map_test_pred.png)
 *Training the model and prediction strategy. We identified that Queens Village's use of the subway was an utlier observation.*
 
 
 
 
-![]({{ site.baseurl }}/images/mapa_calor_res.png width="50%" height="50%")
+![]({{ site.baseurl }}/images/mapa_calor_res.png){width=50%}
 *Heat map of the change in the use of the subway system after the pandemic.*

@@ -3,18 +3,18 @@ layout: post
 title:  Predicting traffic in the New York City Subway
 date:   2022-07-17 15:01:35 +0300
 image:  caio-silva-NYC-unsplash.jpg
-tags:   Life
+tags:   Urban planning
 ---
 <small>joint work with Julieta Rivero and Rodrigo Villela</small>
 
 Courtesy of Ciao Silva, from Unsplash https://unsplash.com/@caaaaaaaaaio.
 
-![]({{ site.baseurl }}/images/nywSubwayMap.png)
+![]({{ site.baseurl }}/images/nycSubwayMap.png)
 *A map of the NYC subway system*
 
 
 
-![]({{ site.baseurl }}/images/map_test_pred.png width="50%" height="50%")
+![]({{ site.baseurl }}/images/mapa_test_pred.png)
 *Training the model and prediction strategy. We identified that Queens Village's use of the subway was an utlier observation.*
 
 

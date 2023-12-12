@@ -71,14 +71,152 @@ for(j in 1:1000){
   alphas[j]=alpha
   
 }
+(alphaEst=mean(alphas))
+#the output is 
+#[1] 0.5997652
+#which is very close to the theoretical value of alpha.
 {% endhighlight %}
 
 
 
-By the definition of $$\alpha^*$$, the exact optimal alpha is 0.6 in this example.
+By the definition of $$\alpha^*$$, the exact optimal alpha is $$0.6=\frac{4+2/}{4+2+4}$$ in this example.
+
+
+We can generate a histogram of the simulated estimates of $$\alpha^*$$, which helps us get a sense of the distribution of $$\widehat\alpha^*$$.
+
+
+{% highlight R %}
+par(mfrow=c(1,2))
+hist(alphas, col='orange2', cex.main=.9)
+boxplot(alphas, main='Box-plot of the estimates of the optimal alpha',cex.main=.7)
+{% endhighlight %}
+
+
+However, in order to properly assess the quality of the estimator, we need to consider the uncertainty associated to a point estimation. Don't forget (EVER!) to associate some quantification of uncertainty to  your estimator (Henri Luigi Grandson Decks).
+
+
+
+Formally, we would construct a confidence interval, making some assumptions or appealing to asymptotic results. In order to gain some intuition, we will just appeal to an informal rule of thumb, and deploy a cruede interval. 
+That being said, we would usually expect approximately $$95\%$$ of the observations  (assuming normality of $$\hat{\alpha^*}$$) of our estimations of  $$\alpha^*$$ to live in:
+
+{% highlight R %}
+c(alphaEst-2*sqrt(alphaVar), alphaEst+2*sqrt(alphaVar))
+{% endhighlight %}
+
+which is an interval with small length and contains the value $$\alpha^*=0.6$$, hence the estimator is one of good quality.
+
+
+# Reality: we have finite data (Bootstrap)
+
+We now assume that we only have a sample of n=100  daily returns. 
+
+{% highlight R %}
+set.seed(1)
+returns=mvrnorm(n = 100, mu, Sigma)
+sigx=var(returns[,1])
+sigy=var(returns[,2])
+covxy=cov(returns[,1],returns[,2])
+alpha=(sigy-covxy)/(sigx+sigy-2*covxy)
+alpha #is our point estimate  of alpha
+{% endhighlight %}
+
+We would like to associate an uncertainty to that point estimation just as we did with the theoretical case. This is when Bootstrap comes in
+We will apply $$B=1,000$$ Bootstrap samples. 
 
 
 
 
+{% highlight R %}
+set.seed(1)
+#we make use of the sample function 
+sample(1:10, size=4, replace = TRUE, prob = NULL)
+sample(1:10, size=10, replace = TRUE, prob = NULL)
+#that is to gain  some intuition with the sample function
+#we generate 1000 Bootstrap samples of alpha
+alphasBoot=1:1000 # a vector to store the simulated samples 
+for(k in 1:1000){
+  set.seed(k) #in order to have reproducibility
+  #we generate a random sample based on the indices of the data
+  samp=sample(1:100, size=100, replace = TRUE, prob = NULL)
+  BootSamp=as.data.frame(matrix(nrow=100,ncol=2)) #now we extract the observations associated 
+  #to those indices
+  for(q in 1:100){
+    BootSamp[q,1]=returns[samp[q],1]
+    BootSamp[q,2]=returns[samp[q],2]
+  }
+  sigxx=var(BootSamp[,1])
+  sigyy=var(BootSamp[,2])
+  covxy=cov(BootSamp[,1], BootSamp[,2])
+  alphasBoot[k]=(sigyy-covxy)/(sigxx+sigyy-2*covxy)
+}
+{% endhighlight %}
 
+
+We can now estimate the variance of the estimator using the Bootstrap samples.
+
+{% highlight R %}
+var(alphasBoot)
+{% endhighlight %}
+
+With the data generator we obtained a very close estimation to the variance
+{% highlight R %}
+var(alphas)
+{% endhighlight %}
+
+
+We can visualize the observations of the alphas that we obtained through Bootstrap re-sampling. 
+
+{% highlight R %}
+plot(alphasBoot, main='Observed Bootstrap alphas')
+{% endhighlight %}
+
+
+
+
+{% highlight R %}
+par(mfrow=c(1,2))
+hist(alphasBoot)
+hist(alphas)
+{% endhighlight %}
+
+Oleee!  They look impressively similar!
+They look VERY similar! And this is the magic of the Bootstrap method: we are getting the distribution of the plug-in estimator of $$\alpha^*$$ without a  ridiculously big sample, only by applying computational power to an available data.
+
+
+{% highlight R %}
+boxplot(alphasBoot)
+boxplot(alphas)
+{% endhighlight %}
+
+
+
+# Some plots using ggplot
+
+
+{% highlight R %}
+ggplot(data=as.data.frame(alphas), aes(x=alphas))+
+  geom_density()
+ggplot(data=as.data.frame(alphas), aes(x=alphas))+
+  geom_density(fill='lightblue')
+{% endhighlight %}
+
+
+{% highlight R %}
+ggplot(data=as.data.frame(alphas), aes(x=alphas))+
+  geom_boxplot()
+ggplot(data=as.data.frame(alphasBoot), aes(x=alphasBoot))+
+  geom_boxplot()
+{% endhighlight %}
+
+
+We  see very similar box-plots :)
+
+
+Finally, we can compare with a violin plot, and get convinced that the bootstrap gave great results.
+
+{% highlight R %}
+df=data.frame(name=c(rep('alphas',1000), rep('alphasBoot',1000)), value=c(alphas, alphasBoot))
+ggplot(data=df, aes(x=name, y=value), fill=name)+
+  geom_violin(fill='green4', alpha=.6)
+{% endhighlight %}
 

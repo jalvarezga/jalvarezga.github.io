@@ -58,6 +58,9 @@ plot(returns, xlab = 'X',ylab='Y', main='Joint Returns', col='red', pch=16)
 {% endhighlight %}
 
 
+![]({{ site.baseurl }}/images/jointReturns.png)
+
+
 
 
 {% highlight R %}
@@ -79,7 +82,7 @@ for(j in 1:1000){
 
 
 
-By the definition of $$\alpha^*$$, the exact optimal alpha is $$0.6=\frac{4+2/}{4+2+4}$$ in this example.
+By the definition of $$\alpha^*$$, the exact optimal alpha is $$0.6=\frac{4+2}{4+2+4}$$ in this example.
 
 
 We can generate a histogram of the simulated estimates of $$\alpha^*$$, which helps us get a sense of the distribution of $$\widehat\alpha^*$$.

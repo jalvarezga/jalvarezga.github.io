@@ -7,6 +7,8 @@ tags:   Urban planning
 ---
 This is joint work with Diego Velazquez and Marcelino Sanchez.
 
+<span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithms are highly discouraged in high risk settings, since they do not provide any theoretical guarantee on the coverage.</span>
+
 
 ### Data analysis
 

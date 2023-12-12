@@ -30,8 +30,8 @@ This is joint work with Diego Velazquez and Marcelino Sanchez.
 
 
 ![]({{ site.baseurl }}/images/crimePoints.png)
-*Red points are district centroids. Blue points are locations where a crime occured.*
+*Red points are district centroids. Light blue points are locations where a crime occured.*
 
 ![]({{ site.baseurl }}/images/crimesByDistrict.png)
-*A map of Boston divided by district. Points correspong to crimes. The points are spread thoughout almost all of the city.*
+*A satellite image of Boston whith crime points stratified by neighborhood. The points are spread thoughout almost all of the city.*
 

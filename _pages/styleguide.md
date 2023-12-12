@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Style Guide
+title: Coffee Guide
 permalink: /styleguide/
 image: 08.jpg
 ---

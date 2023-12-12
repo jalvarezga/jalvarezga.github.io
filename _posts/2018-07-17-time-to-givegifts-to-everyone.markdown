@@ -11,7 +11,6 @@ tags:   Urban planning
 
 ### Data analysis
 
-nycSections
 ![]({{ site.baseurl }}/images/nycSections.png)
 *Map of NYC divided by neighborhoods in the city's boroughs excluding Staten Island.*
 

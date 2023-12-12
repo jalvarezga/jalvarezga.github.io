@@ -6,7 +6,7 @@ image:  nycSubwayMap.png
 tags:   Urban planning
 ---
 <small>This is joint work with Julieta Rivero and Rodrigo Villela.</small>
-
+<span style="color: red"> This is joint work with Julieta Rivero and Rodrigo Villela.</span>
 ### Data analysis
 
 

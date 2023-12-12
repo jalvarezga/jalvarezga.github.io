@@ -10,6 +10,9 @@ tags:   Life
   type="text/javascript">
 </script>
 
+[comment]: <> (Useful link to integrate LaTeX to .md files https://docs.mathjax.org/en/v2.7-latest/tex.html)
+
+
 <small>In honor to Vidmantas Bentkus.</small>
 
 

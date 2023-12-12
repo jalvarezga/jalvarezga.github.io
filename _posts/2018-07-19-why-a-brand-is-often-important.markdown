@@ -101,6 +101,10 @@ That being said, we would usually expect approximately $$95\%$$ of the observati
 
 {% highlight R %}
 c(alphaEst-2*sqrt(alphaVar), alphaEst+2*sqrt(alphaVar))
+
+#output:
+#[1]  (0.5588012 0.6407292)
+#which is an interval that includes the 0.6
 {% endhighlight %}
 
 which is an interval with small length and contains the value $$\alpha^*=0.6$$, hence the estimator is one of good quality.
@@ -118,6 +122,7 @@ sigy=var(returns[,2])
 covxy=cov(returns[,1],returns[,2])
 alpha=(sigy-covxy)/(sigx+sigy-2*covxy)
 alpha #is our point estimate  of alpha
+#[1] 0.5977546
 {% endhighlight %}
 
 We would like to associate an uncertainty to that point estimation just as we did with the theoretical case. This is when Bootstrap comes in
@@ -156,11 +161,15 @@ We can now estimate the variance of the estimator using the Bootstrap samples.
 
 {% highlight R %}
 var(alphasBoot)
+#output
+#[1] 0.0003518312
 {% endhighlight %}
 
 With the data generator we obtained a very close estimation to the variance
 {% highlight R %}
 var(alphas)
+#output
+#[1] 0.0004195125
 {% endhighlight %}
 
 
@@ -194,8 +203,6 @@ boxplot(alphas)
 
 
 {% highlight R %}
-ggplot(data=as.data.frame(alphas), aes(x=alphas))+
-  geom_density()
 ggplot(data=as.data.frame(alphas), aes(x=alphas))+
   geom_density(fill='lightblue')
 {% endhighlight %}

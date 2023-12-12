@@ -7,6 +7,13 @@ tags:   Urban planning
 ---
 This is joint work with Diego Velazquez and Marcelino Sanchez.
 
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+[comment]: <> (Necessaty code to add LaTeX notation in this environment)
+
+
 
 
 <small><span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithm is highly discouraged in high-risk scenarios, since it does not provide any theoretical guarantee on the coverage.</span></small>
@@ -37,5 +44,10 @@ This is joint work with Diego Velazquez and Marcelino Sanchez.
 *Red points are district centroids. Light blue points are locations where a crime occured.*
 
 ![]({{ site.baseurl }}/images/crimesByDistrict.png)
-*A satellite image of Boston whith crime points stratified by neighborhood. The points are spread thoughout almost all of the city.*
+*A satellite image of Boston whith crime points stratified by neighborhood. The points are spread throughout almost all of the city.*
+
+
+
+#Model proposal: a Gaussian process
+
 

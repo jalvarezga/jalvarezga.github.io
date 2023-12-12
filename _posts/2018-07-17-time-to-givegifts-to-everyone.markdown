@@ -6,6 +6,14 @@ image:  nycSubwayMap.png
 tags:   Urban planning
 ---
 
+
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
+
+
 <span style="color: red"> This is joint work with Julieta Rivero and Rodrigo Villela.</span>
 
 

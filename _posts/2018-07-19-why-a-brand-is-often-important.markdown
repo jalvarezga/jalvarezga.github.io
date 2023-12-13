@@ -58,7 +58,7 @@ plot(returns, xlab = 'X',ylab='Y', main='Joint Returns', col='red', pch=16)
 {% endhighlight %}
 
 
-![]({{ site.baseurl }}/images/jointReturns.png)
+![]({{ site.baseurl }}/images/bootstrap/jointReturns.png)
 
 
 
@@ -93,6 +93,8 @@ par(mfrow=c(1,2))
 hist(alphas, col='orange2', cex.main=.9)
 boxplot(alphas, main='Box-plot of the estimates of the optimal alpha',cex.main=.7)
 {% endhighlight %}
+
+![]({{ site.baseurl }}/images/bootstrap/twoFiguresOnePlot.png)
 
 
 However, in order to properly assess the quality of the estimator, we need to consider the uncertainty associated to a point estimation. Don't forget (EVER!) to associate some quantification of uncertainty to  your estimator (Henri Luigi Grandson Decks).
@@ -182,7 +184,7 @@ We can visualize the observations of the alphas that we obtained through Bootstr
 plot(alphasBoot, main='Observed Bootstrap alphas')
 {% endhighlight %}
 
-
+![]({{ site.baseurl }}/images/bootstrap/observedAlphas.png)
 
 
 {% highlight R %}
@@ -190,6 +192,10 @@ par(mfrow=c(1,2))
 hist(alphasBoot)
 hist(alphas)
 {% endhighlight %}
+
+![]({{ site.baseurl }}/images/bootstrap/compareHistograms.png)
+
+
 
 Oleee!  They look impressively similar!
 They look VERY similar! And this is the magic of the Bootstrap method: we are getting the distribution of the plug-in estimator of $$\alpha^*$$ without a  ridiculously big sample, only by applying computational power to an available data.
@@ -210,6 +216,10 @@ ggplot(data=as.data.frame(alphas), aes(x=alphas))+
   geom_density(fill='lightblue')
 {% endhighlight %}
 
+![]({{ site.baseurl }}/images/bootstrap/alphasDensity.png)
+
+
+
 
 {% highlight R %}
 ggplot(data=as.data.frame(alphas), aes(x=alphas))+
@@ -217,6 +227,11 @@ ggplot(data=as.data.frame(alphas), aes(x=alphas))+
 ggplot(data=as.data.frame(alphasBoot), aes(x=alphasBoot))+
   geom_boxplot()
 {% endhighlight %}
+
+![]({{ site.baseurl }}/images/bootstrap/boxplotAlphas.png)
+
+![]({{ site.baseurl }}/images/bootstrap/boxplotAlphasBoot.png)
+
 
 
 We  see very similar box-plots :)
@@ -229,4 +244,6 @@ df=data.frame(name=c(rep('alphas',1000), rep('alphasBoot',1000)), value=c(alphas
 ggplot(data=df, aes(x=name, y=value), fill=name)+
   geom_violin(fill='green4', alpha=.6)
 {% endhighlight %}
+
+![]({{ site.baseurl }}/images/bootstrap/violinPlot.png)
 

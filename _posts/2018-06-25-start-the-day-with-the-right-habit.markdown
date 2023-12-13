@@ -53,7 +53,7 @@ We are going to consider point referenced data using a Gaussian process to incor
 $$s_i\in \mathbb{R}^2$$ denotes the coordinates of the $$i-th$$ district in Boston, the regresion model that we will be using is given by:
 
  
-$$\begin{equation}Y(s)=\mathbf{\mu}(s)+\mathbf{\omega}(s)+\mathbf{\epsilo}(s),\end{equation}$$
+$$\begin{equation}Y(s)=\mathbf{\mu}(s)+\mathbf{\omega}(s)+\mathbf{\epsilon}(s),\end{equation}$$
 with
 
 
@@ -70,7 +70,7 @@ $$\begin{equation}\mathbf{\mu}(s):= \begin{pmatrix}\mu(s_1)\\ \mu(s_2)\\
 
 
 $$\mu(s_i)=\mathbf{x}(s_i)^{T}\mathbf{\beta}, $$ 
-where $$x(s_i)$$ denotes a feature vector that contains the predictive variables for the variables associated to the i-th neighborhood and  $$\begin{equation}\mathbf{\beta}=\begin{pmatrix}
+where $$\mathbf{x}(s_i)$$ denotes a feature vector that contains the predictive variables for the variables associated to the i-th neighborhood and  $$\begin{equation}\mathbf{\beta}=\begin{pmatrix}
     \beta_1 \\
     \beta_2\\
     \vdots \\
@@ -86,9 +86,9 @@ w(s_n)
 
 denotes a Gaussian process that corresponds to the spatial dependence structure in the data, usinga an exponential covariance function. That is, if $$s_i, s_j$$ are the coordinates of two arbitrary districts in Boston, then 
 
-$$\begin{equation}\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},\end{equation}$$
+$$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},\end{equation}$$
 
-where $$d_{i,j}:= ||s_i-s_j||_{2}\end{equation}.$$
+where $$d_{i,j}:= ||s_i-s_j||_{2}$$  is the Euclidean distance between the coordinates of districts $$i$$ and $$j$$.
 
 And
 
@@ -96,7 +96,7 @@ $$\mathbf{\epsilon}(s) :=\begin{pmatrix}\epsilon(s_1)\\ \epsilon(s_2)\\
 \vdots\\
 \epsilon(s_n)
 \end{pmatrix} \sim N_{n}\Big(\mathbf{0}, \varphi^2 I_{n\times n} \Big)$$
-denotes the errors which we assume to be independent of  $$w(s)$$.
+denotes the errors which we assume to be independent of  $$\mathbf{\omega}(s)$$.
 
 
 

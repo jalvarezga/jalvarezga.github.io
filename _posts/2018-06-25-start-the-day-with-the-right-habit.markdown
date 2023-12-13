@@ -49,5 +49,64 @@ This is joint work with Diego Velazquez and Marcelino Sanchez.
 
 
 #Model proposal: a Gaussian process
+We are going to consider point referenced data using a Gaussian process to incorporate a spatial dependence structure within the data. If 
+$$s_i\in \mathbb{R}^2$$ denotes the coordinates of the $$i-th$$ district in Boston, the regresion model that we will be using is given by:
 
+ 
+$$\begin{equation}Y(s)=\mu(s)+\omega(s)+\epsilon(s),\end{equation}$$
+with
+
+
+$$\begin{equation}Y(s):=\begin{pmatrix}Y(s_1)\\Y(s_2)\\
+\vdots\\
+Y(s_n)
+\end{pmatrix}
+$$
+$$\mu(s):= \begin{pmatrix}\mu(s_1)\\ \mu(s_2)\\
+\vdots\\
+\mu(s_n)
+\end{pmatrix},
+\end{equation}$$
+
+
+$$\mu(s_i)=x(s_i)^{T}\underline{\beta}, $$ 
+where $$x(s_i)$$ denotes a feature vector that contains the predictive variables for the variables associated to the i-th neighborhood and  $$\underline{\beta}=\begin{pmatrix}
+    \beta_1 \\
+    \beta_2\\
+    \vdots \\
+    \beta_p
+\end{pmatrix}$$
+
+is a vector of coefficicients.
+
+
+$$w(s):=\begin{pmatrix}w(s_1)\\w(s_2)\\
+\vdots\\
+w(s_n)
+\end{pmatrix} \sim \mathcal{N}_{n}\Big(\underline{0} , \Sigma(s,t)\Big)$$
+
+denotes a Gaussian process that corresponds to the spatial dependence structure in the data, usinga an exponential covariance function. That is, if $$s_i, s_j$$ are the coordinates of two arbitrary districts in Boston, then 
+$$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},$
+ donde $d_{i,j}\coloneqq ||s_i-s_j||_{2}\end{equation}.$$
+
+ And
+
+$$\epsilon(s) :=\begin{pmatrix}\epsilon(s_1)\\ \epsilon(s_2)\\
+\vdots\\
+\epsilon(s_n)
+\end{pmatrix} \sim \mathcal{N}_{n}\Big(\underline{0}, \varphi^2 I_{n\times n} \Big)$$
+denotes the errors which we assume to be independent of  $$w(s)$$.
+
+
+
+As a consequence of such specification, we get that
+$$Y(s)\sim \mathcal{N}_{n}\Big(\mu(s),\Sigma(s,t)+\varphi^2 I_{n\times n} \Big).$$
+
+
+
+Notice that this is a linear regresion to the mean model, given that we propose a linear combination of the feature variables which affects the mean  of the response variable.
+We propose models of such a structure, using different explanatory variables (features), using a Bayesian approach.
+
+Moreover, the prior distribution of the parameters$$\phi$, $\varphi^2$, $\sigma^2$$ is given by a non-infomrative Gamma.  It is important to keep in mind that by default, BUGS uses precision in the parametrization of the normal distribution and not the variance. 
+For implementation purposes, we ran 2 chains of longitude $$10,000$$ qith a thining of 20 units and a burning period of $$1,000$$ iterations with OpenBUGS.
 

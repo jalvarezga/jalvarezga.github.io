@@ -60,7 +60,7 @@ with
 $$\begin{equation}Y(s):=\begin{pmatrix}Y(s_1)\\Y(s_2)\\
 \vdots\\
 Y(s_n)
-\end{pmatrix}\end{equation}$$
+\end{pmatrix},\end{equation}$$
 
 $$\begin{equation}\mathbf{\mu}(s):= \begin{pmatrix}\mu(s_1)\\ \mu(s_2)\\
 \vdots\\
@@ -88,7 +88,9 @@ denotes a Gaussian process that corresponds to the spatial dependence structure 
 
 $$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},\end{equation}$$
 
-where $$d_{i,j}:= ||s_i-s_j||_{2}$$  is the Euclidean distance between the coordinates of districts $$i$$ and $$j$$.
+where $$\begin{equation}d_{i,j}:= ||s_i-s_j||_{2}\end{equation}$$ 
+
+is the Euclidean distance between the coordinates of districts $$i$$ and $$j$$.
 
 And
 

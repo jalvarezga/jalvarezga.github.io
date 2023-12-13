@@ -119,7 +119,7 @@ For implementation purposes, we ran 2 chains of longitude $$10,000$$ with a thin
 # Prediction analysis
 
 ![]({{ site.baseurl }}/images/boston/BayesianKriging.png)
-*We used a bayesian kriging approach to make predictions. We randomly chose two districts maked in orange and kept them to make predictions as new observattions unobserved during training. We used the rest of the neighborhoods to train the model.*
+*We used a bayesian kriging approach to make predictions. We randomly chose two districts maked in orange and kept them to make predictions unobserved during training. We used the rest of the neighborhoods to train the model.*
 
 
 ![]({{ site.baseurl }}/images/boston/compareHeatMaps.png)

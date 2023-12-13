@@ -88,7 +88,7 @@ denotes a Gaussian process that corresponds to the spatial dependence structure 
 
 $$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},\end{equation}$$
 
-where $$d_{i,j}:= ||s_i-s_j||_{2}$$ 
+where $$d_{i,j}:= \| s_i-s_j\|_{2}$$ 
 
 is the Euclidean distance between the coordinates of districts $$i$$ and $$j$$.
 

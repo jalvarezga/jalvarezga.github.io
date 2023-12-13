@@ -16,34 +16,34 @@ This is joint work with Diego Velazquez and Marcelino Sanchez.
 
 
 
-<small><span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithm is highly discouraged in high-risk scenarios, since it does not provide any theoretical guarantee on the coverage.</span></small>
+<small><span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithm is highly discouraged in high-risk scenarios, since it does not provide any theoretical guarantee on the coverage. One may take the point predictions made by the bayesian model and confomralize them to get rigorous coverage guarantees.</span></small>
 
 
 ### Data analysis
 
-![]({{ site.baseurl }}/images/cover.png)
+![]({{ site.baseurl }}/images/boston/cover.png)
 *A map of Boston's streets.*
 
 
 
-![]({{ site.baseurl }}/images/density.png)
+![]({{ site.baseurl }}/images/boston/density.png)
 *Distribution of crimes per day in Boston during 2022.*
 
 
-![]({{ site.baseurl }}/images/backBay.png)
+![]({{ site.baseurl }}/images/boston/backBay.png)
 *Crimes in the Back Bay area by the location in which they occured.*
 
 
 
 
-![]({{ site.baseurl }}/images/bostonMap.png)
+![]({{ site.baseurl }}/images/boston/bostonMap.png)
 *A map of Boston divided by neighborhoods.*
 
 
-![]({{ site.baseurl }}/images/crimePoints.png)
+![]({{ site.baseurl }}/images/boston/crimePoints.png)
 *Red points are district centroids. Light blue points are locations where a crime occured.*
 
-![]({{ site.baseurl }}/images/crimesByDistrict.png)
+![]({{ site.baseurl }}/images/boston/crimesByDistrict.png)
 *A satellite image of Boston whith crime points stratified by neighborhood. The points are spread throughout almost all of the city.*
 
 
@@ -88,9 +88,7 @@ denotes a Gaussian process that corresponds to the spatial dependence structure 
 
 $$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},\end{equation}$$
 
-where $$d_{i,j}:= \| s_i-s_j\|_{2}$$ 
-
-is the Euclidean distance between the coordinates of districts $$i$$ and $$j$$.
+where $$d_{i,j}:= \| s_i-s_j\|_{2}$$ is the Euclidean distance between the coordinates of districts $$i$$ and $$j$$.
 
 And
 
@@ -113,4 +111,22 @@ We propose models of such a structure, using different explanatory variables (fe
 
 Moreover, the prior distribution of the parameters $$\phi, \varphi^2, \sigma^2$$ is given by a non-infomrative Gamma.  It is important to keep in mind that by default, BUGS uses precision in the parametrization of the normal distribution and not the variance. 
 For implementation purposes, we ran 2 chains of longitude $$10,000$$ with a thining of 20 units and a burning period of $$1,000$$ iterations with OpenBUGS.
+
+
+
+
+
+# Prediction analysis
+
+
+![]({{ site.baseurl }}/images/boston/compareHeatMaps.png)
+*Comparison between the original crime rate heat map and the crime rate heat ma generated using the  Model 1.*
+
+![]({{ site.baseurl }}/images/boston/intervals.png)
+*Point and prediction intervals as a function of average anual income in Boston's neighborhoods.*
+
+
+
+![]({{ site.baseurl }}/images/boston/intervalPredictions.png)
+*Point and interval predictions for neighborhoods that we dind't use during training.*
 

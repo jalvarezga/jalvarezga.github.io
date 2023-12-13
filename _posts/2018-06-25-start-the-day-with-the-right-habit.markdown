@@ -70,20 +70,19 @@ $$\mu(s):= \begin{pmatrix}\mu(s_1)\\ \mu(s_2)\\
 
 
 $$\mu(s_i)=x(s_i)^{T}\underline{\beta}, $$ 
-where $$x(s_i)$$ denotes a feature vector that contains the predictive variables for the variables associated to the i-th neighborhood and  $$\underline{\beta}=\begin{pmatrix}
+where $$x(s_i)$$ denotes a feature vector that contains the predictive variables for the variables associated to the i-th neighborhood and  $$\begin{equation}\underline{\beta}=\begin{pmatrix}
     \beta_1 \\
     \beta_2\\
     \vdots \\
-    \beta_p
-\end{pmatrix}$$
+    \beta_p \end{pmatrix}\end{equation}$$
 
 is a vector of coefficicients.
 
 
-$$w(s):=\begin{pmatrix}w(s_1)\\w(s_2)\\
+$$\begin{equation}w(s):=\begin{pmatrix}w(s_1)\\w(s_2)\\
 \vdots\\
 w(s_n)
-\end{pmatrix} \sim \mathcal{N}_{n}\Big(\underline{0} , \Sigma(s,t)\Big)$$
+\end{pmatrix} \sim \mathcal{N}_{n}\Big(\underline{0} , \Sigma(s,t)\Big)\end{equation}$$
 
 denotes a Gaussian process that corresponds to the spatial dependence structure in the data, usinga an exponential covariance function. That is, if $$s_i, s_j$$ are the coordinates of two arbitrary districts in Boston, then 
 $$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},$
@@ -100,6 +99,7 @@ denotes the errors which we assume to be independent of  $$w(s)$$.
 
 
 As a consequence of such specification, we get that
+
 $$Y(s)\sim \mathcal{N}_{n}\Big(\mu(s),\Sigma(s,t)+\varphi^2 I_{n\times n} \Big).$$
 
 

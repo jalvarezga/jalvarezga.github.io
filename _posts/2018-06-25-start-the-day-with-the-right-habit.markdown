@@ -60,9 +60,9 @@ with
 $$\begin{equation}Y(s):=\begin{pmatrix}Y(s_1)\\Y(s_2)\\
 \vdots\\
 Y(s_n)
-\end{pmatrix}
-$$
-$$\mu(s):= \begin{pmatrix}\mu(s_1)\\ \mu(s_2)\\
+\end{pmatrix}\end{equation}$$
+
+$$\begin{equation}\mu(s):= \begin{pmatrix}\mu(s_1)\\ \mu(s_2)\\
 \vdots\\
 \mu(s_n)
 \end{pmatrix},
@@ -107,6 +107,6 @@ $$Y(s)\sim N_{n}\Big(\mu(s),\Sigma(s,t)+\varphi^2 I_{n\times n} \Big).$$
 Notice that this is a linear regresion to the mean model, given that we propose a linear combination of the feature variables which affects the mean  of the response variable.
 We propose models of such a structure, using different explanatory variables (features), using a Bayesian approach.
 
-Moreover, the prior distribution of the parameters$$\phi$, $\varphi^2$, $\sigma^2$$ is given by a non-infomrative Gamma.  It is important to keep in mind that by default, BUGS uses precision in the parametrization of the normal distribution and not the variance. 
+Moreover, the prior distribution of the parameters $$\phi, \varphi^2, \sigma^2$$ is given by a non-infomrative Gamma.  It is important to keep in mind that by default, BUGS uses precision in the parametrization of the normal distribution and not the variance. 
 For implementation purposes, we ran 2 chains of longitude $$10,000$$ qith a thining of 20 units and a burning period of $$1,000$$ iterations with OpenBUGS.
 

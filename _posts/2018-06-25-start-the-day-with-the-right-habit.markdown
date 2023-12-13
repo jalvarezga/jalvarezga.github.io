@@ -69,8 +69,8 @@ $$\mu(s):= \begin{pmatrix}\mu(s_1)\\ \mu(s_2)\\
 \end{equation}$$
 
 
-$$\mu(s_i)=x(s_i)^{T}\underline{\beta}, $$ 
-where $$x(s_i)$$ denotes a feature vector that contains the predictive variables for the variables associated to the i-th neighborhood and  $$\begin{equation}\underline{\beta}=\begin{pmatrix}
+$$\mu(s_i)=x(s_i)^{T}\mathbf{\beta}, $$ 
+where $$x(s_i)$$ denotes a feature vector that contains the predictive variables for the variables associated to the i-th neighborhood and  $$\begin{equation}\mathbf{\beta}=\begin{pmatrix}
     \beta_1 \\
     \beta_2\\
     \vdots \\
@@ -82,25 +82,25 @@ is a vector of coefficicients.
 $$\begin{equation}w(s):=\begin{pmatrix}w(s_1)\\w(s_2)\\
 \vdots\\
 w(s_n)
-\end{pmatrix} \sim \mathcal{N}_{n}\Big(\underline{0} , \Sigma(s,t)\Big)\end{equation}$$
+\end{pmatrix} \sim N_{n}\Big(\mathbf{0} , \Sigma(s,t)\Big)\end{equation}$$
 
 denotes a Gaussian process that corresponds to the spatial dependence structure in the data, usinga an exponential covariance function. That is, if $$s_i, s_j$$ are the coordinates of two arbitrary districts in Boston, then 
 $$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},$
- donde $d_{i,j}\coloneqq ||s_i-s_j||_{2}\end{equation}.$$
+where $d_{i,j}:= ||s_i-s_j||_{2}\end{equation}.$$
 
- And
+And
 
 $$\epsilon(s) :=\begin{pmatrix}\epsilon(s_1)\\ \epsilon(s_2)\\
 \vdots\\
 \epsilon(s_n)
-\end{pmatrix} \sim \mathcal{N}_{n}\Big(\underline{0}, \varphi^2 I_{n\times n} \Big)$$
+\end{pmatrix} \sim N_{n}\Big(\mathbf{0}, \varphi^2 I_{n\times n} \Big)$$
 denotes the errors which we assume to be independent of  $$w(s)$$.
 
 
 
 As a consequence of such specification, we get that
 
-$$Y(s)\sim \mathcal{N}_{n}\Big(\mu(s),\Sigma(s,t)+\varphi^2 I_{n\times n} \Big).$$
+$$Y(s)\sim N_{n}\Big(\mu(s),\Sigma(s,t)+\varphi^2 I_{n\times n} \Big).$$
 
 
 

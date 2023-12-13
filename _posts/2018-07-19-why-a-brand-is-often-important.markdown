@@ -201,17 +201,13 @@ Oleee!  They look impressively similar!
 They look VERY similar! And this is the magic of the Bootstrap method: we are getting the distribution of the plug-in estimator of $$\alpha^*$$ without a  ridiculously big sample, only by applying computational power to an available data.
 
 
-{% highlight R %}
-boxplot(alphasBoot)
-boxplot(alphas)
-{% endhighlight %}
-
 
 
 # Some plots using ggplot
 
 
 {% highlight R %}
+library(ggplot2)
 ggplot(data=as.data.frame(alphas), aes(x=alphas))+
   geom_density(fill='lightblue')
 {% endhighlight %}

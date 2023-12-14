@@ -18,11 +18,21 @@ This is joint work with Diego Velazquez and Marcelino Sanchez.
 
 <small><span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithm is highly discouraged in high-risk scenarios, since it does not provide any theoretical guarantee on the coverage. One may take the point predictions made by the bayesian model and conformalize them to get rigorous coverage guarantees.</span></small>
 
+### Context
 
-### Data analysis
+The government of the City of Boston runs a very modern approach focused on a data culture to monitor and improve the quality of life in the city and it has available [open data](https://data.boston.gov/) website which offers gathered infomration by Boston's Police Department about crimes happening in the city. Anlayze Boston also reports census data for Boston's districts, containg detailed information about Boston's depographic characteristics.  Among other things, this site offers information about the kind of crime, location and time in which the crime happened.
+
 
 ![]({{ site.baseurl }}/images/boston/cover.png)
 *A map of Boston's streets.*
+
+We created spatial regression models with a bayesian approach to determine the predictive capacity of demographic variables to determine crime rates for each of Boston's districts. 
+
+
+
+
+
+### Data analysis
 
 
 

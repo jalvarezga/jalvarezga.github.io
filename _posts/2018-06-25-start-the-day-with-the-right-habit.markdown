@@ -16,7 +16,7 @@ This is joint work with Diego Velazquez and Marcelino Sanchez.
 
 
 
-<small><span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithm is highly discouraged in high-risk scenarios, since it does not provide any theoretical guarantee on the coverage. One may take the point predictions made by the bayesian model and confomralize them to get rigorous coverage guarantees.</span></small>
+<small><span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithm is highly discouraged in high-risk scenarios, since it does not provide any theoretical guarantee on the coverage. One may take the point predictions made by the bayesian model and conformalize them to get rigorous coverage guarantees.</span></small>
 
 
 ### Data analysis

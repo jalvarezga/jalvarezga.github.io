@@ -37,12 +37,26 @@ We had two datasets: the crimes in 2022 and demographic charactersitics of the 2
 
 In notation, if i ∈ {1, . . . , 22} is the i-th district in Boston and there occured 
 $$Z_i$$ ∈ $$\mathbb{N}$$ crimes in 2022 2022 and according to the census of 2019, there were 
-$$M_i$$$ ∈ $$\mathbb{N}$$  people in the i-th district, then we took Yi := Zi ∈ (0, ∞).
+$$M_i$$ ∈ $$\mathbb{N}$$  people in the i-th district, then we took $$Y_i := \frac{Z_i}{M_i}$$ ∈ (0, ∞).
+$$Y_i$$ tells us the crime rate in district $$i$$: the number of crimes per capita in 2022 realtive to 2019's population. 
+Actually, given the nature of the data, and as we would expect to have more people than crimes in each neighborhood, then  
+ $$Y_i$$ ∈ (0, 1) ∀i ∈ {1, . . . , 22}. In order to adjust the model and work in all $$\mathbb{R}$$, we consider an invertible transformation 
 
 
- Yi nos Mi
-dice el nu ́mero de cr ́ımenes por habitante en el distrito i en el an ̃o 2022. De hecho, por la naturaleza de los datos, como es de esperarse que cada distrito tenga m ́as habitantes que cr ́ımenes ocurridos en un an ̃o, lo que ocurre es que Yi ∈ (0, 1) ∀i ∈ {1, . . . , 22}. Para ajustar un modelo espacial con un proceso Gaussiano consideramos trabajar con una transformaci ́on invertible y que nos lleve a una variable respuesta que en principio pueda tomar valores en todo R. As ́ı pues, lo m ́as natural es trabajar con Y (si) := log(Yi), con si ∈ R2 las coordenadas geogr ́aficas asociadas al distrito i. As ́ı pues, nuestra variable respuesta en los modelos que vamos a construir ser ́a la tasa de crimen en escala logar ́ıtmica.
-En cuanto a las variables explicativas, los censos ofrecen informaci ́on muy amplia y detallada de cada distrito.
+
+ $$\begin{equation}{Y (s_i) := log(Y_i),\end{equation}$$
+
+ where   $$s_i$$ ∈ $$\mathbb{R}^2$$ are the coordinates of the i-th district (the centroid).
+ 
+ 
+ Hence, we consider our response variable as crime rates at a logarithmic scale. 
+
+
+With respect to the feature variables, the 2019 census of Boston offers a lot of details about each district. For example, distance to the closest park for each home within each district, average anual income in usd, average time to work, proportion of houses that own a car, etc.
+
+
+
+
 
 
 

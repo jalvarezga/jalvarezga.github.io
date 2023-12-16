@@ -33,10 +33,10 @@ We created spatial regression models with a bayesian approach to determine the p
 We used the data base of the crimes that occured during 2022 in the City of Boston reported by the Boston Police Department.
 This data base not only includes crimes but many other kind of activities that are reported to the police such as suicides, use of drugs, etc. We restricted the data to observations that were interpretable kinds of crime such as murder, shooting, larceny, shoplifting, valdalism,  etc. We only used the observations that we consider would help us get an insight about tghe crime situation in Boston. We constructed the response variable following the procedure that we present next.
 
-We had two datasets: the crimes in 2022 and demographic charactersitics of the 22 districts in Boston collected in the census. Both datasets are availale in [Analyze Boston](https://data.boston.gov/) Analyze Boston. The crimese datset contains the location of the crime (in coordinates), district in which the crime occured, type of crime, time at which it was reported to the police, among others. We assigned a centroid to each of the city's district, by selecting a point that we considered to be central within the district.  We then assigned a label to each crime determined by the closest centroid. Finally, we counted how many crimes we had per district and divided them by the population size acccording to the census 
+We had two datasets: the crimes in 2022 and demographic charactersitics of the 22 districts in Boston collected in the census. Both datasets are availale in [Analyze Boston](https://data.boston.gov/). The crimese datset contains the location of the crime (in coordinates), district in which the crime occured, type of crime, time at which it was reported to the police, among others. We assigned a centroid to each of the city's district, by selecting a point that we considered to be central within the district.  We then assigned a label to each crime determined by the closest centroid. Finally, we counted how many crimes we had per district and divided them by the population size acccording to the census 
 
 In notation, if i ∈ {1, . . . , 22} is the i-th district in Boston and there occured 
-$$Z_i$$ ∈ $$\mathbb{N}$$ crimes in 2022 2022 and according to the census of 2019, there were 
+$$Z_i$$ ∈ $$\mathbb{N}$$ crimes in 2022 and according to the census of 2019, there were 
 $$M_i$$ ∈ $$\mathbb{N}$$  people in the i-th district, then we took $$Y_i := \frac{Z_i}{M_i}$$ ∈ (0, ∞).
 $$Y_i$$ tells us the crime rate in district $$i$$: the number of crimes per capita in 2022 realtive to 2019's population. 
 Actually, given the nature of the data, and as we would expect to have more people than crimes in each neighborhood, then  
@@ -44,7 +44,7 @@ Actually, given the nature of the data, and as we would expect to have more peop
 
 
 
- $$\begin{equation}{Y (s_i) := log(Y_i),\end{equation}$$
+ $$\begin{equation}Y (s_i) := log(Y_i),\end{equation}$$
 
  where   $$s_i$$ ∈ $$\mathbb{R}^2$$ are the coordinates of the i-th district (the centroid).
  

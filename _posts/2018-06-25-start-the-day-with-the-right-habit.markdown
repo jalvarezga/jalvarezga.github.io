@@ -28,7 +28,21 @@ The government of the City of Boston runs a very modern approach focused on a da
 
 We created spatial regression models with a bayesian approach to determine the predictive capacity of demographic variables to determine crime rates for each of Boston's districts. 
 
+### Variables
 
+We used the data base of the crimes that occured during 2022 in the City of Boston reported by the Boston Police Department.
+This data base not only includes crimes but many other kind of activities that are reported to the police such as suicides, use of drugs, etc. We restricted the data to observations that were interpretable kinds of crime such as murder, shooting, larceny, shoplifting, valdalism,  etc. We only used the observations that we consider would help us get an insight about tghe crime situation in Boston. We constructed the response variable following the procedure that we present next.
+
+We had two datasets: the crimes in 2022 and demographic charactersitics of the 22 districts in Boston collected in the census. Both datasets are availale in [Analyze Boston](https://data.boston.gov/) Analyze Boston. The crimese datset contains the location of the crime (in coordinates), district in which the crime occured, type of crime, time at which it was reported to the police, among others. We assigned a centroid to each of the city's district, by selecting a point that we considered to be central within the district.  We then assigned a label to each crime determined by the closest centroid. Finally, we counted how many crimes we had per district and divided them by the population size acccording to the census 
+
+In notation, if i ∈ {1, . . . , 22} is the i-th district in Boston and there occured 
+$$Z_i$$ ∈ $$\mathbb{N}$$ crimes in 2022 2022 and according to the census of 2019, there were 
+$$M_i$$$ ∈ $$\mathbb{N}$$  people in the i-th district, then we took Yi := Zi ∈ (0, ∞).
+
+
+ Yi nos Mi
+dice el nu ́mero de cr ́ımenes por habitante en el distrito i en el an ̃o 2022. De hecho, por la naturaleza de los datos, como es de esperarse que cada distrito tenga m ́as habitantes que cr ́ımenes ocurridos en un an ̃o, lo que ocurre es que Yi ∈ (0, 1) ∀i ∈ {1, . . . , 22}. Para ajustar un modelo espacial con un proceso Gaussiano consideramos trabajar con una transformaci ́on invertible y que nos lleve a una variable respuesta que en principio pueda tomar valores en todo R. As ́ı pues, lo m ́as natural es trabajar con Y (si) := log(Yi), con si ∈ R2 las coordenadas geogr ́aficas asociadas al distrito i. As ́ı pues, nuestra variable respuesta en los modelos que vamos a construir ser ́a la tasa de crimen en escala logar ́ıtmica.
+En cuanto a las variables explicativas, los censos ofrecen informaci ́on muy amplia y detallada de cada distrito.
 
 
 

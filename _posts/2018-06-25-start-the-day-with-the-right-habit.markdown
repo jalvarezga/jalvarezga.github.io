@@ -69,6 +69,41 @@ With respect to the feature variables, the 2019 census of Boston offers a lot of
 
 
 
+$$\begin{table}[h]
+\centering
+\small
+\begin{tabular}{p{5cm}p{8cm}}
+
+\textbf{Variable Explicativa} & \textbf{Descripción} \\
+\hline
+\hline
+$porcentajeUndergrads_i$ & Porcentaje de personas que tienen un grado a nivel licenciatura en el distrito $i$ \\
+\hline
+$PorcentajeMaestria_i$ & Porcentaje de personas que tienen un título de maestría en el distrito $i$ \\
+\hline
+$PorcentajeHispanos_i$ & Porcentaje de personas de origen hispano/latino en el distrito $i$ \\
+\hline
+$PorcentajeAfroamericanos_i$ & Porcentaje de personas de origen étnico afroamericano en el distrito $i$ \\
+\hline
+$PorcentajeMayores_i$ & Porcentaje de personas en el distrito $i$ que tienen más de 60 años de edad \\
+\hline
+$PorcentajeCasados_i$ & Porcentaje de viviendas en el distrito $i$ en las que residen personas casadas \\
+\hline
+$incomePerCapita_i$ & Ingreso promedio anual de personas en el distrito $i$ \\
+\hline
+$metroTren_i$ & Porcentaje de personas en el distrito $i$ cuyo principal medio de transporte es el metro o tren \\
+\hline
+$houseHoldIncome_i$ & Porcentaje de vecindarios con ingreso superior a 150 mil dólares anuales en el distrito $i$  \\
+\hline
+$longTravel_i$ & Porcentaje de personas que hacen en promedio más de 60 minutos para llegar a su trabajo desde su hogar en el distrito $i$  \\
+\hline
+\end{tabular}
+\caption{La definición de cada variable explicativa}
+\end{table}
+$$
+
+
+
 
 ### Data analysis
 

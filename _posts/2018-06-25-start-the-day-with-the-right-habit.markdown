@@ -65,6 +65,12 @@ Actually, given the nature of the data, and as we would expect to have more peop
 With respect to the feature variables, the 2019 census of Boston offers a lot of details about each district. For example, distance to the closest park for each home within each district, average anual income in usd, average time to work, proportion of houses that own a car, etc.
 
 
+![]({{ site.baseurl }}/images/boston/plot1.png)
+*Scatter plot showing the the response variable and the percentage of houses with a marrid couple in each district.*
+
+![]({{ site.baseurl }}/images/boston/plot2.png)
+*Scatter plot showing the the response variable and income per capita in each neighborhood in Boston.*
+
 
 
 ### Data analysis

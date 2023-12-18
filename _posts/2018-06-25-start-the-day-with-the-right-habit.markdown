@@ -67,15 +67,6 @@ With respect to the feature variables, the 2019 census of Boston offers a lot of
 
 
 
-| Month    | Savings |
-| -------- | ------- |
-| January  | $250    |
-| February | $80     |
-| March    | $420    |
-
-
-
-
 ### Data analysis
 
 

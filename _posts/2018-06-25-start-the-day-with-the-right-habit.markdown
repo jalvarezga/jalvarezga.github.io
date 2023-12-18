@@ -5,13 +5,23 @@ date:   2023-06-25 15:01:35 +0300
 image:  todd-kent-Boston-unsplash.jpg
 tags:   Urban planning
 ---
+
+
+
+<small>Boston, Massachusetts. Photo by courtesy of  [Todd Kent](https://unsplash.com/@churchoftodd).</small>
+
+
+
 This is joint work with Diego Velazquez and Marcelino Sanchez.
 
 <script
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
   type="text/javascript">
 </script>
+
+
 [comment]: <> (Necessaty code to add LaTeX notation in this environment)
+
 
 
 

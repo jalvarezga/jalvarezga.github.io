@@ -6,6 +6,10 @@ image: allan-rodrigues-turbine-unsplash.jpg
 ---
 
 
+<small>Photo by courtesy of [Allan Rodrigues](https://unsplash.com/@rodriguesallan).</small>
+
+
+
 ## This section is under development!
 
 

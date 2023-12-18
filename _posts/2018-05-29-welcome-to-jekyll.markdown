@@ -12,6 +12,7 @@ tags:   Life
 
 [comment]: <> (Useful link to integrate LaTeX to .md files https://docs.mathjax.org/en/v2.7-latest/tex.html)
 
+<small>Photo by [Seyfettin Dincturk](https://unsplash.com/@dincturk).</small>
 
 <small>In honor to Vidmantas Bentkus.</small>
 

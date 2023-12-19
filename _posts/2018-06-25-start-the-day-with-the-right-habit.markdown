@@ -67,7 +67,7 @@ With respect to the feature variables, the 2019 census of Boston offers a lot of
 
 ![]({{ site.baseurl }}/images/boston/plot1.png)
 *Scatter plot showing the the response variable and the percentage of houses with a married couple in each district.*
-These two variables have a correlation of -0.15969. Though not quite strong, it is interesting to note thqat the correlation is negative.
+These two variables have a correlation of -0.15969. Though not quite strong, it is interesting to note that the correlation is negative.
 
 
 ![]({{ site.baseurl }}/images/boston/plot2.png)

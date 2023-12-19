@@ -66,10 +66,18 @@ With respect to the feature variables, the 2019 census of Boston offers a lot of
 
 
 ![]({{ site.baseurl }}/images/boston/plot1.png)
-*Scatter plot showing the the response variable and the percentage of houses with a marrid couple in each district.*
+*Scatter plot showing the the response variable and the percentage of houses with a married couple in each district.*
+These two variables have a correlation of -0.15969. Though not quite strong, it is interesting to note thqat the correlation is negative.
+
 
 ![]({{ site.baseurl }}/images/boston/plot2.png)
 *Scatter plot showing the the response variable and income per capita in each neighborhood in Boston.*
+
+These two variables are strongly correlated, they actually have a correlation of 0.61378.
+
+We could explore further this kind of relationships, are even prresent a correlation matrix, which we included in the original work as part of the exploratory data analysis.
+Here's a list of the variables that we considered:
+
 
 
 
@@ -135,7 +143,7 @@ $$\begin{equation}\mathbf{\omega}(s):=\begin{pmatrix}w(s_1)\\w(s_2)\\
 w(s_n)
 \end{pmatrix} \sim N_{n}\Big(\mathbf{0} , \Sigma(s,t)\Big)\end{equation}$$
 
-denotes a Gaussian process that corresponds to the spatial dependence structure in the data, usinga an exponential covariance function. That is, if $$s_i, s_j$$ are the coordinates of two arbitrary districts in Boston, then 
+denotes a Gaussian process that corresponds to the spatial dependence structure in the data, using an exponential covariance function. That is, if $$s_i, s_j$$ are the coordinates of two arbitrary districts in Boston, then 
 
 $$\begin{equation}Cov(w(s_i), w(s_j))=\Sigma(s_i,s_j)=\sigma^2exp\{ -\phi d_{i,j}\},\end{equation}$$
 

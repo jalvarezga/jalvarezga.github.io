@@ -59,7 +59,7 @@ Actually, given the nature of the data, and as we would expect to have more peop
  where   $$s_i$$ ∈ $$\mathbb{R}^2$$ are the coordinates of the i-th district (the centroid).
  
  
- Hence, we consider our response variable as crime rates at a logarithmic scale. 
+Hence, we consider our response variable as crime rates in a logarithmic scale. 
 
 
 With respect to the feature variables, the 2019 census of Boston offers a lot of details about each district. For example, distance to the closest park for each home within each district, average anual income in usd, average time to work, proportion of houses that own a car, etc.
@@ -76,8 +76,18 @@ These two variables have a correlation of -0.15969. Though not quite strong, it 
 These two variables are strongly correlated, they actually have a correlation of 0.61378.
 
 We could explore further this kind of relationships, are even prresent a correlation matrix, which we included in the original work as part of the exploratory data analysis.
-Here's a list of the variables that we considered:
 
+
+Here's a list of the variables that we considered for the second model that we used:
+
+porcentageUndergrads:
+PorcentageMaestrs:
+PorcentageHispanic:
+PorcentageAfroamerican:
+PorcentageMayors:
+PorcentageMarried:
+incomePerCapita:
+metroTren:
 
 
 
@@ -177,6 +187,13 @@ For implementation purposes, we ran 2 chains of longitude $$10,000$$ with a thin
 
 # Prediction analysis
 
+
+We implemented two models: Model 1 and  Model 2. Model 1 includes more variables through a dimension reduction done with PCA. Model 1 used indices as feature variables, each of which considers several variables (e.g. an education index, which considers percentage of population with a masters degree, fraction of the population who are undergrad students, etc.). 
+Whereas Model 2 is a more parsimonious model that uses more interpretable variables.
+
+
+
+
 ![]({{ site.baseurl }}/images/boston/BayesianKriging.png)
 *We used a bayesian kriging approach to make predictions. We randomly chose two districts maked in orange and kept them to make predictions unobserved during training. We used the rest of the neighborhoods to train the model.*
 
@@ -192,3 +209,20 @@ For implementation purposes, we ran 2 chains of longitude $$10,000$$ with a thin
 ![]({{ site.baseurl }}/images/boston/intervalPredictions.png)
 *Point and interval predictions for neighborhoods that we didn't use during training.*
 
+#### Model 2
+
+This model used a linear predictor of the form
+
+$$\begin{equation}\mu(s_i) = \beta_{1} + \beta_{2} X_{1,i} + \beta_{3} X_{2,i}  +\beta_{4} X_{3,i}  + \beta_{5} X_{4,i}  + \beta_{6} X_{5,i} +\beta_{7} X_{6,i} + \beta_{8} X_{7,i}  + \beta_{9} X_{8,i},  \end{equation}$$
+
+where: 
+X1=porcentageUndergrads,
+X2 =PorcentageMaestrs,
+X3 =PorcentageHispanic,
+X4 =PorcentageAfroamerican,
+X5 =PorcentageMayors,
+X6 =PorcentageMarried,
+X7 =incomePerCapita,
+X8 =metroTren.
+
+This model had a similar performance as the Model 1 with the predictions for neighborhoods that we didn't use during training as well as with predictions with the training dataset.

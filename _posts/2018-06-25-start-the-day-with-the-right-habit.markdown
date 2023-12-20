@@ -80,14 +80,22 @@ We could explore further this kind of relationships, are even prresent a correla
 
 Here's a list of the variables that we considered for the second model that we used:
 
-porcentageUndergrads:
-PorcentageMaestrs:
-PorcentageHispanic:
-PorcentageAfroamerican:
-PorcentageMayors:
-PorcentageMarried:
-incomePerCapita:
-metroTren:
+percentageUndergrads: percentage of people in the district that have an undergraduate degree.
+
+PercentageMasters: porcentage of people in the district that hold a masters degree.
+
+PercentageHispanic: percentage of hispanic/latino people in the neighborhood.
+
+PercentageAfroamerican: percentage of afro-american people in the neighborhood.
+
+PercentageMayors:percentage of people in the district who are older than 60 years old.
+
+PercentageMarried: percentage of properties (houses/apartments) in the district where a married couple lives.
+
+incomePerCapita: average anual income per person in the neighborhood.
+
+metroTren: percentage of people in the neighborhood whose main transport is the metro or the train.
+
 
 
 
@@ -216,13 +224,28 @@ This model used a linear predictor of the form
 $$\begin{equation}\mu(s_i) = \beta_{1} + \beta_{2} X_{1,i} + \beta_{3} X_{2,i}  +\beta_{4} X_{3,i}  + \beta_{5} X_{4,i}  + \beta_{6} X_{5,i} +\beta_{7} X_{6,i} + \beta_{8} X_{7,i}  + \beta_{9} X_{8,i},  \end{equation}$$
 
 where: 
-X1=porcentageUndergrads,
-X2 =PorcentageMaestrs,
-X3 =PorcentageHispanic,
-X4 =PorcentageAfroamerican,
-X5 =PorcentageMayors,
-X6 =PorcentageMarried,
-X7 =incomePerCapita,
-X8 =metroTren.
+
+$$X_{1,i}=$$percentageUndergrads:  percentage of people in the district $$i$$ that have an undergraduate degree.
+
+$$X_{2,i}=$$ percentageMasters:porcentage of people in the district $$i$$ that hold a masters degree.
+
+$$X_{3,i}=$$PercentageHispanic: percentage of hispanic/latino people in the neighborhood $$i$$.
+
+
+$$X_{4,i}=$$percentageAfroamerican: percentage of afro-american people in the neighborhood $$i$$.
+
+
+$$X_{5,i}=$$ PercentageMayors: percentage of people in the district $$i$$ who are older than 60 years old.
+
+
+$$X_{6,i}=$$ PercentageMarried: percentage of properties (houses/apartments) in the district $$i$$ where a married couple lives.
+
+
+$$X_{7,i}=$$incomePerCapita: average anual income per person in the neighborhood $$i$$.
+
+$$X_{8,i}=$$metroTren: percentage of people in the neighborhood $$i$$ whose main transport is the metro or the train.
+
+
+
 
 This model had a similar performance as the Model 1 with the predictions for neighborhoods that we didn't use during training as well as with predictions with the training dataset.

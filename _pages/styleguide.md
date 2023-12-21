@@ -2,15 +2,18 @@
 layout: page
 title: Coffee Guide
 permalink: /styleguide/
-image: allan-rodrigues-turbine-unsplash.jpg
+image: hule.JPG
 ---
 
 
-<small>Photo by courtesy of [Allan Rodrigues](https://unsplash.com/@rodriguesallan).</small>
 
 
 
-## This section is under development!
+## This section is under development
+
+
+<!--- 
+<small>Photo by courtesy of [Allan Rodrigues](https://unsplash.com/@rodriguesallan).</small>!-->
 
 
 

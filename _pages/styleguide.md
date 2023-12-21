@@ -12,12 +12,17 @@ permalink: /styleguide/
 ## This section is under development
 
 
-![]({{ site.baseurl }}/images/coffee/hule.JPG)
+![]({{ site.baseurl }}/images/coffee/hule.png)
 *Hule Records, CDMX.*
 
 
-![]({{ site.baseurl }}/images/coffee/blueBottle1.JPEG)
+![]({{ site.baseurl }}/images/coffee/blueBottle1.png)
 *Blue Bottle, CA.*
+
+![]({{ site.baseurl }}/images/coffee/blueBottle2.png)
+*Blue Bottle, CA.*
+
+
 
 
 <!--- 

@@ -13,7 +13,7 @@ permalink: /styleguide/
 
 
 ![]({{ site.baseurl }}/images/coffee/hule.JPG)
-*Hule vinyl records, CDMX.*
+*Hule Records, CDMX.*
 
 
 <!--- 

@@ -2,7 +2,7 @@
 layout: page
 title: Coffee Guide
 permalink: /styleguide/
-image: hule.JPG
+
 ---
 
 
@@ -10,6 +10,10 @@ image: hule.JPG
 
 
 ## This section is under development
+
+
+![]({{ site.baseurl }}/images/coffee/hule.JPG)
+*Hule vinyl records, CDMX.*
 
 
 <!--- 

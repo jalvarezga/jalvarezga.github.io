@@ -12,7 +12,7 @@ permalink: /styleguide/
 ## This section is under development
 
 
-![]({{ site.baseurl }}/images/coffee/hule.png)
+![]({{ site.baseurl }}/images/coffee/hule.JPG)
 *Hule Records, CDMX.*
 
 

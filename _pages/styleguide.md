@@ -16,6 +16,10 @@ permalink: /styleguide/
 *Hule Records, CDMX.*
 
 
+![]({{ site.baseurl }}/images/coffee/blueBottle1.JPEG)
+*Blue Bottle, CA.*
+
+
 <!--- 
 <small>Photo by courtesy of [Allan Rodrigues](https://unsplash.com/@rodriguesallan).</small>!-->
 

@@ -204,6 +204,7 @@ Whereas Model 2 is a more parsimonious model that uses more interpretable variab
 
 ![]({{ site.baseurl }}/images/boston/BayesianKriging.png)
 *We used a bayesian kriging approach to make predictions. We randomly chose two districts maked in orange and kept them to make predictions unobserved during training. We used the rest of the neighborhoods to train the model.*
+We numbered the districts from 1 to 22, and selected two  numbers randomly fixing a seed for replicaton purposes. The selected numbers (which we excluded for training and kept only for prediction purposes) were 15 and 19 corresponding to North End and South Boston Waterfront. So we predicted the values of $$Y(s_{15})$$ and $$Y(s_{19})$$ to test the models on these values and compare them.
 
 
 ![]({{ site.baseurl }}/images/boston/compareHeatMaps.png)
@@ -222,8 +223,13 @@ How can we interpret these intervals in terms of crime rates? With respect to qu
 
 
 $$\begin{equation}0.95=\mathbb{P}(q_{0.025}\leq X\leq q_{0.975})=\mathbb{P}(e^{q_{0.025}}\leq e^X\leq e^{q_{0.975}}),\end{equation}$$
+
+
 since the exponential function is an increasing function , hence it doesn't alter inequalities. We can use this result and this kind of ideas to convert every prediction (either point prediction or interval prediction) to terms of crime rates instead of crime rates in a log-scale.
 
+
+We estimated such quantiles of the predictive distribution using Markov Chain Monte Carlo.
+Here were report the results:
 
 
 $$
@@ -249,11 +255,10 @@ $$
 
 
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| Variable   |      Point prediction     | $$q_{0.025}$$  | $$q_{0.975}$$  | Real observed value  | District  |Model |
+|----------|:-------------:|------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| $$Y(s_{15})$$|  -4.09 | -5.30  | -2.86  |-4.02  |North End |Model 1 |
+|$$Y(s_{19})$$|    -4.09 | -5.30  | -2.86  |-4.02  |North End |Model 1 | 
 
 
 

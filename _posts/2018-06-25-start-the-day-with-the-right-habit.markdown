@@ -217,6 +217,39 @@ Whereas Model 2 is a more parsimonious model that uses more interpretable variab
 ![]({{ site.baseurl }}/images/boston/intervalPredictions.png)
 *Point and interval predictions for neighborhoods that we didn't use during training.*
 
+
+How can we interpret these intervals in terms of crime rates? With respect to quantiles, if $$X$$ is a random variable and $$q_p$$ is a quantile of order $$p$$ (i.e. $$q_p=inf\{t\in\mathbb{R}:\mathbb{P}(X\leq t)\geq p\}$$), then:
+
+
+$$\begin{equation}0.95=\mathbb{P}(q_{0.025}\leq X\leq q_{0.975})=\mathbb{P}(e^{q_{0.025}}\leq e^X\leq e^{q_{0.975}}),\end{equation}$$
+since the exponential function is an increasing function , hence it doesn't alter inequalities. We can use this result and this kind of ideas to convert every prediction (either point prediction or interval prediction) to terms of crime rates instead of crime rates in a log-scale.
+
+
+
+$$
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrll}
+  \hline
+Variable  & Predicción puntual & $q_{0.025}$ &  $q_{0.975}$ & Observación & Distrito & Modelo \\ 
+  \hline
+$Y(s_{15})$ & -4.09 & -5.30 & -2.86 & -4.02 & North End & Modelo 1 \\ 
+  $Y(s_{19})$  & -2.56 & -3.77 & -1.32 & -2.34 & South Boston Waterfront & Modelo 1 \\ 
+  \hline
+  $Y(s_{15})$  & -3.27 & -4.66 & -1.88 & -4.02 & North End & Modelo 2 \\ 
+  $Y(s_{19})$ & -2.68 & -4.29 & -1.08 & -2.34 & South Boston Waterfront & Modelo 2 \\ 
+  \hline
+$Y(s_{15})$ & -3.36 & -4.46 & -2.26 & -4.02 & North End & Modelo 3 \\ 
+  $Y(s_{19})$ & -2.97 & -4.23 & -1.69 & -2.34 & South Boston Waterfront & Modelo 3 \\ 
+   \hline
+\end{tabular}
+\caption{Predicciones en escala logarítmica}
+\end{table}
+$$
+
+
+
+
 #### Model 2
 
 This model used a linear predictor of the form

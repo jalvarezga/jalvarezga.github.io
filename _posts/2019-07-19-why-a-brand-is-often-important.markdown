@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hubieras hechado más desmadre"
+title:  "'Hubieras hechado más desmadre'"
 date:   2021-12-21 18:05:55 +0300
 image:  art.png
 tags:   Life

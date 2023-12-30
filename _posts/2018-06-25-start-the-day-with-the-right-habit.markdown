@@ -62,7 +62,7 @@ Actually, given the nature of the data, and as we would expect to have more peop
 Hence, we consider our response variable as crime rates in a logarithmic scale. 
 
 
-With respect to the feature variables, the 2019 census of Boston offers a lot of details about each district. For example, distance to the closest park for each home within each district, average anual income in usd, average time to work, proportion of houses that own a car, etc.
+With respect to the feature variables, the 2019 census of Boston offers a lot of details about each district. For example, distance to the closest park for each home within each district, average annual income in usd, average time to work, proportion of houses that own a car, etc.
 
 
 ![]({{ site.baseurl }}/images/boston/plot1.png)
@@ -92,7 +92,7 @@ PercentageMayors:percentage of people in the district who are older than 60 year
 
 PercentageMarried: percentage of properties (houses/apartments) in the district where a married couple lives.
 
-incomePerCapita: average anual income per person in the neighborhood.
+incomePerCapita: average annual income per person in the neighborhood.
 
 metroTren: percentage of people in the neighborhood whose main transport is the metro or the train.
 
@@ -211,7 +211,7 @@ We numbered the districts from 1 to 22, and selected two  numbers randomly fixin
 *Comparison between the original crime rate heat map and the crime rate heat ma generated using the  Model 1.*
 
 ![]({{ site.baseurl }}/images/boston/intervals.png)
-*Point and prediction intervals as a function of average anual income in Boston's neighborhoods. Red points are observed values, whereas black points are point predictions.*
+*Point and prediction intervals as a function of average annual income in Boston's neighborhoods. Red points are observed values, whereas black points are point predictions.*
 
 
 
@@ -229,37 +229,30 @@ since the exponential function is an increasing function , hence it doesn't alte
 
 
 We estimated such quantiles of the predictive distribution using Markov Chain Monte Carlo.
+
 Here were report the results:
 
 
-$$
-\begin{table}[ht]
-\centering
-\begin{tabular}{rrrrrll}
-  \hline
-Variable  & Predicción puntual & $q_{0.025}$ &  $q_{0.975}$ & Observación & Distrito & Modelo \\ 
-  \hline
-$Y(s_{15})$ & -4.09 & -5.30 & -2.86 & -4.02 & North End & Modelo 1 \\ 
-  $Y(s_{19})$  & -2.56 & -3.77 & -1.32 & -2.34 & South Boston Waterfront & Modelo 1 \\ 
-  \hline
-  $Y(s_{15})$  & -3.27 & -4.66 & -1.88 & -4.02 & North End & Modelo 2 \\ 
-  $Y(s_{19})$ & -2.68 & -4.29 & -1.08 & -2.34 & South Boston Waterfront & Modelo 2 \\ 
-  \hline
-$Y(s_{15})$ & -3.36 & -4.46 & -2.26 & -4.02 & North End & Modelo 3 \\ 
-  $Y(s_{19})$ & -2.97 & -4.23 & -1.69 & -2.34 & South Boston Waterfront & Modelo 3 \\ 
-   \hline
-\end{tabular}
-\caption{Predicciones en escala logarítmica}
-\end{table}
-$$
 
 
-
-|    Variable      |      Point prediction     |    $$q_{0.025}$$     |    $$q_{0.975}$$     |    Real observed value     |    District     |   Model    |
-|:----------|:-------------:|:------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|    Variable      |      Point prediction     |    $$q_{0.025}$$     |    $$q_{0.975}$$     |   Observed value     |    District     |   Model    |
+|:----------------:|:-------------------:|:------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 | $$Y(s_{15})$$|  -4.09 | -5.30  | -2.86  |-4.02  |North End |Model 1 |
-|$$Y(s_{19})$$|    -4.09 | -5.30  | -2.86  |-4.02  |North End |Model 1 | 
+|$$Y(s_{19})$$|    -2.56 | -3.77  | -1.32  | -2.34 |South Boston Waterfront | Model 1 | 
+| $$Y(s_{15})$$|  -3.27  | -4.66 | -1.88 |-4.02  |North End |Model 2 |
+|$$Y(s_{19})$$|    -2.68 | -4.29  | -1.08  | -2.34 |South Boston Waterfront | Model 2 | 
 
+
+
+
+
+
+|    Variable      |      Point prediction     |    $$e^{q_{0.025}}$$     |    $$e^{q_{0.975}}$$     |   Observed crime rate     |    District     |   Model    |
+|:----------------:|:-------------------:|:------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+| $$Y_{15}$$|  0.0168 | 0.0050  |0.0572 |0.0179 |North End |Model 1 |
+|$$Y_{19}$$|    0.0772 | 0.0231  | 0.2671  | 0.0963  |South Boston Waterfront | Model 1 | 
+| $$Y_{15}$$|  0.0381  | 0.0095 | 0.1518 | 0.0179  |North End |Model 2 |
+|$$Y_{19}$$|     0.0685  | 0.0137  |0.3396  | 0.0963  |South Boston Waterfront | Model 2 | 
 
 
 
@@ -289,11 +282,17 @@ $$X_{5,i}=$$ PercentageMayors: percentage of people in the district $$i$$ who ar
 $$X_{6,i}=$$ PercentageMarried: percentage of properties (houses/apartments) in the district $$i$$ where a married couple lives.
 
 
-$$X_{7,i}=$$incomePerCapita: average anual income per person in the neighborhood $$i$$.
+$$X_{7,i}=$$incomePerCapita: average annual income per person in the neighborhood $$i$$.
 
 $$X_{8,i}=$$metroTren: percentage of people in the neighborhood $$i$$ whose main transport is the metro or the train.
 
 
 
 
-This model had a similar performance as the Model 1 with the predictions for neighborhoods that we didn't use during training as well as with predictions with the training dataset.
+This model had a similar performance as the Model 1 with the predictions for neighborhoods that we didn't use during training as well as with predictions with the training dataset. As it can be observed in the summary tables however, the Model 2 had smaller intervals, which makes it better in  that criteria. We don't preseent the infernce for the coefficients associated to each variable, however we should emphasize tha some variables were not significant at the $$5\%$$ level. For this reasoin we implemented a third model excluding the variables that were not significant at the $$5\%$$ level, and incorporating the education index that we created with PCA. This third model had a similar performance to the Model 2, having the advantage of being more parsimonious due to the fact that it had less variables. With respect to the variables that had a a considerable predictive capactity  (significant at the $$5\%$$ level) with Model 2, we obtained the percentage of afroamerican people in the district and the annual income oper capita in the district. 
+
+
+
+
+
+

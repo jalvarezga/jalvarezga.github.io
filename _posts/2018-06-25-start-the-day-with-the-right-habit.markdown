@@ -210,12 +210,12 @@ Whereas Model 2 is a more parsimonious model that uses more interpretable variab
 *Comparison between the original crime rate heat map and the crime rate heat ma generated using the  Model 1.*
 
 ![]({{ site.baseurl }}/images/boston/intervals.png)
-*Point and prediction intervals as a function of average anual income in Boston's neighborhoods.*
+*Point and prediction intervals as a function of average anual income in Boston's neighborhoods. Red points are observed values, whereas black points are point predictions.*
 
 
 
 ![]({{ site.baseurl }}/images/boston/intervalPredictions.png)
-*Point and interval predictions for neighborhoods that we didn't use during training.*
+*Point and interval predictions for neighborhoods that we didn't use during training. Red points are observed values, whereas black points are point predictions.*
 
 
 How can we interpret these intervals in terms of crime rates? With respect to quantiles, if $$X$$ is a random variable and $$q_p$$ is a quantile of order $$p$$ (i.e. $$q_p=inf\{t\in\mathbb{R}:\mathbb{P}(X\leq t)\geq p\}$$), then:
@@ -246,6 +246,16 @@ $Y(s_{15})$ & -3.36 & -4.46 & -2.26 & -4.02 & North End & Modelo 3 \\
 \caption{Predicciones en escala logarítmica}
 \end{table}
 $$
+
+
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+
 
 
 

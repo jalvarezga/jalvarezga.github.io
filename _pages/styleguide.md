@@ -22,6 +22,11 @@ permalink: /styleguide/
 ![]({{ site.baseurl }}/images/coffee/blueBottle2.png)
 *Blue Bottle, CA.*
 
+![]({{ site.baseurl }}/images/coffee/chiquitito1.png)
+*CHIQUITITO CAFE, CDMX.*
+
+![]({{ site.baseurl }}/images/coffee/chiquitito2.png)
+*CHIQUITITO CAFE, CDMX.*
 
 
 

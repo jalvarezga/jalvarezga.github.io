@@ -41,11 +41,16 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 
 ### Variables
-$$
-\begin{itemize}
-  \item \textbf{\textit{born\_nys}}: porcentaje de la población del barrio que nació en Nueva York. Toma valores numéricos entre $0$ y $100$. 
-  \item \textbf{\textit{prc\_car\_free}}: porcentaje viviendas en el vecindario que no cuentan con un automóvil. Toma valores numéricos entre $0$ y $100$. 
-  \item \textbf{\textit{disabled\_pop}}: porcentaje de la población en el barrio que tiene alguna discapacidad. Toma valores numéricos entre $0$ y $100$. 
+
+- $$\textbf{\textit{born\_nys}}:$$porcentaje de la población del barrio que nació en Nueva York. Toma valores numéricos entre $0$ y $100$. 
+
+-$$\textbf{\textit{prc\_car\_free}}$$: porcentaje viviendas en el vecindario que no cuentan con un automóvil. Toma valores numéricos entre $0$ y $100$.
+
+ -$$\textbf{\textit{disabled\_pop}}$$: porcentaje de la población en el barrio que tiene alguna discapacidad. Toma valores numéricos entre $0$ y $100$. 
+
+
+
+ 
   \item \textbf{\textit{foreign\_pop}}: porcentaje de la población del barrio que es extranjera. Toma valores numéricos entre $0$ y $100$. 
   \item \textbf{\textit{homeownership\_rate}}: porcentaje de viviendas del vecindario habitadas por sus dueños. Toma valores numéricos entre $0$ y $100$. 
   \item \textbf{\textit{houses\_children}}: porcentaje de hogares en los que vive al menos una persona menor de 18 años. Toma valores numéricos entre $0$ y $100$. 
@@ -67,8 +72,6 @@ $$
   \item \textbf{\textit{unemployent\_rate}}: tasa de desempleo de los habitantes pertenecientes a la población económicamente activa de ese barrio. 
   \item \textbf{\textit{income\_cat}}: una versión categórica de la variable \textbf{\textit{income}}. Se divide en cuatro factores: \textit{bajo, medio, medio\_alto} y  \textit{alto}. Para elegir los puntos de corte que definen a las clases se usaron el primer cuartil US $\$49460$ , la mediana US $\$57680$  y el tercer cuartil US $\$71920$.
   \item \textbf{\textit{zones}}: variable categórica que clasifica a los vacindarios según su ubicación en los siguientes distritos: \textit{Bronx, Brooklyn, Manhattan} y \textit{Queens}. 
-\end{itemize}
-$$
 
 
 ## Prediction strategy

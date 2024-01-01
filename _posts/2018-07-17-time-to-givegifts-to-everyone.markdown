@@ -50,7 +50,7 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 
 
- 
+
   \item \textbf{\textit{foreign\_pop}}: porcentaje de la población del barrio que es extranjera. Toma valores numéricos entre $0$ y $100$. 
   \item \textbf{\textit{homeownership\_rate}}: porcentaje de viviendas del vecindario habitadas por sus dueños. Toma valores numéricos entre $0$ y $100$. 
   \item \textbf{\textit{houses\_children}}: porcentaje de hogares en los que vive al menos una persona menor de 18 años. Toma valores numéricos entre $0$ y $100$. 
@@ -87,9 +87,9 @@ $$Y_i=\beta_0+\beta_{1}X_{1i}+\dots\beta_{p-1}X_{p-1,i}+\epsilon_{i}\quad,$$
 
 
 
-whwere we suppose that 
+where we suppose that 
 
-$$\begin{equation}\epsilon_{i}\sim \mathcal{N}(0,\sigma^2),\quad \forall i\in \{1,\dots n\}\end{equation}$$
+$$\begin{equation}\epsilon_{i}\sim N(0,\sigma^2),\quad \forall i\in \{1,\dots n\}\end{equation}$$
 
 
 $$\begin{equation}Cov(\epsilon_{i},\epsilon_{j})=0 \quad \forall i,j\in \{1,\dots n\} , i\neq j\end{equation}$$
@@ -101,12 +101,12 @@ $$\begin{equation}\underbar{\beta}\coloneqq\begin{bmatrix}
            \beta_{p-1}
          \end{bmatrix},\end{equaiton}$$
 
-$$\underbar{\beta}$$ is the vector of unknown coefficientsd; additionallyn we assume that the explanatory variables are knon constants for each $$i$$.
-On the other hand, the least squares estimator of $$\underbar{\beta}$$ for the multiple regression model has the form
+$$\textbf{\beta}$$ is the vector of unknown coefficientsd; additionallyn we assume that the explanatory variables are knon constants for each $$i$$.
+On the other hand, the least squares estimator of $$\textbf{\beta}$$ for the multiple regression model has the form
 
-$$\begin{equation}\underline{\Hat{\beta}}=(X'X)^{-1}X'\underbar{Y},\end{equation}$$
+$$\begin{equation}\textbf{\hat{\beta}}=(X'X)^{-1}X'\textbf{Y},\end{equation}$$
 
-where $$X$$ is the design matrix and $$\underbar{Y}$$ es el vector que contiene a la muestra de la variable repuesta. Como podemos notar, la existencia de este estimador requiere que la matriz $X'X$ tenga inversa. Para garantizar invertibilidad, es necesario que la matriz de diseño, $X$, tenga rango completo, es decir, que sus columnas sean linealmente independientes. Por ejemplo, si una variable tiene muy poca varianza relativa a la magnitud de la variable, entonces es posible que su correspondiente columna en la matriz de diseño resulte linealmente dependiente de la primera columna de X, en cuyo caso el estimador de mínimos cuadrados no estaría definido. Otro posible problema sería que dos variables estén fuertemente correlacionadas entre sí, digamos, con correlación en valor absoluto mayor a $0.8$, lo cual daría lugar a inestabilidad en las operaciones numéricas para invertir $X'X$, debido a que $X$ tendría dos columnas (casi) linealmente dependientes. \\ 
+where $$X$$ is the design matrix and $$\textbf{Y}$$ es el vector que contiene a la muestra de la variable repuesta. Como podemos notar, la existencia de este estimador requiere que la matriz $X'X$ tenga inversa. Para garantizar invertibilidad, es necesario que la matriz de diseño, $X$, tenga rango completo, es decir, que sus columnas sean linealmente independientes. Por ejemplo, si una variable tiene muy poca varianza relativa a la magnitud de la variable, entonces es posible que su correspondiente columna en la matriz de diseño resulte linealmente dependiente de la primera columna de X, en cuyo caso el estimador de mínimos cuadrados no estaría definido. Otro posible problema sería que dos variables estén fuertemente correlacionadas entre sí, digamos, con correlación en valor absoluto mayor a $0.8$, lo cual daría lugar a inestabilidad en las operaciones numéricas para invertir $X'X$, debido a que $X$ tendría dos columnas (casi) linealmente dependientes. \\ 
 
 Es por esta razón que es fundamental hacer un análisis exploratorio de las variables que se utlizarán para consturir el modelo de regresión lineal múltiple. Lo cual motiva la necesidad de familiarizarnos con las variables explicativas que usaremos, para así detectar este tipo de problemas y poder comprender a mayor profundidad su naturaleza de manera previa al modelaje. 
 

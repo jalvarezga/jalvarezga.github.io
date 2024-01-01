@@ -25,6 +25,14 @@ permalink: /styleguide/
 
 
 
+![]({{ site.baseurl }}/images/coffee/lacolombe1.jpg)
+*La Colombe, CA.*
+
+
+![]({{ site.baseurl }}/images/coffee/lacolombe2.jpg)
+*La Colombe, CA.*
+
+
 <!--- 
 <small>Photo by courtesy of [Allan Rodrigues](https://unsplash.com/@rodriguesallan).</small>!-->
 

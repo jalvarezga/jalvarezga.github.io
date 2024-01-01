@@ -42,11 +42,11 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 ### Variables
 
-- $$\textbf{\textit{born\_nys}}:$$porcentaje de la población del barrio que nació en Nueva York. Toma valores numéricos entre $0$ y $100$. 
+- $$\textbf{born_nys}:$$porcentaje de la población del barrio que nació en Nueva York. Toma valores numéricos entre $0$ y $100$. 
 
--$$\textbf{\textit{prc\_car\_free}}$$: porcentaje viviendas en el vecindario que no cuentan con un automóvil. Toma valores numéricos entre $0$ y $100$.
+-$$\textbf{prc_car_free}$$: porcentaje viviendas en el vecindario que no cuentan con un automóvil. Toma valores numéricos entre $0$ y $100$.
 
- -$$\textbf{\textit{disabled\_pop}}$$: porcentaje de la población en el barrio que tiene alguna discapacidad. Toma valores numéricos entre $0$ y $100$. 
+ -$$\textbf{disabled_pop}$$: porcentaje de la población en el barrio que tiene alguna discapacidad. Toma valores numéricos entre $0$ y $100$. 
 
 
 

@@ -11,10 +11,15 @@ permalink: /styleguide/
 
 ## This section is under development
 
+I have an ever-increasing obsession with coffee. These are some of my favorite coffee shops.
+
 
 ![]({{ site.baseurl }}/images/coffee/hule.JPG)
 *Hule Records, CDMX.*
 
+
+![]({{ site.baseurl }}/images/coffee/hule2.jpg)
+*Hule Records, CDMX.*
 
 ![]({{ site.baseurl }}/images/coffee/blueBottle1.png)
 *Blue Bottle, CA.*

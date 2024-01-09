@@ -28,7 +28,7 @@ Which motivates a question about how should we treat depression? How should we t
 
 
 
-I recently read [a book](https://www.goodreads.com/book/show/58818434-the-awakened-brain)  from Dr. Lisa Miller, which has had a deep impact on my perspective about life.
+I recently read [a book](https://www.goodreads.com/book/show/58818434-the-awakened-brain) from Dr. Lisa Miller, who has had a deep impact on my perspective about life.
 
 ![]({{ site.baseurl }}/images/LisaMiller.jpg)
 *Dr. Lisa Miller. She's a pioneer in the study of depression and its links to spirituality.*
@@ -58,7 +58,7 @@ Practical ideas I like to use in my life:
 - Take action! Don't wait for life to happen. Make it happen.
 
 
-- Get uncomfortable with being uncomfortable: do stuff that makes you grow. You can't grow on your couch watching TV. You can't grow playing video games and scrolling in social media for 6 hours. Get a cold shower, talk to a random person, try new activities.
+- Get comfortable with being uncomfortable: do stuff that makes you grow. You can't grow on your couch watching TV. You can't grow playing video games and scrolling in social media for 6 hours. Get a cold shower, talk to a random person, try new activities.
 
 
 

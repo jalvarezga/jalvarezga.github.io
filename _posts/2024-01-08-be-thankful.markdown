@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Life is in the streets"
+title:  "Allow yourself to be vulnerable"
 date:   2024-01-08 18:05:55 +0300
 image:  thankful.png
 tags:   mental health

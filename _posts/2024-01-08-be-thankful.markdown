@@ -15,25 +15,16 @@ This is a post about my personal opinion regarding depression. I'm not an expert
 
 
 
-To begin, I would like you to consider some revealing findings about depression. 
+To begin, I would like you to consider a revealing fact about depression: [most people on antidepressants don’t need them](https://www.economist.com/leaders/2022/10/19/most-people-on-antidepressants-dont-need-them?utm_medium=social-media.content.np&utm_source=linkedin&utm_campaign=editorial-social&utm_content=discovery.content).
 
-Firstly, [most people on antidepressants don’t need them](https://www.economist.com/leaders/2022/10/19/most-people-on-antidepressants-dont-need-them?utm_medium=social-media.content.np&utm_source=linkedin&utm_campaign=editorial-social&utm_content=discovery.content).
-
-Another revealing fact is that [most people on antidepressants aren't depressed!](
-https://time.com/4345517/antidepressants-depression-insomnia-depression-migraine/)
 
 Which motivates a question about how should we treat depression? How should we think about this taboo topic? This is not a matter of whether pills are helpful or not. I would like to explore the idea of depression from a philosophical perspective.
 
-[Depression is tricky](https://time.com/4053881/antidepressant-placebo-effect/). The medical/psychological community hasn't gotten a conclusive unanimous point of view about depression.
+[Depression is tricky](https://time.com/4053881/antidepressant-placebo-effect/). The medical/psychological community hasn't gotten a conclusive unanimous point of view about depression. And there are actually various [mis-conceptions] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001865/) about it, even in the scientific community!
 
 
 
 
-
-
-
-
-If you are not spending enough time in the streets, you better watch out.
 
 
 
@@ -45,6 +36,11 @@ I recently read [a book](https://www.goodreads.com/book/show/58818434-the-awaken
 
 
 
-Watching this was an immediate memory trigger to my teenage years in school. I recall all my friends and classmates having fun and not caring about school. But honestly I did care about school. And probably I didn't have the greatest time during those days. The days where you are supposed to be stress-free and enjoying life without limits. The days where you are supposed to experience the world without restrictions and try 'cool' stuff.  But instead of regretting that I didn't relax more during those days, and instead of regretting that I could have had more fun during those days, I choose to honor what I felt during those years. I felt that I wasn't safe in this world. I felt that paying for my education was something that I could not take for granted. I was in survival mode, but wasn't aware at the time. And not feeling safe is one of the hugest triggers you can get to take action and grow beyond your limits regardless of the consequences. So for me it's fine that I haven't done many of the things that one is supposed to experience when you are young. The 'cost' of not having those kind of experiences has had an enormous payoff in my personal growth. I've got to experience the world through a different lens.
+Practical ideas I like to keep in mind:
+
+- Life is in the streets: If you are not spending enough time in the streets, you better watch out.
+
+
+
 
 

@@ -55,7 +55,7 @@ Constant reminders I make to myself:
 - Passion: you should get excited about something! It can be anything: art, cooking, yoga, playing sports, taking photos. If you don't stand for something, you will fall for anything.
 
 
-- Take action! Don't wait for life to happen. Make it happen. But at the same time, be patient! There will be hundreds of days where absolutely nothing happens. Stay grateful in those days, and prectice patience, because worthy things may not happen overnight. 
+- Take action! Don't wait for life to happen. Make it happen. But at the same time, be patient! There will be hundreds of days where absolutely nothing happens. Stay grateful in those days, and practice patience, because worthy things may not happen overnight. 
 
 
 - Get comfortable with being uncomfortable: do stuff that makes you grow. You can't grow on your couch watching TV. You can't grow playing video games and scrolling in social media for 6 hours. Get a cold shower, talk to a random person, try new activities.

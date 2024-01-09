@@ -109,8 +109,11 @@ $$\mathbf{houses_children}$$: porcentaje de hogares en los que vive al menos una
 
 
 ## Prediction strategy
+
+We randomly selected 15% of the neighborhoods and kept them to test the model. We trained the model with the 85% of the remaining neighborhoods.
+
 ![]({{ site.baseurl }}/images/map_test_pred.png)
-*Training the model and prediction strategy. We identified that Queens Village's change in the use of the subway was an outlier observation.*
+*Green neighborhoods were used only for training. Yellow neighborhoods were not used for training and were used to test the performance of the model. We identified that Queens Village's change in the use of the subway was an outlier observation.*
 
 
 ## Regression model

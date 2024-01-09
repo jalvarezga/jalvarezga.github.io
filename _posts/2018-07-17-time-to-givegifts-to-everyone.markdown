@@ -42,7 +42,7 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 ### Variables
 
-- $$\textbf{born_nys}:$$ porcentaje de la población del barrio que nació en Nueva York. Toma valores numéricos entre $$0$$ y $$100$$. 
+- $$\textbf{born_nys}:$$ percentage of the population oin the neighborhood who were born in NYC. By definitition,  this variable takes values in $$[0,100]$$. 
 
 - $$\textbf{prc_car_free}$$: porcentaje viviendas en el vecindario que no cuentan con un automóvil. Toma valores numéricos entre $$0$$ y $$100$$.
 
@@ -125,12 +125,18 @@ $$\begin{equation}\mathbf{\beta}:=\begin{bmatrix}
            \beta_{p-1}
          \end{bmatrix},\end{equation}$$
 
-$$\mathbf{\beta}$$ is the vector of unknown coefficientsd; additionallyn we assume that the explanatory variables are knon constants for each $$i$$.
+$$\mathbf{\beta}$$ is the vector of unknown coefficients; additionally we assume that the explanatory variables are knon constants for each $$i$$.
 On the other hand, the least squares estimator of $$\mathbf{\beta}$$ for the multiple regression model has the form
 
 $$\begin{equation}\mathbf{\hat{\beta}}=(X'X)^{-1}X'\textbf{Y},\end{equation}$$
 
-where $$X$$ is the design matrix and $$\textbf{Y}$$ es el vector que contiene a la muestra de la variable repuesta. Como podemos notar, la existencia de este estimador requiere que la matriz $X'X$ tenga inversa. Para garantizar invertibilidad, es necesario que la matriz de diseño, $X$, tenga rango completo, es decir, que sus columnas sean linealmente independientes. Por ejemplo, si una variable tiene muy poca varianza relativa a la magnitud de la variable, entonces es posible que su correspondiente columna en la matriz de diseño resulte linealmente dependiente de la primera columna de X, en cuyo caso el estimador de mínimos cuadrados no estaría definido. Otro posible problema sería que dos variables estén fuertemente correlacionadas entre sí, digamos, con correlación en valor absoluto mayor a $0.8$, lo cual daría lugar a inestabilidad en las operaciones numéricas para invertir $X'X$, debido a que $X$ tendría dos columnas (casi) linealmente dependientes. \\ 
+where $$X$$ is the design matrix and $$\textbf{Y}$$ is the vector containing the response variables.
+
+
+
+
+
+ Como podemos notar, la existencia de este estimador requiere que la matriz $X'X$ tenga inversa. Para garantizar invertibilidad, es necesario que la matriz de diseño, $X$, tenga rango completo, es decir, que sus columnas sean linealmente independientes. Por ejemplo, si una variable tiene muy poca varianza relativa a la magnitud de la variable, entonces es posible que su correspondiente columna en la matriz de diseño resulte linealmente dependiente de la primera columna de X, en cuyo caso el estimador de mínimos cuadrados no estaría definido. Otro posible problema sería que dos variables estén fuertemente correlacionadas entre sí, digamos, con correlación en valor absoluto mayor a $0.8$, lo cual daría lugar a inestabilidad en las operaciones numéricas para invertir $X'X$, debido a que $X$ tendría dos columnas (casi) linealmente dependientes. \\ 
 
 Es por esta razón que es fundamental hacer un análisis exploratorio de las variables que se utlizarán para consturir el modelo de regresión lineal múltiple. Lo cual motiva la necesidad de familiarizarnos con las variables explicativas que usaremos, para así detectar este tipo de problemas y poder comprender a mayor profundidad su naturaleza de manera previa al modelaje. 
 

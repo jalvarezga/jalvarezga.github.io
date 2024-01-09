@@ -41,55 +41,62 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 
 ### Variables
+We take distict and neighborhood as synonyms throughout the desctiption of the feature variables (predictive variables).
 
-- $$\textbf{born_nys}:$$ percentage of the population oin the neighborhood who were born in NYC. By definitition,  this variable takes values in $$[0,100]$$. 
+- $$\textbf{born_nys}:$$ percentage of the population on the neighborhood who were born in NYC. By definitition,  this variable takes values in $$[0,100]$$. 
 
-- $$\textbf{prc_car_free}$$: porcentaje viviendas en el vecindario que no cuentan con un automóvil. Toma valores numéricos entre $$0$$ y $$100$$.
+- $$\textbf{prc_car_free}$$: percentage of living places in the neighborhood that do not have a car.porcentaje viviendas en el vecindario que no cuentan con un automóvil. Takes values in $$[0,100]$$.
 
- - $$\textbf{disabled_pop}$$: porcentaje de la población en el barrio que tiene alguna discapacidad. Toma valores numéricos entre $$0$$ y $$100$$. 
+ - $$\textbf{disabled_pop}$$: percentage of the population in the distirct who have certain 
+disability.
 
-- $$\textbf{foreign_pop}$$: porcentaje de la población del barrio que es extranjera. Toma valores numéricos entre $0$ y $100$. 
+- $$\textbf{foreign_pop}$$: percentage of people in the neighborhood who are foregin.
 
-- $$\textbf{homeownership_rate}$$: porcentaje de viviendas del vecindario habitadas por sus dueños. Toma valores numéricos entre $0$ y $100$. 
+- $$\textbf{homeownership_rate}$$: percentage of living places such that the owner of the place lives in it.
 
-- $$\textbf{houses_children}$$: porcentaje de hogares en los que vive al menos una persona menor de 18 años. Toma valores numéricos entre $0$ y $100$. 
+- $$\textbf{houses_children}$$: porcentage of houses in which there is at least one person younger than 18 years old.
 
-- $$\textbf{housing_units}$$: número de unidades habitacionales en el vecindario.
+- $$\textbf{housing_units}$$: number of housing units in the neighborhood.
 
-- $$\textbf{work_travel_time}$$: tiempo promedio en minutos que hace un residente del vecindario a su trabajo.
-
-- $$\textbf{income}$$: ingreso promedio anual por vivienda ubicada en el barrio en dólares estadounidenses del 2020.
-
-- $$\textbf{prc_asian}$$: porcentaje de población asiática en el vecindario. Toma valores numéricos entre $0$ y $100$. 
-
-- $$ \textbf{prc_hispanic}$$: porcentaje de hispanos que viven en el barrio. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{prc_black}$$: porcentaje de afrodescendientes que viven en el barrio. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{prc_white}$$: porcentaje de caucásicos que viven en el barrio. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{population}$$: número de habitantes en el vecindario.
-
-- $$\textbf{pop_65}$$: porcentaje de habitates mayores a 65 años de edad. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{pop_density}$$: densidad poblacional. Se obtuvo calculando el número de habitantes por milla cuadrada y dividiendo esa cantidad entre $1,000$. Por lo tanto, si se multiplica esta variable por mil, se obtiene el número de habitantes por milla cuadrada en el barrio.
-
-- $$\textbf{poverty_rate}$$: porcentaje de personas que viven en condiciones de pobreza en el barrio. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{public_housing_prc}$$: porcentaje de viviendas del vecindario subsidiadas por el gobierno. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{houses_subway}$$: porcentaje de viviendas en el vecindario que tienen una estación de metro a una distancia menor a 12 millas. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{houses_park}$$: porcentaje de unidades residenciales en el barrio que tienen un parque a una distancia menor a 14 millas. Toma valores numéricos entre $0$ y $100$. 
-
-- $$\textbf{crime_rate}$$: número de crímenes que resultaron en encarcelamiento por cada $1,000$ habitantes de 16 años de edad en adelante. No está expresado porcentualmente pero, por ejemplo, el valor más grande que tenemos en la base es de $23.5$. Al  multiplicarlo por $100,000$  y dividir entre $1,000$ obtenemos el número de encarcelamientos por cada $100,000$ personas de 16 años y mayores, que sería de  $2,350$, es decir, el $2.35\%$ de los habitantes mayores de 15 años en ese barrio fueron encarcelados por algún crimen durante el 2020. 
+- $$\textbf{work_travel_time}$$: average time (in minutes) to work for a person living in the neighborhood.
 
 
-- $$\textbf{unemployent_rate}$$: tasa de desempleo de los habitantes pertenecientes a la población económicamente activa de ese barrio. 
+- $$\textbf{income}$$: average anual income for a peron in the district (reported in terms of 2020 us dollars).
 
-- $$\textbf{income_cat}$$: una versión categórica de la variable \textbf{\textit{income}}. Se divide en cuatro factores: \textit{bajo, medio, medio\_alto} y  \textit{alto}. Para elegir los puntos de corte que definen a las clases se usaron el primer cuartil US $\$49460$ , la mediana US $\$57680$  y el tercer cuartil US $\$71920$.
+- $$\textbf{prc_asian}$$: percentage of the population in the district who are asian.
 
-- $$\textbf{zones}$$: variable categórica que clasifica a los vacindarios según su ubicación en los siguientes distritos: \textit{Bronx, Brooklyn, Manhattan} y \textit{Queens}. 
+- $$ \textbf{prc_hispanic}$$: percentage of hispanic people living in the neighborhood.
+
+- $$\textbf{prc_black}$$: percentage of african-american people living in the district.
+
+- $$\textbf{prc_white}$$: percentage of white people living in the district.
+
+- $$\textbf{population}$$: number of people living in the district.
+
+- $$\textbf{pop_65}$$: percentage of habitants in the district who are older than 65 years old.
+
+- $$\textbf{pop_density}$$: Population density. We constructed this variable by computing the number of habitants in the district per square mile and dividing it by 1,000.
+
+- $$\textbf{poverty_rate}$$:percentage of people in the neighborhood who live in poberty.
+
+
+- $$\textbf{public_housing_prc}$$: percentage of living places which are subsidized by the NY government.
+
+
+- $$\textbf{houses_subway}$$: percentage of living places in the neighborhood such that they have a metro station within 12 miles or less.
+
+- $$\textbf{houses_park}$$: percentage of living units in the neighborhood that have a park 14 miles or closer.
+
+- $$\textbf{crime_rate}$$: number of crimes which resulted in jail for every $$1,000$$ people 16 years old or older. As an example, the biggest value that we have in the dataset is 
+23.5. Multiplying it by 100,000  and dividing it by 1000 we obtain the number of people who went to jail for every 100,000 people. In this exaple we get that  $$2,350$$ people of 16 years old or older went to jail for every $$100,000$$ persons in that age range. That is, $$2.35\%$$  of the habitants older than 15 years old went to jail for some crime during 2020.
+
+- $$\textbf{unemployent_rate}$$: unemployment rate in the neighborhood.
+
+- $$\textbf{income_cat}$$: this a categorical version of the variable $$\textbf{income}$$. It is divided into 4 categories according to income thresholds that we fixed. It is divided into: low, medium, medium-high, and high income. 
+To choose the thresholds we used the quantiles of the income variable: the first quantile US $$\$49,460$$ ,  the median of $$\$57,680$$ usd and the third quantile of $$\$71,920$$usd.
+
+- $$\textbf{zones}$$: Categorical variable dividinf the neighborhoods according to their location:
+Bronx, Brooklyn, Manhattan and Queens. 
 
 
 

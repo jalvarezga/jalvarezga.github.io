@@ -41,7 +41,7 @@ Constant reminders I make to myself:
 
 - Don't take things for granted! This is an awesome way to put things into perspective. You can walk, you have water, you can speak and you have eyes to appreciate the beaty in this world. You have a bed to sleep. Don't take those minor things for granted. Some people would give their lives just to have some of those things.
 
-- Do social service: this is a great way to appreciate all the blessings that you have. Sad for not having a girlfriend? Go help adults with physical disabilities who will never have one! And you'll find blessings in that experience. Sad for not getting invited to a party? Go meet people who can't go to a party even f they were invited. You might be surprised to find them happy despite their physical limitations. You may realize how little stuff it takes to be happy. 
+- Do social service: this is a great way to appreciate all the blessings that you have. Sad for not having a girlfriend? Go help adults with physical disabilities who will never have one! And you'll realize how lucky you are. Sad for not getting invited to a party? Go meet people with physical disabilities who can't go to a party even if they were invited. You might be surprised to find them happy despite their physical limitations. You may realize how little stuff it takes to be happy. 
 
 
 

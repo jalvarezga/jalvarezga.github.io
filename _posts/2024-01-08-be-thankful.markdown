@@ -20,7 +20,7 @@ To begin, I would like you to consider a revealing fact about depression: [most 
 
 Which motivates a question about how should we treat depression? How should we think about this taboo topic? This is not a matter of whether pills are helpful or not. I would like to explore the idea of depression from a philosophical perspective.
 
-[Depression is tricky](https://time.com/4053881/antidepressant-placebo-effect/). The medical/psychological community hasn't gotten a conclusive unanimous point of view about depression. And there are actually various [mis-conceptions] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001865/) about it, even in the scientific community!
+[Depression is tricky](https://time.com/4053881/antidepressant-placebo-effect/). The medical/psychological community hasn't gotten a conclusive unanimous point of view about depression. And there are actually various [mis-conceptions](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6001865/) about it, even in the scientific community!
 
 
 

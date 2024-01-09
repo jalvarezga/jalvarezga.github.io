@@ -13,20 +13,28 @@ This post is under development.
 <span style="color: red"> 
 This is a post about my personal opinion regarding depression. I'm not an expert in the field, but I just like to talk about it as a means to do a  philosophical sketch of ideas. Though they are only personal opinions, some do infact have scientific foundations.</span>
 
+
+
+To begin, I would like you to consider some revealing findings about depression. 
+
+Firstly, [most people on antidepressants don’t need them](https://www.economist.com/leaders/2022/10/19/most-people-on-antidepressants-dont-need-them?utm_medium=social-media.content.np&utm_source=linkedin&utm_campaign=editorial-social&utm_content=discovery.content).
+
+Another revealing fact is that [most people on antidepressants aren't depressed!](
+https://time.com/4345517/antidepressants-depression-insomnia-depression-migraine/)
+
+Which motivates a question about how should we treat depression? How should we think about this taboo topic? This is not a matter of whether pills are helpful or not. I would like to explore the idea of depression from a philosophical perspective.
+
+
+
+
+
 If you are not spending enough time in the streets, you better watch out.
 
 
 
 
-![]({{ site.baseurl }}/images/LisaLiller.jpg)
+![]({{ site.baseurl }}/images/LisaMiller.jpg)
 *Dr. Lisa Miller. She's a pioneer in the study of depression and its links to spirituality.*
-
-
-
-
-In fact [most people taking antidepresants don't need them](https://time.com/4345517/antidepressants-depression-insomnia-depression-migraine/).
-
-
 
 
 

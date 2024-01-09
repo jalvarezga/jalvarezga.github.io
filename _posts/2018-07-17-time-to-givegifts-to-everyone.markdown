@@ -42,16 +42,16 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 ### Variables
 
-- $$\mathbf{born_nys}:$$ porcentaje de la población del barrio que nació en Nueva York. Toma valores numéricos entre $$0$$ y $$100$$. 
+- $$\textbf{born_nys}:$$ porcentaje de la población del barrio que nació en Nueva York. Toma valores numéricos entre $$0$$ y $$100$$. 
 
 - $$\textbf{prc_car_free}$$: porcentaje viviendas en el vecindario que no cuentan con un automóvil. Toma valores numéricos entre $$0$$ y $$100$$.
 
  - $$\textbf{disabled_pop}$$: porcentaje de la población en el barrio que tiene alguna discapacidad. Toma valores numéricos entre $$0$$ y $$100$$. 
 
--$$\textbf{foreign_pop}$$: porcentaje de la población del barrio que es extranjera. Toma valores numéricos entre $0$ y $100$. 
+- $$\textbf{foreign_pop}$$: porcentaje de la población del barrio que es extranjera. Toma valores numéricos entre $0$ y $100$. 
 
 
-$$\mathbf{homeownership_rate}$$: porcentaje de viviendas del vecindario habitadas por sus dueños. Toma valores numéricos entre $0$ y $100$. 
+- $$\textbf{homeownership_rate}$$: porcentaje de viviendas del vecindario habitadas por sus dueños. Toma valores numéricos entre $0$ y $100$. 
 
 
 
@@ -128,7 +128,7 @@ $$\begin{equation}\epsilon_{i}\sim N(0,\sigma^2),\quad \forall i\in \{1,\dots n\
 
 $$\begin{equation}Cov(\epsilon_{i},\epsilon_{j})=0 \quad \forall i,j\in \{1,\dots n\} , i\neq j\end{equation}$$
 
-$$\begin{equation}\underbar{\beta}\coloneqq\begin{bmatrix}
+$$\begin{equation}\mathbf{\beta}:=\begin{bmatrix}
            \beta_{0} \\
            \beta_{1} \\
            \vdots \\

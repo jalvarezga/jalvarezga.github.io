@@ -36,9 +36,9 @@ I recently read [a book](https://www.goodreads.com/book/show/58818434-the-awaken
 
 
 
-Practical ideas I like to use in my life:
+Constant reminders I make to myself:
 
-- Don't take things for granted! This is a grat way to put things into perspective. You can walk, you have water, you can speak and you have eyes to appreciate the beaty in this world. You have a bed to sleep. Don't take those minor things for granted. Some people would give their lives just to have some of those things.
+- Don't take things for granted! This is an awesome way to put things into perspective. You can walk, you have water, you can speak and you have eyes to appreciate the beaty in this world. You have a bed to sleep. Don't take those minor things for granted. Some people would give their lives just to have some of those things.
 
 - Do social service: this is a great way to appreciate all the blessings that you have. Sad for not having a girlfriend? Go help adults with physical disabilities who will never have one! And you'll find blessings in that experience. Sad for not getting invited to a party? Go meet people who can't go to a party even f they were invited. You might be surprised to find them happy despite their physical limitations. You may realize how little stuff it takes to be happy. 
 
@@ -49,7 +49,7 @@ Practical ideas I like to use in my life:
 
 - Stay thankful! This is perhaps the best tool that you got:  ***gratitude.*** Gratitude is a contemplation of life. Gratitude allows you to see beaty in places you never thought you could find beauty. 
 
-- Move! Exercise is powerful. Exercising is not an obligation, it's a necessity. The body literally needs to move. We're built for that.
+- Move! Exercise is powerful. Exercising is not an option, it's a necessity. The body literally needs to move. We're built for moving.
 
 
 - Passion: you should get excited about something! It can be anything: art, cooking, yoga, playing sports, taking photos. If you don't stand for something, you will fall for anything.
@@ -61,8 +61,7 @@ Practical ideas I like to use in my life:
 - Get comfortable with being uncomfortable: do stuff that makes you grow. You can't grow on your couch watching TV. You can't grow playing video games and scrolling in social media for 6 hours. Get a cold shower, talk to a random person, try new activities.
 
 
-
-- Be vulnerable: ask for help! Sometimes we can't handle everything by ourselves. There's always peoople who find joy in helping. Helping is an innate human desire. 
+- Be vulnerable: ask for help! Sometimes we can't handle everything by ourselves. There's always people who find joy in helping. Helping is an innate human desire. 
 
 
 

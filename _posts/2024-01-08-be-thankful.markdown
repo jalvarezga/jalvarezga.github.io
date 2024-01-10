@@ -45,7 +45,7 @@ Constant reminders I make to myself:
 
 - Never lose faith. An incredible future is awaiting you, if you decide to belive so.
 
-- ***Life is in the streets***: if you are not spending enough time in the streets, you better watch out. Go meet people, grab a walk, call your old friends. Be curious about the wonders in the streets. I've been so blessed to meet beautiful random neighbors, had inspiring conversations and received enormous amounts of encouragement from them: Claudia, Maye, Don Carlos, simply by walking through the streets. How can you exchange an hour of TV for the possibility of observing a genuine smile from a random person in the street? 
+- ***Life is in the streets***: if you are not spending enough time in the streets, you better watch out. Go meet people, grab a walk, call your old friends. Be curious about the wonders in the streets. I've been so blessed to meet beautiful random neighbors, had inspiring conversations and received enormous amounts of encouragement from them: Claudia, Don Walo,  Maye, Don Carlos, simply by walking through the streets. How can you exchange an hour of TV for the possibility of observing a genuine smile from a random person in the street? 
 
 
 - Stay thankful! This is perhaps the best tool that you got:  ***gratitude.*** Gratitude is a contemplation of life. Gratitude allows you to see beaty in places you never thought you could find beauty. 

@@ -139,6 +139,10 @@ $$\begin{equation}\mathbf{\hat{\beta}}=(X'X)^{-1}X'\textbf{Y},\end{equation}$$
 
 where $$X$$ is the design matrix and $$\textbf{Y}$$ is the vector containing the response variables.
 
+Notice that the existence of such estimator requires that the matrix $$X'X$$ is invertible.
+
+
+
 
 
 

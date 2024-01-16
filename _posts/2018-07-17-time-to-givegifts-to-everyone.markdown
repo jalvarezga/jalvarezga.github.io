@@ -19,20 +19,31 @@ tags:   Urban planning
 
 ## Data analysis
 
-![]({{ site.baseurl }}/images/nycSections.png)
+![]({{ site.baseurl }}/images/nyc_subway/nycSections.png)
 *Map of NYC divided by neighborhoods in the city's boroughs excluding Staten Island.*
 
 
 
 
-![]({{ site.baseurl }}/images/mapa_calor_res.png)
+![]({{ site.baseurl }}/images/nyc_subway/mapa_calor_res.png)
 *Heat map of the change in the use of the subway system after the pandemic.*
 
 
 
 
+![]({{ site.baseurl }}/images/nyc_subway/work_travel_time.png)
+*Average time to work (in minutes) for people in each neighborhood in relation to the response variable.*
 
-![]({{ site.baseurl }}/images/eda_zonas.png)
+We can clearly appreciate a negative linear relationship between the variables. A possible reason for this relationship might be that for people whose time to work is very close, they can easily substitute the metro for walking or bycicle, for example, given that their commute to work is likely very short.
+
+
+
+
+
+
+
+
+![]({{ site.baseurl }}/images/nyc_subway/eda_zonas.png)
 *Change in the use of the subway divided by zones in NYC.*
 
 We can see that on average, the subway use got reduced the most in Manhattan. Queens has a lot of variance in the response variable, due to the fact that the whiskers in its box plot are very large. Whereas we see that the Bronx had low changes in the use of the subway with low variance.

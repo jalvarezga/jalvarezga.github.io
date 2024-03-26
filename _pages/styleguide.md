@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Coffee Guide
-permalink: /styleguide/
+permalink: /coffee/
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: yoga
-permalink: /styleguide/
+permalink: /yoga/
 
 ---
 

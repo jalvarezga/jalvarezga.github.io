@@ -18,6 +18,12 @@ I have an ever-increasing obsession with coffee. These are some of my favorite c
 *Hule Records, CDMX.*
 
 
+![]({{ site.baseurl }}/images/coffee/niddo1.jpg)
+*Niddo, CDMX.*
+
+![]({{ site.baseurl }}/images/coffee/niddo2.jpg)
+*Niddo, CDMX.*
+
 ![]({{ site.baseurl }}/images/coffee/hule2.jpg)
 *Hule Records, CDMX.*
 

@@ -10,7 +10,7 @@ tags:   mental health
 
 This post is under development.
 
-<span style="color: red"> 
+<!-- <span style="color: red"> 
 This is a post about my personal opinion regarding depression. I'm not an expert in the field, but I just like to talk about it as a means to do a  philosophical sketch of ideas. Though they are only personal opinions, some of them actually have scientific foundations.</span>
 
 

@@ -10,11 +10,9 @@ tags:   mental health
 
 This post is under development.
 
-<!-- <span style="color: red"> 
-This is a post about my personal opinion regarding depression. I'm not an expert in the field, but I just like to talk about it as a means to do a  philosophical sketch of ideas. Though they are only personal opinions, some of them actually have scientific foundations.</span>
 
 
-
+[comment]: <> (<span style="color: red"> This is a post about my personal opinion regarding depression. I'm not an expert in the field, but I just like to talk about it as a means to do a  philosophical sketch of ideas. Though they are only personal opinions, some of them actually have scientific foundations.</span>
 
 To begin, I would like you to consider a revealing fact about depression: [most people on antidepressants don’t need them](https://www.economist.com/leaders/2022/10/19/most-people-on-antidepressants-dont-need-them?utm_medium=social-media.content.np&utm_source=linkedin&utm_campaign=editorial-social&utm_content=discovery.content).
 
@@ -65,6 +63,7 @@ Constant reminders I make to myself:
 - Be vulnerable: ask for help! Sometimes we can't handle everything by ourselves. There's always people who find joy in helping. Helping is an innate human desire. 
 
 
+)
 
 
 

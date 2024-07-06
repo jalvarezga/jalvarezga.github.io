@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Coffee Guide
-permalink: /coffee/
+title: Research
+permalink: /research/
 
 ---
 

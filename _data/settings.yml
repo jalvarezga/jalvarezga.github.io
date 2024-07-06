@@ -11,7 +11,7 @@ author:
   name: Joaquin Alvarez
   image: profile_pic.jpg
   say-hello: Joaquin Alvarez
-  bio:  I finished my bachelors in Applied mathematics at ITAM in Mexico City. I am interested in distribution-free uncertainty quantification to guarantee the safe deployment of machine learning models in high-risk settings. My curiosity is captivated by the uncertainty that naturally arises in diverse fields of machine leraning such as computer vision, autonomous AI systems, or large language models. I aspire to build rigorous cutting-edge statistical tools to deploy black-box models in an efficient and  reliable manner. Feel free to reach out and check my research.
+  bio:  I finished my bachelors in Applied Mathematics at ITAM in Mexico City. I've been fortunate to receive guidanance and support by professors Miguel Angel Mota, Mauricio Romero and Edgar Francisco Roman-Rangel. I am interested in distribution-free uncertainty quantification to guarantee the safe deployment of machine learning models in high-risk settings. My curiosity is captivated by the uncertainty that naturally arises in diverse fields of machine leraning such as computer vision, autonomous AI systems, or large language models. I aspire to build rigorous cutting-edge statistical tools to deploy black-box models in an efficient and  reliable manner. Feel free to reach out and check my research.
  
 
 
@@ -20,7 +20,7 @@ author:
 twitter: https://x.com/artisticML # Add your Twitter handle
 #facebook: https://facebook.com/ # Add your Facebook handle
 #dribbble: https://dribbble.com/ # Add your Dribbble handle
-#googlescholar: https://scholar.google.com/citations?user=9D0eWhgAAAAJ&hl=en
+googlescholar: https://scholar.google.com/citations?hl=es&user=9D0eWhgAAAAJ
 #instagram: https://instagram.com/ # Add your Instagram handle
 #pinterest: https://pinterest.com/ # Add your Pinterest handle
 

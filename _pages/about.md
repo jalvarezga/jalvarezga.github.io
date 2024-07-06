@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: marius-christensen-newport-unsplash.jpg
+image: 01.jpg
 ---
 
 <sub><sup>Newport Beach, CA. Photo by courtesy of  [Marius Christensen](https://unsplash.com/@mariuschristensen).</sup></sub>

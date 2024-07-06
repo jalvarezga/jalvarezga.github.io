@@ -9,7 +9,7 @@ description: Zolan is modern minimal theme for Jekyll
 # Author Settings
 author:
   name: Joaquin Alvarez
-  image: 01.jpg
+  image: profilePic.jpg
   say-hello: Welcome! Thank you for visiting!
   bio:  I finished my bachelors in Applied mathematics at ITAM in Mexico City. I am interested in distribution-free uncertainty quantification to guarantee the safe deployment of machine learning models in high-risk settings. My curiosity is captivated by the uncertainty that naturally arises in diverse fields of machine leraning such as computer vision, autonomous AI systems, or large language models. I aspire to build rigorous cutting-edge statistical tools to deploy black-box models in an efficient and  reliable manner. Feel free to reach out and check my research.
  

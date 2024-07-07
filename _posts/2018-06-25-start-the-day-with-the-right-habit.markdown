@@ -3,7 +3,7 @@ layout: post
 title:  Predicting crimes in Boston
 date:   2023-06-25 15:01:35 +0300
 image:  todd-kent-Boston-unsplash.jpg
-tags:   Urban planning
+tags:   Project
 ---
 
 

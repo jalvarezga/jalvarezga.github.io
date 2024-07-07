@@ -3,7 +3,7 @@ layout: post
 title:  Predicting traffic in the New York City Subway
 date:   2022-07-17 15:01:35 +0300
 image:  nycSubwayMap.png
-tags:   Urban planning
+tags:   Project
 ---
 
 

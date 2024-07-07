@@ -3,7 +3,7 @@ layout: post
 title:  "Reflections about Bentkus inequality"
 date:   2023-05-29 18:05:55 +0300
 image:  seyfettin-coffee-unsplash.jpg
-tags:   Life
+tags:   Blog
 ---
 <script
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"

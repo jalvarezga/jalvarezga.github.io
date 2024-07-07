@@ -178,3 +178,31 @@ Considering the last remark, $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ is pa
 $$\frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}$$ (given that we are just scaling the vector $$A^k\vec{u_{0}}$$)
 and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector of A associated to the dominant eigenvalue $$\lambda_{1}$$ as $$k\xrightarrow{}\infty$$.
 
+
+
+
+
+$$
+\usepackage{amsmath}
+\usepackage{algorithm}
+%\usepackage[noend]{algpseudocode}
+
+\begin{algorithm}
+\caption{The Power iteration}
+\begin{algorithmic}[1]
+\Procedure {PowerIter}{$A$, $\vec{u_{0}}$, $maxNumIter$, $Tol$}
+\State $k \leftarrow 1$
+\While{$k<maxNumIter$}
+\State {$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$}
+\State $\Tilde{\lambda}_{k}\leftarrow \vec{u}_{k}^TA\vec{u}_{k}$
+\If {$\frac{||A\vec{u}_{k}-\Tilde{\lambda_{k}}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol$}
+\State Break
+\Else
+\State{$k\leftarrow k+1$}
+\EndIf
+\EndWhile
+\Return{$\Tilde{\lambda}_{k},\vec{u}_{k} $}
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+$$

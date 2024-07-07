@@ -13,9 +13,25 @@ author: Joaquin
 </script>
 
 
-## By courtesy of Juan Carlos Aguilar's Numerical Calculus course at ITAM.
-This was  the first project that I did using LaTeX :smiley: ! 
-The purpose is to illustrate the Bootstrap through an example. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the [ISLR](https://www.statlearning.com) book. 
+## By courtesy of [Juan Carlos Aguilar](https://facultad.itam.mx/en/facultad/juan-carlos-aguilar-villegas) 's Numerical Calculus course at ITAM.
+
+This was the first project that I did using LaTeX! I used it to lern the basics of this beautiful and elegant form of writting scientific articles. The power iteration algorithm was one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument that shows why it works and how does it work.
+
+
+
+
+#### Definitions and context.
+
+Dominant eigenvalue of a matrix:  Let $$A\in \mathbb{R}^{n\times n}$$ be a diagonalizable matrix over $$\mathbb{C}$$, and $$\lambda_{1},\lambda_{2},\dots,\lambda_{n}\in \mathbb{C}$$ be its corresponding eigenvalues.
+$$\lambda_{j}$$ is the dominant eigenvalue of A if and only if
+$$|\lambda_{i}|\leq |\lambda_{j}|, \text{for all} i=1,2,\dots,n,$$ 
+where $$|\cdot|$$ denotes the modulus of a complex number or absolute value in case it corresponds to real numbers.
+
+
+
+
+
+The purpose is to illustrate the Bootstrap through an example. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the 
 
 Suppose we want to invest in two different stocks in the market. We have access to historical data of the daily returns (joint returns) of those two assets, $$(X_i,Y_i) \stackrel{i.i.d.}{\sim} \mathbb{P}_{X,Y},\quad i=1,\dots,n$$. $$\mathbb{P}_{X,Y}$$ denotes a joint probability distribution. For simplicity we assume these observations are independent, however, we could make more relaxed assumptions (or use a more sophisticated Time Series Model) and Bootstrap still provides the magic. We are going to allocate a proportion of $\alpha\in (0,1)$ of our total money we want to invest to the stock X and the rest ($$1-\alpha$$) to asset Y. We want to make the allocation in such a way that we minimize the variance of the return of the portfolio.
 

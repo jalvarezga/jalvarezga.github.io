@@ -187,7 +187,7 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 #### Inputs: $$A$$, $$\vec{u_{0}}$$, $$maxNumIter$$, $$Tol$$.
 
-#### Output: $$\hat{\lambda}_{k}$$, $$\vec{u}_{k}$$.
+#### Output: $$\ell_{k}$$, $$\vec{u}_{k}$$.
 
 
 
@@ -195,13 +195,23 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 2.- $$\textbf{While } k<maxNumIter$$
 
-  >  3.- $$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$$
-   > 4.- $$\hat{\lambda}_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
-   > 5.- $$\textbf{If}\frac{||A\vec{u}_{k}-\hat{\lambda_{k}}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol$$
-    >>  6.- $$\textbf{Break}$$
-    >7.- $$\textbf{Else:}$$
-    >>8.- $$k\leftarrow k+1$$
-    >>9.- $$\textbf{End if}$$ 
- 10.- $$\textbf{End if}$$ 
- 11.- $$\textbf{End while}$$
-12.- $$\textbf{Return } \hat{\lambda}_{k},\vec{u}_{k}$$
+3.- $$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$$
+
+4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
+
+
+5.- $$\textbf{If}\frac{||A\vec{u}_{k}-\ell_{k}}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol$$
+
+6.- $$\textbf{Break}$$
+
+ 7.- $$\textbf{Else:}$$
+
+8.- $$k\leftarrow k+1$$
+
+9.- $$\textbf{End if}$$ 
+
+10.- $$\textbf{End if}$$ 
+
+11.- $$\textbf{End while}$$
+
+12.- $$\textbf{Return } \\ell_{k},\vec{u}_{k}$$

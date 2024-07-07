@@ -28,7 +28,7 @@ $$\lambda_{j}$$ is the dominant eigenvalue of A if and only if
 $$|\lambda_{i}|\leq |\lambda_{j}|, \text{ for all } i=1,2,\dots,n,$$ 
 
 
-where $$|\cdot|$$ denotes the modulus of a complex number or absolute value in case it corresponds to real numbers.
+where $$\left| \cdot \right|$$ denotes the modulus of a complex number or absolute value in case it corresponds to real numbers.
 
 
 
@@ -193,11 +193,11 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 2.- $$\textbf{While } k<maxNumIter:$$
 
-3.- $$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$$
+3.- $$\vec{u_{k}} \leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$$
 
 4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
 
-5.- $$\textbf{If}\frac{||A\vec{u}_{k}-\ell_{k}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol: \textbf{Break while}$$
+5.- $$\textbf{If}\frac{\left|\left|A\vec{u}_{k}-\ell_{k}\vec{u}_{k}\right|\right|}{\left|\left|A\vec{u_{k}}\right|\right|}\leq Tol: \textbf{ Break while}$$
 
 6.- $$\textbf{Else:}$$
 
@@ -207,4 +207,4 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 9.- $$\textbf{End while}$$
 
-10.- $$\textbf{Return} \ell_{k},\vec{u}_{k}$$
+10.- $$\textbf{Return } \ell_{k},\vec{u}_{k}.$$

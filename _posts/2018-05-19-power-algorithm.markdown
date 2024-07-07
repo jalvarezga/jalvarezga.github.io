@@ -14,7 +14,7 @@ author: Joaquin
 
 
 ## By courtesy of Juan Carlos Aguilar's Numerical Calculus course at ITAM.
-
+This was  the first project that I did using LaTeX :smiley: ! 
 The purpose is to illustrate the Bootstrap through an example. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the [ISLR](https://www.statlearning.com) book. 
 
 Suppose we want to invest in two different stocks in the market. We have access to historical data of the daily returns (joint returns) of those two assets, $$(X_i,Y_i) \stackrel{i.i.d.}{\sim} \mathbb{P}_{X,Y},\quad i=1,\dots,n$$. $$\mathbb{P}_{X,Y}$$ denotes a joint probability distribution. For simplicity we assume these observations are independent, however, we could make more relaxed assumptions (or use a more sophisticated Time Series Model) and Bootstrap still provides the magic. We are going to allocate a proportion of $\alpha\in (0,1)$ of our total money we want to invest to the stock X and the rest ($$1-\alpha$$) to asset Y. We want to make the allocation in such a way that we minimize the variance of the return of the portfolio.

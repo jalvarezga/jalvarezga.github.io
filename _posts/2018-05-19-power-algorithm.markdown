@@ -70,7 +70,7 @@ such that:
 
 $$
 \begin{equation}
-    \vec{u_{0}}=  \sum_{i = 1}^n\alpha_{i}\vec{v_{i}}
+    \vec{u_{0}}=  \sum_{i = 1}^n\alpha_{i}\vec{v_{i}}.
 \end{equation}
 $$
 
@@ -78,20 +78,86 @@ $$
 
 Multiplying both sides by $$A$$:
 
-$$\begin{equation*}
+$$\begin{equation}
 A\vec{u_{0}}=  A\sum_{i = 1}^n\alpha_{i}\vec{v_{i}}
 &=\sum_{i = 1}^n\alpha_{i}A\vec{v_{i}}.
-\end{equation*}$$
+\end{equation}$$
 
 
 And since $$\vec{v_{i}}$$ is an eigenvector of $$A$$ corresponding to the eigenvalue  $$\lambda_{i}$$, then by definition of eigenvector we get:
 
-$$\begin{equation*}
+$$\begin{equation}
 A\vec{u_{0}}=  \sum_{i = 1}^n\alpha_{i}\lambda_{i}\vec{v_{i}}.
-\end{equation*}$$
+\end{equation}$$
 
 
 Again, multiplying by $$A$$ in both sides, using the same argument as above we get:
-$$\begin{equation*}
+$$\begin{equation}
 A^2\vec{u_{0}}=  \sum_{i = 1}^n\alpha_{i}\lambda_{i}^2\vec{v_{i}}.
-\end{equation*}$$
+\end{equation}$$
+
+
+
+
+Proceeding by induction, we get:
+
+$$\begin{equation}
+A^k\vec{u_{0}}=  \sum_{i = 1}^n\alpha_{i}\lambda_{i}^k\vec{v_{i}}
+=\alpha_{1}\lambda_{1}^k\vec{v_{1}}+\alpha_{2}\lambda_{2}^k\vec{v_{2}}+\dots +\alpha_{n}\lambda_{n}^k\vec{v_{n}},
+\end{equation}$$
+
+for all $$k \in\mathbb{N}$$.
+
+
+
+
+Dividing both sides by $$\lambda_{1}^k$$ (remember that $$\lambda_{1}$$ is the only dominant eigenvalue of A by hypothesis):
+
+$$
+\begin{equation}
+\frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}=\alpha_{1}\vec{v_{1}}+\alpha_{2}\left(\frac{\lambda_{2}}{\lambda_{1}}\right)^k\vec{v_{2}}+\dots+\alpha_{n}\left(\frac{\lambda_{n}}{\lambda_{1}}\right)^k\vec{v_{n}}.
+\end{equation}$$
+
+
+
+
+And since $$
+0\leq|\lambda_{n}|\leq|\lambda_{n-1}|\leq\dots\leq|\lambda_{2}|<|\lambda_{1}|$$, then dividing all the inequalities by $$|\lambda_{1}|>0$$, we get that 
+$$0\leq\left|\frac{\lambda_{n}}{\lambda_{1}}\right|\leq\left|\frac{\lambda_{n-1}}{\lambda_{1}}\right|\leq\dots\leq\left|\frac{\lambda_{2}}{\lambda_{1}}\right|<1,$$
+
+
+if and only if
+$$0\leq\left|\frac{\lambda_{n}}{\lambda_{1}}\right|^k\leq\left|\frac{\lambda_{n-1}}{\lambda_{1}}\right|^k\leq\dots\leq\left|\frac{\lambda_{2}}{\lambda_{1}}\right|^k<1 \text{ for all }  k\in\mathbb{N}$$.
+
+
+Therefore 
+$$\begin{equation} \lim_{k\to\infty}{\left|\frac{\lambda_{j}}{\lambda_{1}}\right|^k}=0, \text{ for } j\in\{{2,3,\dots,n\}} .\end{equation}$$
+
+
+
+
+
+Going back to the equation that we obtain by induction, and taking limits in both sides we have that:
+
+$$
+\begin{equation}
+ \lim_{k\to\infty}\frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}=\lim_{k\to\infty}\alpha_{1}\vec{v_{1}}+\alpha_{2}\left(\frac{\lambda_{2}}{\lambda_{1}}\right)^k\vec{v_{2}}+\dots+\alpha_{n}\left(\frac{\lambda_{n}}{\lambda_{1}}\right)^k\vec{v_{n}}.
+\end{equation}$$
+
+
+Using the fact that $$\lambda_1$$ is a dominant eigenvalue, in the limit, this equation simplifies to:
+
+
+$$\begin{equation}
+ \lim_{k\to\infty}\frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}=\alpha_{1}\vec{v_{1}}.
+\end{equation}$$
+
+
+
+
+ This suggests that for a big $$k \in \mathbb{N}$$ we obtain the following approximation:
+$$\begin{equation}
+\frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}\approx\alpha_{1}\vec{v_{1}}.
+\end{equation}$$
+
+

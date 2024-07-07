@@ -195,7 +195,7 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
 
-5.- $$\textbf{If } \frac{||A\vec{u}_{k}-\ell_{k}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol: \textbf{ Break while}$$
+5.- $$\textbf{If } \frac{\text{norm}(A\vec{u}_{k}-\ell_{k}\vec{u}_{k})}{\text{norm}(A\vec{u_{k}})}\leq Tol: \textbf{ Break while}$$
 
 6.- $$\textbf{Else:}$$
 
@@ -206,3 +206,5 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 9.- $$\textbf{End while}$$
 
 10.- $$\textbf{Return } \ell_{k},\vec{u}_{k}.$$
+
+Where $$\text{norm}()$$ denotes the Eucledian norm function for vectors in $$\mathbb{R}^n$$. Notice that the initial $$\vec{u_{0}}$$ must satisfy $$A\vec{u_{0}}\neq\vec{0}$$.

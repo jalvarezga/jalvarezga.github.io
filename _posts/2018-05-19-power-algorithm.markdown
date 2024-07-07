@@ -193,25 +193,23 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 1.- $$k \leftarrow 1$$
 
-2.- $$\textbf{While } k<maxNumIter$$
+2.- $$\textbf{While } k<maxNumIter:$$
 
-3.- $$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$$
+    3.- $$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$$
 
-4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
+    4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
 
 
-5.- $$\textbf{If}\frac{||A\vec{u}_{k}-\ell_{k}}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol$$
+5.- $$\textbf{If}\frac{||A\vec{u}_{k}-\ell_{k}}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol:$$
 
-6.- $$\textbf{Break}$$
+        6.- $$\textbf{Break while}$$
 
  7.- $$\textbf{Else:}$$
 
-8.- $$k\leftarrow k+1$$
+    8.- $$k\leftarrow k+1$$
 
 9.- $$\textbf{End if}$$ 
 
-10.- $$\textbf{End if}$$ 
+10.- $$\textbf{End while}$$
 
-11.- $$\textbf{End while}$$
-
-12.- $$\textbf{Return } \\ell_{k},\vec{u}_{k}$$
+11.- $$\textbf{Return } \ell_{k},\vec{u}_{k}$$

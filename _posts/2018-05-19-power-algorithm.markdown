@@ -24,11 +24,55 @@ This was the first project that I did using LaTeX! I used it to lern the basics 
 
 Dominant eigenvalue of a matrix:  Let $$A\in \mathbb{R}^{n\times n}$$ be a diagonalizable matrix over $$\mathbb{C}$$, and $$\lambda_{1},\lambda_{2},\dots,\lambda_{n}\in \mathbb{C}$$ be its corresponding eigenvalues.
 $$\lambda_{j}$$ is the dominant eigenvalue of A if and only if
-$$|\lambda_{i}|\leq |\lambda_{j}|, \text{for all} i=1,2,\dots,n,$$ 
+
+$$|\lambda_{i}|\leq |\lambda_{j}|, \text{ for all } i=1,2,\dots,n,$$ 
+
+
 where $$|\cdot|$$ denotes the modulus of a complex number or absolute value in case it corresponds to real numbers.
 
 
 
+Remark: we will assume that we have a matrix $$A$$,which is diagonalizable. Hence, without loss of generality, let´s suppose that $$\lambda_{1}$$ is a dominant eigenvalue for our diagonalizable matrix A.
+
+We say that $$\lambda_{1}$$ is the only dominant eigenvalue of A if and only if
+$$|\lambda_{1}|>|\lambda_{j}| \text{ for all } j=2,\dots,n.$$
+
+
+
+
+### Approximation to the (only) dominant eigenvalue of a real squared matrix (if it exists)
+
+
+In this section we´ll discuss the power iteration algorithm focusing in $$\mathbb{R}$$, however, the ideas can be extended to $$\mathbb{C}$$.
+
+
+Let $$A\in \mathbb{R}^{n\times n}$$ be a diagonalizable matrix over $$\mathbb{R}$$ and $$\lambda_{1},\lambda_{2},...,\lambda_{n}\in\mathbb{R}$$ be the corresponding eigenvalues.
+
+Suppose that $$\lambda_{1}$$ is the only dominant eigenvalue of A. Furthermore, without loss of generality we can write:
+$$|\lambda_{1}|>|\lambda_{2}|\geq|\lambda_{3}|\geq\dots\geq|\lambda_{n}|.$$
+
+
+
+Since $$A$$ is diagonalizable in $$\mathbb{R}$$,there exist linearly independent eigenvectors of $$A$$,
+$$\vec{v_{1}}, \vec{v_{2}},\dots,\vec{v_{n}} \in \mathbb{R}^{n}$$, corresponding to the eigenvalues
+
+$$\lambda_{1},\lambda_{2},...,\lambda_{n}$$, respectively and form a basis of $$\mathbb{R}^{n}$$.
+
+
+
+Let $$\vec{u_{0}}\in\mathbb{R}^{n}-\{\vec{0}\}}$$ be an arbitrary vector.
+
+
+
+Since   $$\{\vec{v_{1}},\dots,\vec{v_{n}}\}$$ is a basis of $$\mathbb{R}^{n}$$, there exist constants  $$\alpha_{1},\alpha_{1},\dots,\alpha_{n} \in \mathbb{R}$$
+such that:
+
+
+$$
+\begin{equation}
+    \vec{u_{0}}=  \sum_{i = 1}^n\alpha_{i}\vec{v_{i}}
+\end{equation}
+$$
 
 
 The purpose is to illustrate the Bootstrap through an example. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the 

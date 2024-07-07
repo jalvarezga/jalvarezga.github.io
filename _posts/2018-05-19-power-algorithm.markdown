@@ -15,7 +15,7 @@ author: Joaquin
 
 ## By courtesy of [Juan Carlos Aguilar](https://facultad.itam.mx/en/facultad/juan-carlos-aguilar-villegas) 's Numerical Calculus course at ITAM.
 
-This was the first project that I did using LaTeX! I used it to learn the basics of this beautiful and elegant form of writting scientific articles. The power iteration algorithm was one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument that shows why it works and how does it work.
+This is the first project that I did using LaTeX! I used it to learn the basics of this beautiful and elegant form of writting scientific articles. The power iteration algorithm is one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument showing what it does and why it works.
 
 
 
@@ -123,7 +123,7 @@ $$0\leq\left|\frac{\lambda_{n}}{\lambda_{1}}\right|\leq\left|\frac{\lambda_{n-1}
 
 
 if and only if
-$$0\leq\left|\frac{\lambda_{n}}{\lambda_{1}}\right|^k\leq\left|\frac{\lambda_{n-1}}{\lambda_{1}}\right|^k\leq\dots\leq\left|\frac{\lambda_{2}}{\lambda_{1}}\right|^k<1 \text{ for all }  k\in\mathbb{N}$$.
+$$0\leq\left|\frac{\lambda_{n}}{\lambda_{1}}\right|^k\leq\left|\frac{\lambda_{n-1}}{\lambda_{1}}\right|^k\leq\dots\leq\left|\frac{\lambda_{2}}{\lambda_{1}}\right|^k<1 \text{ for all }  k\in\mathbb{N}.$$
 
 
 Therefore 

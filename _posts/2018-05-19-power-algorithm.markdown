@@ -80,7 +80,7 @@ Multiplying both sides by $$A$$:
 
 $$\begin{equation}
 A\vec{u_{0}}=  A\sum_{i = 1}^n\alpha_{i}\vec{v_{i}}
-&=\sum_{i = 1}^n\alpha_{i}A\vec{v_{i}}.
+=\sum_{i = 1}^n\alpha_{i}A\vec{v_{i}}.
 \end{equation}$$
 
 
@@ -160,4 +160,19 @@ $$\begin{equation}
 \frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}\approx\alpha_{1}\vec{v_{1}}.
 \end{equation}$$
 
+Here it is worth to pause and make a couple of observations:
+
+
+1. We picked $$\vec{u_{0}}$$ to be an arbitrary vector in $$\mathbb{R}^{n}$$. However, $$\vec{u_{0}}$$ needs to satisfy that $$\alpha_{1}$$ in (1) is different form 0 so that the last approximation is different from $$\vec{0}$$, since $$\vec{0}$$ is not an eigenvector by definition.
+
+
+
+2. The hole point of all the argument above is to motivate an algorithm that approximates the only dominant eigenvalue of A (i.e.$$\lambda_{1}$$), which we don´t know a priori and actually want to approximate, assuming that it exists.
+
+
+3. A useful property of eigenvectors worth to recall:
+Let $$A\in\mathbb{R}^{n\times n}$$ and suppose that $$\vec{v_{1}}\in\mathbb{R}^{n}$$ is an eigenvector of $$A$$, then $$\alpha\vec{v_{1}}$$ is also an eigenvector of A for all $$\alpha\in \mathbb{R}-\{0\}}$$. Moreover, from the proof of this statement it follows that $$\vec{v_{1}}$$ and $$\alpha\vec{v_{1}}$$ have the same associated eigenvalue of $$A$$.
+Considering the last remark, $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ is parallel to 
+$$\frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}$$ (given that we are just scaling the vector $$A^k\vec{u_{0}}$$)
+and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector of A associated to the dominant eigenvalue $$\lambda_{1}$$ as $$k\xrightarrow{}\infty$$.
 

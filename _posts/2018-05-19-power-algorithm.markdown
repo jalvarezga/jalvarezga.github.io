@@ -182,27 +182,27 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 
 
-$$
-\usepackage{amsmath}
-\usepackage{algorithm}
-%\usepackage[noend]{algpseudocode}
 
-\begin{algorithm}
-\caption{The Power iteration}
-\begin{algorithmic}[1]
-\Procedure {PowerIter}{$A$, $\vec{u_{0}}$, $maxNumIter$, $Tol$}
-\State $k \leftarrow 1$
-\While{$k<maxNumIter$}
-\State {$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$}
-\State $\Tilde{\lambda}_{k}\leftarrow \vec{u}_{k}^TA\vec{u}_{k}$
-\If {$\frac{||A\vec{u}_{k}-\Tilde{\lambda_{k}}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol$}
-\State Break
-\Else
-\State{$k\leftarrow k+1$}
-\EndIf
-\EndWhile
-\Return{$\Tilde{\lambda}_{k},\vec{u}_{k} $}
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
-$$
+## Power iteration algorithm: a pseudocode
+
+#### Inputs: $$A$$, $$\vec{u_{0}}$$, $$maxNumIter$$, $$Tol$$.
+
+#### Output: $$\Tilde{\lambda}_{k}$$ , $$\vec{u}_{k}$$
+
+
+
+
+1. $$k \leftarrow 1$$
+
+2. $$\textbf{While } k<maxNumIter$$
+
+    3. $$\vec{u_{k}}\leftarrow \frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}}||$$
+    4. $$\Tilde{\lambda}_{k}\leftarrow \vec{u}_{k}^TA\vec{u}_{k}$$
+    5. $$\textbf{If}\frac{||A\vec{u}_{k}-\Tilde{\lambda_{k}}\vec{u}_{k}||}{||A\vec{u_{k}}||}\leq Tol$$
+      6. $$\textbf{Break}$$
+    7. $$\textbf{Else:}$$
+    8. $$k\leftarrow k+1$$$
+    9. $$\textbf{End if}$$ 
+ 10. $$\textbf{End if}$$ 
+ 11. $$\textbf{End while}$$
+12. $$\textbf{Return } \Tilde{\lambda}_{k},\vec{u}_{k} $$

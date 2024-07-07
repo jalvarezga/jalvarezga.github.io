@@ -2,7 +2,7 @@
 layout: post
 title:  Power iteration algorithm
 date:   2021-01-19 15:01:35 +0300
-image:  violinPlot.png
+image:  09.jpg
 tags:   Blog
 author: Joaquin
 ---
@@ -15,7 +15,7 @@ author: Joaquin
 
 ## By courtesy of [Juan Carlos Aguilar](https://facultad.itam.mx/en/facultad/juan-carlos-aguilar-villegas) 's Numerical Calculus course at ITAM.
 
-This was the first project that I did using LaTeX! I used it to lern the basics of this beautiful and elegant form of writting scientific articles. The power iteration algorithm was one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument that shows why it works and how does it work.
+This was the first project that I did using LaTeX! I used it to learn the basics of this beautiful and elegant form of writting scientific articles. The power iteration algorithm was one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument that shows why it works and how does it work.
 
 
 
@@ -131,7 +131,9 @@ $$0\leq\left|\frac{\lambda_{n}}{\lambda_{1}}\right|^k\leq\left|\frac{\lambda_{n-
 
 
 Therefore 
-$$\begin{equation} \lim_{k\to\infty}{\left|\frac{\lambda_{j}}{\lambda_{1}}\right|^k}=0, \text{ for } j\in\{{2,3,\dots,n\}} .\end{equation}$$
+
+
+$$\begin{equation} \lim_{k\to\infty}{\left|\frac{\lambda_{j}}{\lambda_{1}}\right|^k}=0, \text{ for } j\in\{ 2,3,\dots,n\} .\end{equation}$$
 
 
 
@@ -163,7 +165,7 @@ $$\begin{equation}
 Here it is worth to pause and make a couple of observations:
 
 
-1. We picked $$\vec{u_{0}}$$ to be an arbitrary vector in $$\mathbb{R}^{n}$$. However, $$\vec{u_{0}}$$ needs to satisfy that $$\alpha_{1}$$ in (1) is different form 0 so that the last approximation is different from $$\vec{0}$$, since $$\vec{0}$$ is not an eigenvector by definition.
+1. We picked $$\vec{u_{0}}$$ to be an arbitrary vector in $$\mathbb{R}^{n}$$. However, $$\vec{u_{0}}$$ needs to satisfy that $$\alpha_{1}$$ is different form 0 so that the last approximation is different from $$\vec{0}$$, since $$\vec{0}$$ is not an eigenvector by definition.
 
 
 
@@ -171,7 +173,7 @@ Here it is worth to pause and make a couple of observations:
 
 
 3. A useful property of eigenvectors worth to recall:
-Let $$A\in\mathbb{R}^{n\times n}$$ and suppose that $$\vec{v_{1}}\in\mathbb{R}^{n}$$ is an eigenvector of $$A$$, then $$\alpha\vec{v_{1}}$$ is also an eigenvector of A for all $$\alpha\in \mathbb{R}-\{0\}}$$. Moreover, from the proof of this statement it follows that $$\vec{v_{1}}$$ and $$\alpha\vec{v_{1}}$$ have the same associated eigenvalue of $$A$$.
+Let $$A\in\mathbb{R}^{n\times n}$$ and suppose that $$\vec{v_{1}}\in\mathbb{R}^{n}$$ is an eigenvector of $$A$$, then $$\alpha\vec{v_{1}}$$ is also an eigenvector of A for all $$\alpha\in \mathbb{R}-\{0\}$$. Moreover, from the proof of this statement it follows that $$\vec{v_{1}}$$ and $$\alpha\vec{v_{1}}$$ have the same associated eigenvalue of $$A$$.
 Considering the last remark, $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ is parallel to 
 $$\frac{1}{\lambda_{1}^k}A^k\vec{u_{0}}$$ (given that we are just scaling the vector $$A^k\vec{u_{0}}$$)
 and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector of A associated to the dominant eigenvalue $$\lambda_{1}$$ as $$k\xrightarrow{}\infty$$.

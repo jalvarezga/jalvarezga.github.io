@@ -191,7 +191,7 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 2.- $$\textbf{While } k<maxNumIter:$$
 
-3.- $$\vec{u_{k}} \leftarrow$$
+3.- $$\vec{u_{k}} \leftarrow$$ $$\frac{A\vec{u}_{k-1}}{||A\vec{u}_{k-1}||}$$
 
 4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
 

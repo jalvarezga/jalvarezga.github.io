@@ -25,14 +25,10 @@ This was the first project that I did using LaTeX! I used it to learn the basics
 Dominant eigenvalue of a matrix:  Let $$A\in \mathbb{R}^{n\times n}$$ be a diagonalizable matrix over $$\mathbb{C}$$, and $$\lambda_{1},\lambda_{2},\dots,\lambda_{n}\in \mathbb{C}$$ be its corresponding eigenvalues.
 $$\lambda_{j}$$ is the dominant eigenvalue of A if and only if
 
-$$|\lambda_{i}|\leq |\lambda_{j}|, \text{ for all } i=1,2,\dots,n,$$ 
+$$|\lambda_{i}|\leq |\lambda_{j}|, \text{ for all } i=1,2,\dots,n.$$ 
 
-
-where $$| |$$ denotes the modulus of a complex number or absolute value in case it corresponds to real numbers.
-
-
-
-Remark: we will assume that we have a matrix $$A$$,which is diagonalizable. Hence, without loss of generality, let´s suppose that $$\lambda_{1}$$ is a dominant eigenvalue for our diagonalizable matrix A.
+##### Remark:
+we will assume that we have a matrix $$A$$,which is diagonalizable. Hence, without loss of generality, let´s suppose that $$\lambda_{1}$$ is a dominant eigenvalue for our diagonalizable matrix A.
 
 We say that $$\lambda_{1}$$ is the only dominant eigenvalue of A if and only if
 $$|\lambda_{1}|>|\lambda_{j}| \text{ for all } j=2,\dots,n.$$

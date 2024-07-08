@@ -16,7 +16,7 @@ author: Joaquin
 
 The purpose is to illustrate the Bootstrap through an example. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the [ISLR](https://www.statlearning.com) book. 
 
-Suppose we want to invest in two different stocks in the market. We have access to historical data of the daily returns (joint returns) of those two assets, $$(X_i,Y_i) \stackrel{i.i.d.}{\sim} \mathbb{P}_{X,Y},\quad i=1,\dots,n$$. $$\mathbb{P}_{X,Y}$$ denotes a joint probability distribution. For simplicity we assume these observations are independent, however, we could make more relaxed assumptions (or use a more sophisticated Time Series Model) and Bootstrap still provides the magic. We are going to allocate a proportion of $\alpha\in (0,1)$ of our total money we want to invest to the stock X and the rest ($$1-\alpha$$) to asset Y. We want to make the allocation in such a way that we minimize the variance of the return of the portfolio.
+Suppose we want to invest in two different stocks in the market. We have access to historical data of the daily returns (joint returns) of those two assets, $$(X_i,Y_i) \stackrel{i.i.d.}{\sim} \mathbb{P}_{X,Y},\quad i=1,\dots,n$$. $$\mathbb{P}_{X,Y}$$ denotes a joint probability distribution. For simplicity, and for the purposes of understanding how the bootstrap works, we assume that these observations are independent and identically distributed (i.i.d.). We are going to allocate a proportion of $$\alpha\in (0,1)$$ of our total investing budget to the stock $$X$$ and the rest ($$1-\alpha$$) to the asset $$Y$$. We want to make the allocation in such a way that we minimize the variance of the return of the portfolio.
 
 In this context, the total return in terms of the proportion we invest to each asset is given by $$f(\alpha, X, Y):= \alpha X+(1-\alpha)Y, \quad \forall \alpha \in (0,1)$$ , where $$(X,Y) \sim \mathbb{P}_{X,Y}$$ is an observation of the daily joint returns of the asset. We want to minimize $$\mathbb{V}ar(f(\alpha, X, Y))$$ with respect to alpha, picking the $$\alpha \in (0,1)$$ that minimizes that expression. That is, we want to minimize the  variance of the daily return of a portfolio consisting of two assets, with daily returns for each asset denoted by X and Y, respectively. We use the following notation: $$\sigma_X^2 := \mathbb{V}(X),\quad \sigma_Y^2:=\mathbb{V}ar(Y), \quad \sigma_{X,Y}:=Cov(X,Y)$$. We assume that we $$\underline{don't}$$ know this quantities, and we assume that they exist.
 
@@ -97,11 +97,11 @@ boxplot(alphas, main='Box-plot of the estimates of the optimal alpha',cex.main=.
 ![]({{ site.baseurl }}/images/bootstrap/twoFiguresOnePlot.png)
 
 
-However, in order to properly assess the quality of the estimator, we need to consider the uncertainty associated to a point estimation. Don't forget (EVER!) to associate some quantification of uncertainty to  your estimator (Henri Luigi Grandson Decks).
+However, in order to properly assess the quality of the estimator, we need to consider the uncertainty associated to a point estimation. One of the biggest lessons that I had in my undergraduate studies was to ALWAYS associate some quantification of uncertainty to any point estimator (Henri Luigi Grandson Decks). This is one of the best ways to have a notion of how good it is and how much can we rely on our estimation to make a data-driven decision. 
 
 
 
-Formally, we would construct a confidence interval, making some assumptions or appealing to asymptotic results. In order to gain some intuition, we will just appeal to an informal rule of thumb, and deploy a cruede interval. 
+Formally, we would construct a confidence interval, making some assumptions or appealing to asymptotic results. In order to gain some intuition, we will just appeal to an informal rule of thumb, and deploy a crued interval. 
 That being said, we would usually expect approximately $$95\%$$ of the observations  (assuming normality of $$\hat{\alpha^*}$$) of our estimations of  $$\alpha^*$$ to live in:
 
 {% highlight R %}
@@ -115,7 +115,7 @@ c(alphaEst-2*sqrt(alphaVar), alphaEst+2*sqrt(alphaVar))
 which is an interval with small length and contains the value $$\alpha^*=0.6$$, hence the estimator is one of good quality.
 
 
-# Reality: we have finite data (Bootstrap)
+# Reality: we have finite data (Bootstrap is our solution approach)
 
 We now assume that we only have a sample of n=100  daily returns. 
 

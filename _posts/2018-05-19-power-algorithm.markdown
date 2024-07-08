@@ -15,7 +15,7 @@ author: Joaquin
 
 ## By courtesy of [Juan Carlos Aguilar](https://facultad.itam.mx/en/facultad/juan-carlos-aguilar-villegas) 's Numerical Calculus course at ITAM.
 
-This is the first project that I did using LaTeX! I used it to learn the basics of this beautiful and elegant form of writting scientific articles. The power iteration algorithm is one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument showing what it does and why it works.
+This is the first project that I did using LaTeX! I find LaTeX to be a beautiful and elegant form of writting scientific articles. The power iteration algorithm is one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument showing what it does and why it works.
 
 
 

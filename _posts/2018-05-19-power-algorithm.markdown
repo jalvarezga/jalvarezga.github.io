@@ -207,4 +207,4 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 10.- $$\textbf{Return } \ell_{k},\vec{u}_{k}.$$
 
-Where $$\text{norm}()$$ denotes the Eucledian norm function for vectors in $$\mathbb{R}^n$$. Notice that the initial $$\vec{u_{0}}$$ must satisfy $$A\vec{u_{0}}\neq\vec{0}$$.
+Where $$\text{norm}()$$ denotes the Euclidean norm function for vectors in $$\mathbb{R}^n$$. Notice that the initial $$\vec{u_{0}}$$ must satisfy $$A\vec{u_{0}}\neq\vec{0}$$.

@@ -129,7 +129,7 @@ $$0\leq\mid\frac{\lambda_{n}}{\lambda_{1}}\mid^k\leq\mid\frac{\lambda_{n-1}}{\la
 Therefore 
 
 
-$$\begin{equation} \lim_{k\to\infty}{\left|\frac{\lambda_{j}}{\lambda_{1}}\right|^k}=0, \text{ for } j\in\{ 2,3,\dots,n\} .\end{equation}$$
+$$\begin{equation} \lim_{k\to\infty}{\bigl\vert\frac{\lambda_{j}}{\lambda_{1}}\bigl\vert^k}=0, \text{ for } j\in\{ 2,3,\dots,n\} .\end{equation}$$
 
 
 

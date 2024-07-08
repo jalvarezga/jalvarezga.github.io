@@ -123,7 +123,7 @@ $$0\leq\left|\frac{\lambda_{n}}{\lambda_{1}}\right|\leq\left|\frac{\lambda_{n-1}
 
 
 if and only if
-$$0\leq\mid\frac{\lambda_{n}}{\lambda_{1}}\mid^k\leq\mid\frac{\lambda_{n-1}}{\lambda_{1}}\mid^k\leq\dots\leq\mid\frac{\lambda_{2}}{\lambda_{1}}\mid^k<1 \text{ for all }  k\in\mathbb{N}.$$
+$$0\leq\bigl\vert\frac{\lambda_{n}}{\lambda_{1}}\bigl\vert^k\leq\bigl\vert\frac{\lambda_{n-1}}{\lambda_{1}}\bigl\vert^k\leq\dots\leq\bigl\vert\frac{\lambda_{2}}{\lambda_{1}}\bigl\vert^k<1 \text{ for all }  k\in\mathbb{N}.$$
 
 
 Therefore 

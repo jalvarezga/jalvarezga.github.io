@@ -254,3 +254,13 @@ $$\begin{equation}
 \begin{split}
 \|\vec{a}_{k}^{T}(\vec{b}_{k}-\vec{b})\|+\|(\vec{a}_{k}-\vec{a})^{T}\vec{b} \|&\leq \|\vec{a}_{k}\| \|\vec{b}_{k}-\vec{b}\|+\|\vec{a}_{k}-\vec{a}\|\|\vec{b}\|.
 \end{split}\end{equation}$$
+
+Now, since $$\{\vec{a}_k\}_{k=1}^{\infty}$$ converges, then it is bounded. On the other hand, by our hypotheses,
+
+
+ $$\begin{equation} \lim_{k\to \infty}\|\vec{b}_{k}-\vec{b}\|=0\text{ and } \lim_{k\to \infty} \|\vec{a}_{k}-\vec{a}\|=0.\end{equation}$$
+
+With this we can conclude that 
+
+
+$$\begin{equation}\lim_{k\to \infty} \Big\|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}^{T}\vec{b} \Big\| =0.\end{equation}$$

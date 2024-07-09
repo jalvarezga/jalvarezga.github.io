@@ -264,3 +264,8 @@ With this we can conclude that
 
 
 $$\begin{equation}\lim_{k\to \infty} \Big\|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}^{T}\vec{b} \Big\| =0.\end{equation}$$
+
+This is equivalent to our desired result:
+
+
+$$\begin{equation}\lim_{k\to \infty} \vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}.\end{equation}$$ $$\blacksquare$$

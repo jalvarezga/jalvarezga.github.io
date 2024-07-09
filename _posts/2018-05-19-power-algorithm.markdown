@@ -211,3 +211,22 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 10.- $$\textbf{Return } \ell_{k},\vec{u}_{k}.$$
 
 Where $$\text{norm}()$$ denotes the Euclidean norm function for vectors in $$\mathbb{R}^n$$. Notice that the initial $$\vec{u_{0}}$$ must satisfy $$A\vec{u_{0}}\neq\vec{0}$$.
+
+
+
+
+# Why does the algorithm work?
+
+We will show that $$\lim_{k\to\infty}\ell_k=\lambda_1$$. We need some auxiliary lemmas towards achieving that goal. We are considering convergence in the context fo the Euclidean norm.
+Firstly, consider the following proposition.
+
+## Proposition
+Let $$\{\vec{a}_k\}_{k=1}^{\infty}$$ and $$\{\vec{b}_k\}_{k=1}^{\infty}$$ be two sequences of vectors in $$\mathbb{R}^{n}$$ such that $$\lim_{k\to \infty}\vec{a}_k=\vec{a}$$ and $$\lim_{k\to \infty}\vec{b}_k=\vec{b}$$  for some $$\vec{a}, \vec{b}\in \mathbb{R}^{n}$$.
+Then $$\begin{equation}\lim_{k\to\infty}\vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}\end{equation}$$
+
+
+### Proof
+
+
+$$ \|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}_{k}\vec{b} \|=\|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}_{k}\vec{b}+\vec{a}_{k}\vec{b}-\vec{a}_{k}\vec{b} \|$$
+

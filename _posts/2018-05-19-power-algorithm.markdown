@@ -221,7 +221,7 @@ We will show that
 
 $$\begin{equation}\lim_{k\to\infty}\ell_k=\lambda_1.\end{equation}$$
 
-We need some auxiliary lemmas to achive that goal. We are considering convergence in the context fo the Euclidean norm.
+We need some auxiliary lemmas to achive that goal. We will use the notation $$\big\| \big\|$$ generically to refer to the Eucledian norm. Recall that in the case of real numbers in one dimension, it is simply the absolute value. 
 Firstly, consider the following proposition.
 
 ## Proposition
@@ -237,20 +237,20 @@ for some $$\vec{a}, \vec{b}\in \mathbb{R}^{n}$$.Then
 
 ### Proof
 
-We begin by applying the triangle inequality. We will use the notation $$\big\| \big\|$$ generically, but keep in mind that in the case of real numbers, it simplifies to the absolute value. 
+We begin by applying the triangle inequality. 
 
 
 $$\begin{equation}
 \begin{split}
 \Big\|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}^{T}\vec{b} \Big\|&=\|\vec{a}_{k}^{T}\vec{b}_{k}-\vec{a}_{k}^{T}\vec{b}+\vec{a}_{k}^{T}\vec{b}-\vec{a}^{T}\vec{b} \|\\
  &\leq \|\vec{a}_{k}^{T}\vec{b}_{k}-\vec{a}_{k}^{T}\vec{b}\|+\|\vec{a}_{k}^{T}\vec{b}-\vec{a}^{T}\vec{b} \|\\
- &=\|\vec{a}_{k}^{T}(\vec{b}_{k}-\vec{b})\|+\|(\vec{a}_{k}-\vec{a}^{T})^{T}\vec{b} \|
+ &=\|\vec{a}_{k}^{T}(\vec{b}_{k}-\vec{b})\|+\|(\vec{a}_{k}-\vec{a})^{T}\vec{b} \|.
 \end{split}\end{equation}$$
 
-Next we apply the Cauchy-Schwarz inequality
+Next we apply the Cauchy-Schwarz inequality:
 
 
 $$\begin{equation}
 \begin{split}
-\|\vec{a}_{k}^{T}(\vec{b}_{k}-\vec{b})\|+\|(\vec{a}_{k}-\vec{a}^{T})^{T}\vec{b} \|&\leq 
+\|\vec{a}_{k}^{T}(\vec{b}_{k}-\vec{b})\|+\|(\vec{a}_{k}-\vec{a})^{T}\vec{b} \|&\leq \|\vec{a}_{k}\| \|\vec{b}_{k}-\vec{b}\|+\|\vec{a}_{k}-\vec{a}\|\|\vec{b}\|.
 \end{split}\end{equation}$$

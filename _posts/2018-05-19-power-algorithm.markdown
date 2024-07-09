@@ -198,7 +198,7 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
 
-5.- $$\textbf{If } \frac{\text{norm}(A\vec{u}_{k}-\ell_{k}\vec{u}_{k})}{\text{norm}(A\vec{u_{k}})}\leq Tol: \textbf{ Break while}$$
+5.- $$\textbf{If } \frac{\big\|A\vec{u}_{k}-\ell_{k}\vec{u}_{k}\big\|}{\big\|A\vec{u_{k}}\big\|}\leq Tol: \textbf{ Break while}$$
 
 6.- $$\textbf{Else:}$$
 
@@ -210,7 +210,7 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 10.- $$\textbf{Return } \ell_{k},\vec{u}_{k}.$$
 
-Where $$\text{norm}()$$ denotes the Euclidean norm function for vectors in $$\mathbb{R}^n$$. Notice that the initial $$\vec{u_{0}}$$ must satisfy $$A\vec{u_{0}}\neq\vec{0}$$.
+Where $$\big\| \big\|$$ denotes the Euclidean norm function for vectors in $$\mathbb{R}^n$$. Notice that the initial $$\vec{u_{0}}$$ must satisfy $$A\vec{u_{0}}\neq\vec{0}$$.
 
 
 
@@ -237,7 +237,7 @@ for some $$\vec{a}, \vec{b}\in \mathbb{R}^{n}$$.Then
 
 ### Proof
 
-We begin by applying the triangle inequality. We will use the notation $$\Big\|$$ generically, but keep in mind that in the case of real numbers, it simplifies to the absolute value. 
+We begin by applying the triangle inequality. We will use the notation $$\big\| \big\|$$ generically, but keep in mind that in the case of real numbers, it simplifies to the absolute value. 
 
 
 $$\begin{equation}

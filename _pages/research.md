@@ -11,7 +11,7 @@ permalink: /research/
 
 ## This section is under development!!!
 
-- A distribution-free valid p-value for finite samples of bounded random variables (2024). [arXiv](https://arxiv.org/abs/2405.08975)   
+- J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [arXiv](https://arxiv.org/abs/2405.08975)   
 
 
 ## This section is under development!!!
@@ -23,12 +23,6 @@ permalink: /research/
 I have an ever-increasing obsession with coffee. These are some of my favorite coffee shops.
 
 
-![]({{ site.baseurl }}/images/coffee/hule.JPG)
-*Hule Records, CDMX.*
-
-![]({{ site.baseurl }}/images/coffee/niddo2.jpg)
-*Niddo, CDMX.*
-
 ![]({{ site.baseurl }}/images/coffee/hule2.jpg)
 *Hule Records, CDMX.*
 
@@ -38,9 +32,6 @@ I have an ever-increasing obsession with coffee. These are some of my favorite c
 <iframe src="https://www.youtube.com/embed/iWowJBRMtpc" frameborder="0" allowfullscreen></iframe>
 
 
-
-![]({{ site.baseurl }}/images/coffee/muss2.jpg)
-*Muss Cafe, Oax.*
 
 
 

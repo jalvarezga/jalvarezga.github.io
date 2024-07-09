@@ -194,7 +194,7 @@ and thus $$\frac{A^k\vec{u_{0}}}{||A^k\vec{u_{0}||}}$$ tends to an eigenvector o
 
 2.- $$\textbf{While } k<maxNumIter:$$
 
-3.- $$\vec{u_{k}} \leftarrow$$ $$\frac{A\vec{u}_{k-1}}{\text{norm}(A\vec{u}_{k-1})}$$
+3.- $$\vec{u_{k}} \leftarrow$$ $$\frac{A\vec{u}_{k-1}}{\big\|A\vec{u}_{k-1}\big\|}$$
 
 4.- $$\ell_{k}\leftarrow \vec{u}_{k}^T A\vec{u}_{k}$$
 
@@ -217,7 +217,11 @@ Where $$\text{norm}()$$ denotes the Euclidean norm function for vectors in $$\ma
 
 # Why does the algorithm work?
 
-We will show that $$\lim_{k\to\infty}\ell_k=\lambda_1$$. We need some auxiliary lemmas towards achieving that goal. We are considering convergence in the context fo the Euclidean norm.
+We will show that 
+
+$$\begin{equation}\lim_{k\to\infty}\ell_k=\lambda_1.\end{equation}$$
+
+We need some auxiliary lemmas to achive that goal. We are considering convergence in the context fo the Euclidean norm.
 Firstly, consider the following proposition.
 
 ## Proposition
@@ -233,7 +237,7 @@ for some $$\vec{a}, \vec{b}\in \mathbb{R}^{n}$$.Then
 
 ### Proof
 
-We begin by applying the triangle inequality. 
+We begin by applying the triangle inequality. We will use the notation $$\Big\|$$ generically, but keep in mind that in the case of real numbers, it simplifies to the absolute value. 
 
 
 $$\begin{equation}

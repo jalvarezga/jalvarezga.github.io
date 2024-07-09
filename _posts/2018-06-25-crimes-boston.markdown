@@ -12,7 +12,7 @@ tags:   ITAM Project
 
 
 
-This is joint work with Diego Velazquez and Marcelino Sanchez.
+This is joint work with my colleagues Diego Velazquez and Marcelino Sanchez.
 
 <script
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
@@ -26,7 +26,8 @@ This is joint work with Diego Velazquez and Marcelino Sanchez.
 
 
 
-<small><span style="color: red"> Disclaimer: though fancy and useful, this kind of bayesian predictive algorithm is highly discouraged in high-risk scenarios, since it does not provide any theoretical guarantee on the coverage. One may take the point predictions made by the bayesian model and conformalize them to get rigorous coverage guarantees.</span></small>
+<small><span style="color: red"> This is a summary of the a project work for the course Advanced Regression Analysis. In this blog post we will provide a general description of the project and our main findings without diving into the details.</span></small>
+
 
 ### Context
 
@@ -78,19 +79,13 @@ These two variables are strongly correlated, they actually have a correlation of
 We could explore further this kind of relationships, are even prresent a correlation matrix, which we included in the original work as part of the exploratory data analysis.
 
 
-Here's a list of the variables that we considered for the second model that we used:
+Here's a list of some of the variables that we considered for the second model that we used:
 
 percentageUndergrads: percentage of people in the district that have an undergraduate degree.
 
 PercentageMasters: porcentage of people in the district that hold a masters degree.
 
-PercentageHispanic: percentage of hispanic/latino people in the neighborhood.
-
-PercentageAfroamerican: percentage of afro-american people in the neighborhood.
-
-PercentageMayors:percentage of people in the district who are older than 60 years old.
-
-PercentageMarried: percentage of properties (houses/apartments) in the district where a married couple lives.
+PercentageMarried: percentage of properties (houses/apartments) in the district such that a married couple lives in it.
 
 incomePerCapita: average annual income per person in the neighborhood.
 
@@ -264,23 +259,11 @@ This model used a linear predictor of the form
 
 $$\begin{equation}\mu(s_i) = \beta_{1} + \beta_{2} X_{1,i} + \beta_{3} X_{2,i}  +\beta_{4} X_{3,i}  + \beta_{5} X_{4,i}  + \beta_{6} X_{5,i} +\beta_{7} X_{6,i} + \beta_{8} X_{7,i}  + \beta_{9} X_{8,i},  \end{equation}$$
 
-where: 
+where the $$X_{k,i}'$$ is the $$k-$$th demographic characteristic of the district $$i$$. For example, 
 
 $$X_{1,i}=$$percentageUndergrads:  percentage of people in the district $$i$$ that have an undergraduate degree.
 
 $$X_{2,i}=$$ percentageMasters:porcentage of people in the district $$i$$ that hold a masters degree.
-
-$$X_{3,i}=$$PercentageHispanic: percentage of hispanic/latino people in the neighborhood $$i$$.
-
-
-$$X_{4,i}=$$percentageAfroamerican: percentage of afro-american people in the neighborhood $$i$$.
-
-
-$$X_{5,i}=$$ PercentageMayors: percentage of people in the district $$i$$ who are older than 60 years old.
-
-
-$$X_{6,i}=$$ PercentageMarried: percentage of properties (houses/apartments) in the district $$i$$ where a married couple lives.
-
 
 $$X_{7,i}=$$incomePerCapita: average annual income per person in the neighborhood $$i$$.
 

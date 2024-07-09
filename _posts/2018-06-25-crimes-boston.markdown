@@ -26,7 +26,7 @@ This is joint work with my colleagues Diego Velazquez and Marcelino Sanchez.
 
 
 
-<small><span style="color: red"> This is a summary of a project work for the course Advanced Regression Analysis. In this blog post we will provide a general description of the project and our main findings without diving into the details.</span></small>
+<small><span style="color: red"> This is a summary of a project work for the course Advanced Regression Analysis. In this blog post we will provide a general description of the project and our main findings without diving into the details. It is a natural extension to the project where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data</span></small>
 
 
 ### Context

@@ -275,13 +275,16 @@ $$\begin{equation}\lim_{k\to \infty} \vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}
 As a corollary of this proposition we can show that $$\begin{equation}\lim_{k\to\infty}\ell_k=\lambda_1.\end{equation}$$
 
 
-Here's how:
+We next describe how to note this.
 
 
-Notice that if $$\vec{w}$$ is an eigenvector of $$A$$ with norm equal to $$1$$, such that $$A\vec{w}=\lamdba_1\vec{w}$$, then
+If $$\vec{w}$$ is an eigenvector of $$A$$ with norm equal to $$1$$, such that $$A\vec{w}=\lambda_1\vec{w}$$, then
 
-$$\begin{eqaution}\begin{split}\| \ell_k-\lambda_1\|&=\|\vec{u}_{k}^T A\vec{u}_{k} -\vec{w}^{T}A\vec{w}\|,\end{split}\end{equation}$$
-by the argument that we gave before the pseudocode,
+$$\begin{equation}\| \ell_k-\lambda_1\|&=\|\vec{u}_{k}^T A\vec{u}_{k} -\vec{w}^{T}A\vec{w}\|,\end{equation}$$
+
+which is an expression similar to the one that we saw in our auxiliary proposition. It should definitely be familiar.
+
+By the argument that we gave before the pseudocode,
 
 
  $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w}\text{ or }\lim_{k\to \infty}\vec{u}_{k}=-\vec{w}.\end{equation}$$
@@ -296,12 +299,20 @@ This is becasue $$\vec{w}\text{ and }-\vec{w}$$  are both eigenvectors of $$A$$ 
 $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w}.\end{equation}$$
 
 
-Indeed, if it were the case that $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=-\vec{w}\end{equation}$$, we can take simply say, $$\vec{q}:=-\vec{w}$$ and present all the ideas in terms of $$\vec{q}$$.
+Indeed, if it were the case that
 
-It should also be clear from the pseudocode that the sequence $$\{\vec{u}_k\}_{k\in \mathbb{N}}$$ is a sequence of unitary vectors,that is, $$ \|\vec{u}_k\|=1\text{ for all }k \in \mathbb{N}.$$
+ $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=-\vec{w},\end{equation}$$
+ 
+ 
+we can simply take $$\vec{q}:=-\vec{w}$$ and present all the ideas in terms of $$\vec{q}$$.
+
+It should also be clear from the pseudocode that the power iteration algorithm generates a sequence $$\{\vec{u}_k\}_{k\in \mathbb{N}}$$ of unitary vectors, that is, $$ \|\vec{u}_k\|=1\text{ for all }k \in \mathbb{N}.$$
 
 
-So notice that once we have that $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w},\end{equation}$$
+So notice that once we have that
+
+
+ $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w},\end{equation}$$
 
 
 then $$\begin{equation}\lim_{k\to \infty}A\vec{u}_{k}=A\vec{w}=\lambda_1\vec{w}.\end{equation}$$
@@ -310,6 +321,10 @@ then $$\begin{equation}\lim_{k\to \infty}A\vec{u}_{k}=A\vec{w}=\lambda_1\vec{w}.
 So by our auxiliary proposition, 
 
 $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}^{T}A\vec{u}_{k}=\vec{w}^{T}A\vec{w}=\lambda_1.\end{equation}$$
+
+
+And we are finished! Thank you for making it this far! I hope you enjoyed the argument, which involves many interesting ideas from linear algebra. 
+
 
 
 

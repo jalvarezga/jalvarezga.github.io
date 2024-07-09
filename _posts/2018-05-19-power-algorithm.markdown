@@ -228,18 +228,25 @@ Let $$\{\vec{a}_k\}_{k=1}^{\infty}$$ and $$\{\vec{b}_k\}_{k=1}^{\infty}$$ be two
 for some $$\vec{a}, \vec{b}\in \mathbb{R}^{n}$$.Then
 
 
- $$\begin{equation}\lim_{k\to\infty}\vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}\end{equation}$$
+ $$\begin{equation}\lim_{k\to\infty}\vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}.\end{equation}$$
 
 
 ### Proof
 
-
+We begin by applying the triangle inequality. 
 
 
 $$\begin{equation}
 \begin{split}
- \\vec{a}_{k}^{T}\vec{b}_k-\vec{a}^{T}\vec{b} |&=\|\vec{a}_{k}^{T}\vec{b}_{k}-\vec{a}_{k}^{T}\vec{b}+\vec{a}_{k}^{T}\vec{b}-\vec{a}^{T}\vec{b} \|\\
+\Big\|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}^{T}\vec{b} \Big\|&=\|\vec{a}_{k}^{T}\vec{b}_{k}-\vec{a}_{k}^{T}\vec{b}+\vec{a}_{k}^{T}\vec{b}-\vec{a}^{T}\vec{b} \|\\
  &\leq \|\vec{a}_{k}^{T}\vec{b}_{k}-\vec{a}_{k}^{T}\vec{b}\|+\|\vec{a}_{k}^{T}\vec{b}-\vec{a}^{T}\vec{b} \|\\
  &=\|\vec{a}_{k}^{T}(\vec{b}_{k}-\vec{b})\|+\|(\vec{a}_{k}-\vec{a}^{T})^{T}\vec{b} \|
 \end{split}\end{equation}$$
 
+Next we apply the Cauchy-Schwarz inequality
+
+
+$$\begin{equation}
+\begin{split}
+\|\vec{a}_{k}^{T}(\vec{b}_{k}-\vec{b})\|+\|(\vec{a}_{k}-\vec{a}^{T})^{T}\vec{b} \|&\leq 
+\end{split}\end{equation}$$

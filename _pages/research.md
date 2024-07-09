@@ -11,25 +11,26 @@ permalink: /research/
 
 ## This section is under development!!!
 
+- A distribution-free valid p-value for finite samples of bounded random variables (2024). [arXiv](https://arxiv.org/abs/2405.08975)   
+
+
+## This section is under development!!!
+
+
+
+
+
 I have an ever-increasing obsession with coffee. These are some of my favorite coffee shops.
 
 
 ![]({{ site.baseurl }}/images/coffee/hule.JPG)
 *Hule Records, CDMX.*
 
-
-![]({{ site.baseurl }}/images/coffee/niddo1.jpg)
-*Niddo, CDMX.*
-
 ![]({{ site.baseurl }}/images/coffee/niddo2.jpg)
 *Niddo, CDMX.*
 
 ![]({{ site.baseurl }}/images/coffee/hule2.jpg)
 *Hule Records, CDMX.*
-
-![]({{ site.baseurl }}/images/coffee/muss1.JPG)
-*Muss Cafe, Oax.*
-
 
 
 ### Videos
@@ -42,26 +43,7 @@ I have an ever-increasing obsession with coffee. These are some of my favorite c
 *Muss Cafe, Oax.*
 
 
-![]({{ site.baseurl }}/images/coffee/blueBottle1.png)
-*Blue Bottle, CA.*
 
-![]({{ site.baseurl }}/images/coffee/blueBottle2.png)
-*Blue Bottle, CA.*
-
-![]({{ site.baseurl }}/images/coffee/chiquitito1.jpg)
-*CHIQUITITO CAFE, CDMX.*
-
-![]({{ site.baseurl }}/images/coffee/chiquitito2.jpg)
-*CHIQUITITO CAFE, CDMX.*
-
-
-
-![]({{ site.baseurl }}/images/coffee/lacolombe1.jpg)
-*La Colombe, CA.*
-
-
-![]({{ site.baseurl }}/images/coffee/lacolombe2.jpg)
-*La Colombe, CA.*
 
 
 <!--- 

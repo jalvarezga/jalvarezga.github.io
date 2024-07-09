@@ -280,7 +280,7 @@ We next describe how to note this.
 
 If $$\vec{w}$$ is an eigenvector of $$A$$ with norm equal to $$1$$, such that $$A\vec{w}=\lambda_1\vec{w}$$, then
 
-$$\begin{equation}\| \ell_k-\lambda_1\|&=\|\vec{u}_{k}^T A\vec{u}_{k} -\vec{w}^{T}A\vec{w}\|,\end{equation}$$
+$$\begin{equation} \| \ell_k-\lambda_1\|=\|\vec{u}_{k}^T A\vec{u}_{k} -\vec{w}^{T}A\vec{w}\|,\end{equation}$$
 
 which is an expression similar to the one that we saw in our auxiliary proposition. It should definitely be familiar.
 
@@ -315,10 +315,13 @@ So notice that once we have that
  $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w},\end{equation}$$
 
 
-then $$\begin{equation}\lim_{k\to \infty}A\vec{u}_{k}=A\vec{w}=\lambda_1\vec{w}.\end{equation}$$
+then
 
 
-So by our auxiliary proposition, 
+ $$\begin{equation}\lim_{k\to \infty}A\vec{u}_{k}=A\vec{w}=\lambda_1\vec{w}.\end{equation}$$
+
+
+Therefore, by our auxiliary proposition,  we have that
 
 $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}^{T}A\vec{u}_{k}=\vec{w}^{T}A\vec{w}=\lambda_1.\end{equation}$$
 

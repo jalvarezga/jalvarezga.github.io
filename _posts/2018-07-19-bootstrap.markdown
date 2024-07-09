@@ -14,7 +14,11 @@ author: Joaquin
 
 ## The context of what we are doing to do
 
-The purpose is to illustrate the Bootstrap through an example. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the [ISLR](https://www.statlearning.com) book. 
+The purpose is to illustrate the Bootstrap. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the [ISLR](https://www.statlearning.com) book. We will provide some additional code and visialization tools associated to such example.
+
+
+
+### Motivating the boostrap through a hands-on example
 
 Suppose we want to invest in two different stocks in the market. We have access to historical data of the daily returns (joint returns) of those two assets, $$(X_i,Y_i) \stackrel{i.i.d.}{\sim} \mathbb{P}_{X,Y},\quad i=1,\dots,n$$. $$\mathbb{P}_{X,Y}$$ denotes a joint probability distribution. For simplicity, and for the purposes of understanding how the bootstrap works, we assume that these observations are independent and identically distributed (i.i.d.). We are going to allocate a proportion of $$\alpha\in (0,1)$$ of our total investing budget to the stock $$X$$ and the rest ($$1-\alpha$$) to the asset $$Y$$. We want to make the allocation in such a way that we minimize the variance of the return of the portfolio.
 

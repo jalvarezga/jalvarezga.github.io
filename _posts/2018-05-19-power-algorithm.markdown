@@ -13,9 +13,12 @@ author: Joaquin
 </script>
 
 
-## By courtesy of [Juan Carlos Aguilar](https://facultad.itam.mx/en/facultad/juan-carlos-aguilar-villegas) 's Numerical Calculus course at ITAM.
+# By courtesy of [Juan Carlos Aguilar](https://facultad.itam.mx/en/facultad/juan-carlos-aguilar-villegas) 's Numerical Calculus course at ITAM.
 
-This is the first project that I did using LaTeX! I find LaTeX to be a beautiful and elegant form of writting scientific articles. The power iteration algorithm is one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. Let us describe the algorithm with an adequate context and an argument showing what it does and why it works.
+
+## Context and summary of this blog post
+
+This is the first project that I did using LaTeX! The power iteration algorithm is one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. In this post we will describe the algorithm with an adequate context and an argument showing what it does and why it works.
 
 
 

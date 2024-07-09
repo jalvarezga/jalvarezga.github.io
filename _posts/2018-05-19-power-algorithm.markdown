@@ -260,7 +260,7 @@ Now, since $$\{\vec{a}_k\}_{k=1}^{\infty}$$ converges, then it is bounded. On th
 
  $$\begin{equation} \lim_{k\to \infty}\|\vec{b}_{k}-\vec{b}\|=0\text{ and } \lim_{k\to \infty} \|\vec{a}_{k}-\vec{a}\|=0.\end{equation}$$
 
-With this we can conclude that 
+With this we can conclude (using the Squeeze theorem) that 
 
 
 $$\begin{equation}\lim_{k\to \infty} \Big\|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}^{T}\vec{b} \Big\| =0.\end{equation}$$
@@ -270,3 +270,46 @@ This is equivalent to our desired result:
 
 
 $$\begin{equation}\lim_{k\to \infty} \vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}.\blacksquare \end{equation}$$ 
+
+
+As a corollary of this proposition we can show that $$\begin{equation}\lim_{k\to\infty}\ell_k=\lambda_1.\end{equation}$$
+
+
+Here's how:
+
+
+Notice that if $$\vec{w}$$ is an eigenvector of $$A$$ with norm equal to $$1$$, such that $$A\vec{w}=\lamdba_1\vec{w}$$, then
+
+$$\begin{eqaution}\begin{split}\| \ell_k-\lambda_1\|&=\|\vec{u}_{k}^T A\vec{u}_{k} -\vec{w}^{T}A\vec{w}\|,\end{split}\end{equation}$$
+by the argument that we gave before the pseudocode,
+
+
+ $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w}\text{ or }\lim_{k\to \infty}\vec{u}_{k}=-\vec{w}.\end{equation}$$
+
+
+
+
+
+This is becasue $$\vec{w}\text{ and }-\vec{w}$$  are both eigenvectors of $$A$$ of norm $$1$$ such that their corresponding eigenvalue is $$\lambda_1$$. Without loss of generality we assume that 
+
+
+$$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w}.\end{equation}$$
+
+
+Indeed, if it were the case that $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=-\vec{w}\end{equation}$$, we can take simply say, $$\vec{q}:=-\vec{w}$$ and present all the ideas in terms of $$\vec{q}$$.
+
+It should also be clear from the pseudocode that the sequence $$\{\vec{u}_k\}_{k\in \mathbb{N}}$$ is a sequence of unitary vectors,that is, $$ \|\vec{u}_k\|=1\text{ for all }k \in \mathbb{N}.$$
+
+
+So notice that once we have that $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}=\vec{w},\end{equation}$$
+
+
+then $$\begin{equation}\lim_{k\to \infty}A\vec{u}_{k}=A\vec{w}=\lambda_1\vec{w}.\end{equation}$$
+
+
+So by our auxiliary proposition, 
+
+$$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}^{T}A\vec{u}_{k}=\vec{w}^{T}A\vec{w}=\lambda_1.\end{equation}$$
+
+
+

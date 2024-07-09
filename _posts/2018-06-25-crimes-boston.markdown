@@ -26,7 +26,7 @@ This is joint work with my colleagues Diego Velazquez and Marcelino Sanchez.
 
 
 
-<small><span style="color: red"> This is a summary of the a project work for the course Advanced Regression Analysis. In this blog post we will provide a general description of the project and our main findings without diving into the details.</span></small>
+<small><span style="color: red"> This is a summary of a project work for the course Advanced Regression Analysis. In this blog post we will provide a general description of the project and our main findings without diving into the details.</span></small>
 
 
 ### Context

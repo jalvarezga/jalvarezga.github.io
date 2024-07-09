@@ -221,12 +221,21 @@ We will show that $$\lim_{k\to\infty}\ell_k=\lambda_1$$. We need some auxiliary 
 Firstly, consider the following proposition.
 
 ## Proposition
-Let $$\{\vec{a}_k\}_{k=1}^{\infty}$$ and $$\{\vec{b}_k\}_{k=1}^{\infty}$$ be two sequences of vectors in $$\mathbb{R}^{n}$$ such that $$\lim_{k\to \infty}\vec{a}_k=\vec{a}$$ and $$\lim_{k\to \infty}\vec{b}_k=\vec{b}$$  for some $$\vec{a}, \vec{b}\in \mathbb{R}^{n}$$.
-Then $$\begin{equation}\lim_{k\to\infty}\vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}\end{equation}$$
+Let $$\{\vec{a}_k\}_{k=1}^{\infty}$$ and $$\{\vec{b}_k\}_{k=1}^{\infty}$$ be two sequences of vectors in $$\mathbb{R}^{n}$$ such that $$\begin{equation}\lim_{k\to \infty}\vec{a}_k=\vec{a} \text{ and }\lim_{k\to \infty}\vec{b}_k=\vec{b}\end{equation}$$  for some $$\vec{a}, \vec{b}\in \mathbb{R}^{n}$$.
+Then
+
+
+ $$\begin{equation}\lim_{k\to\infty}\vec{a}_{k}^{T}\vec{b}_k=\vec{a}^{T}\vec{b}\end{equation}$$
 
 
 ### Proof
 
 
-$$ \|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}_{k}\vec{b} \|=\|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}_{k}\vec{b}+\vec{a}_{k}\vec{b}-\vec{a}_{k}\vec{b} \|$$
+
+
+$$\begin{equation}
+\begin{split}
+ \|\vec{a}_{k}^{T}\vec{b}_k-\vec{a}\vec{b} \|&=\|\vec{a}_{k}^{T}\vec{b}_{k}-\vec{a}_{k}\vec{b}+\vec{a}_{k}\vec{b}-\vec{a}\vec{b} \|\\
+ &\leq \|\vec{a}_{k}^{T}\vec{b}_{k}-\vec{a}_{k}\vec{b}\|+\|\vec{a}_{k}\vec{b}-\vec{a}\vec{b} \|
+\end{split}\end{equation}$$
 

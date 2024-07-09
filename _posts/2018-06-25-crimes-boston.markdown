@@ -76,7 +76,7 @@ These two variables have a correlation of -0.15969. Though not quite strong, it 
 
 These two variables are strongly correlated, they actually have a correlation of 0.61378.
 
-We could explore further this kind of relationships, are even prresent a correlation matrix, which we included in the original work as part of the exploratory data analysis.
+We could explore further this approach, or even a correlation matrix, which we included in the original work as part of the exploratory data analysis. But this is only a brief summary of the work to keep it documented in an ordered and aesthetic manner. 
 
 
 Here's a list of some of the variables that we considered for the second model that we used:
@@ -272,7 +272,9 @@ $$X_{8,i}=$$metroTren: percentage of people in the neighborhood $$i$$ whose main
 
 
 
-This model had a similar performance as the Model 1 with the predictions for neighborhoods that we didn't use during training as well as with predictions with the training dataset. As it can be observed in the summary tables however, the Model 2 had smaller intervals, which makes it better in  that criteria. We don't preseent the infernce for the coefficients associated to each variable, however we should emphasize tha some variables were not significant at the $$5\%$$ level. For this reasoin we implemented a third model excluding the variables that were not significant at the $$5\%$$ level, and incorporating the education index that we created with PCA. This third model had a similar performance to the Model 2, having the advantage of being more parsimonious due to the fact that it had less variables. With respect to the variables that had a a considerable predictive capactity  (significant at the $$5\%$$ level) with Model 2, we obtained the percentage of afroamerican people in the district and the annual income oper capita in the district. 
+This model had a similar performance as the Model 1 with the predictions for neighborhoods that we didn't use during training as well as with predictions with the training dataset. As it can be observed in the summary tables however, the Model 2 had smaller intervals, which makes it better in that criteria. We don't preseent the inference for the coefficients associated to each variable, however we should emphasize tha some variables were not significant at the $$5\%$$ level. For this reason we implemented a third model excluding the variables that were not significant at the $$5\%$$ level, and incorporating the education index that we created with PCA. This third model had a similar performance to the Model 2, having the advantage of being more parsimonious due to the fact that it had less variables. With respect to the variables that had a considerable predictive capactity (significant at the $$5\%$$ level) with Model 2, we obtained the annual income oper capita has a strong significance. 
+
+
 
 
 

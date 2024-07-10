@@ -3,7 +3,7 @@ layout: post
 title:  Power iteration algorithm
 date:   2021-01-19 15:01:35 +0300
 image:  09.jpg
-tags:   Blog
+#tags:   Blog
 author: Joaquin
 ---
 

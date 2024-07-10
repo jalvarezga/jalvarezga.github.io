@@ -3,7 +3,7 @@ layout: post
 title:  Simulation with the Bootstrap
 date:   2022-06-19 15:01:35 +0300
 image:  violinPlot.png
-tags:   Blog
+#tags:   Blog
 author: Joaquin
 ---
 <script

@@ -14,7 +14,7 @@ author: Joaquin
 
 ## The context of what we are doing to do
 
-The purpose is to illustrate the Bootstrap. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the [ISLR](https://www.statlearning.com) book. We will provide some additional code and visialization tools associated to such example.
+The purpose is to illustrate the Bootstrap. This is a very powerful and useful technique with many applications. In order to develop the idea behind the method, we are going to make use of a motivation presented in the [ISLR](https://www.statlearning.com) book. We will provide some additional code and visualization tools associated to such example.
 
 
 

@@ -25,12 +25,12 @@ This is joint work with my colleagues Diego Velazquez and Marcelino Sanchez.
 
 
 
-<small><span style="color: red"> This is a summary of a project work for the course Advanced Regression Analysis. In this blog post we will provide a general description of the project and our main findings without diving into the details. It is a natural extension to the project where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data</span></small>
+<small><span style="color: red"> This is a summary of a project work for the Advanced Regression Analysis course at ITAM. In this blog post we will provide a general description of the project and our main findings without diving into the details. It is a natural extension to the project where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data</span></small>
 
 
 ### Context
 
-The government of the City of Boston runs a very modern approach focused on a data culture to monitor and improve the quality of life in the city and it has available [open data](https://data.boston.gov/) website which offers gathered infomration by Boston's Police Department about crimes happening in the city. Anlayze Boston also reports census data for Boston's districts, containg detailed information about Boston's depographic characteristics.  Among other things, this site offers information about the kind of crime, location and time in which the crime happened.
+The government of the City of Boston runs a very modern approach focused on a data culture to monitor and improve the quality of life in the city and it has available [open data](https://data.boston.gov/) website which offers data gathered by the Boston's Police Department about crimes happening in the city. Anlayze Boston also reports census data for Boston's districts, containg detailed information about Boston's depographic characteristics.  Among other things, this site offers information about the kind of crime, location and time in which the crime happened.
 
 
 ![]({{ site.baseurl }}/images/boston/cover.png)

@@ -20,7 +20,7 @@ In this blog post you can find a summary of our project where we used linear reg
 
 ## Context
 
-The NYC subway system (which is administrated by the Metropolitan Transportation Authority, also known as the MTA) publishes data from the usage of the services that it provides, which can be accessed [here](https://new.mta.info/open-data) or [here](https://opendata.cityofnewyork.us/). We used this data to determine how the subway usage patterns changed throughout the city due to the global pandemic. We built regression models which predict the the usage decline per neighborhood. Indeed, as you might expect, the pandemic caused a huge decline in the subway rides across all New York City. 
+The NYC subway system (which is administrated by the Metropolitan Transportation Authority, also known as the MTA) publishes data from the usage of the services that it provides, which can be accessed [here](https://new.mta.info/open-data) or [here](https://opendata.cityofnewyork.us/). We used this data to determine how the subway traffic patterns changed throughout the city due to the global pandemic. We built regression models which predict the the usage decline per neighborhood. Indeed, as you might expect, the pandemic caused a huge decline in the subway rides across all New York City. The government of the City of New York has a data culture which allows us to undertand the city beyond conventional ways. We take advantage of this situation to get a deeper understanding of the relationship between the metro traffic and the demographic characteristics of the neighborhoods in NYC.
 
 
 

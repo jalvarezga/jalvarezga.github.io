@@ -26,7 +26,7 @@ The NYC subway system (which is administrated by the Metropolitan Transportation
 
 ## Data analysis
 
-Our data is divided by neighborhoods in NYC. We have  access to the daily rides in each of the metro stations in the city. We compared the average number of daily rides in each station between 2019 and 2020, and grouped each station to the neighborhood that they belong. We obtained a decline percentage by comparing the average daily metro rides in each neighborhood in 2019 and 2020. This is the response variable, which we refer to as $$var_res$$. 
+Our data is divided by neighborhoods in NYC. We have  access to the daily rides in each of the metro stations in the city. We compared the average number of daily rides in each station between 2019 and 2020, and grouped each station to the neighborhood that they belong. We obtained a decline percentage by comparing the average daily metro rides in each neighborhood in 2019 and 2020. This is the response variable, which we refer to as $$\textbf{var_res}$$. 
 
 ![]({{ site.baseurl }}/images/nyc_subway/nycSections.png)
 *Map of NYC divided by neighborhoods in the city's boroughs excluding Staten Island.*
@@ -146,7 +146,7 @@ $$\begin{equation}\mathbf{\hat{\beta}}=(X'X)^{-1}X'\textbf{Y},\end{equation}$$
 
 where $$X$$ is the design matrix and $$\textbf{Y}$$ is the vector containing the response variables.
 
-Notice that the existence of such estimator requires the matrix $$X'X$$ to be invertible. In order to guarantee the invertibility of $$X'X$$ we need the matrix $$X$$ to have a full rank, that is, all the columns in $$X$$ should be linearly independent. Whenever two explanatory variables are strongly correlated or any predictive varaible has low variance, this can induce numerical problems when trying to determine the inverse matrix $$X'X$$. This is why we consider the exploratory data analysis to be an imporatnt part of our project. It is also important to validate the assumptions of the model, for example, the constant variance in the errors assumption, also known as homoscedasticity. This is something that we also considered when building our linear models.
+Notice that the existence of such estimator requires the matrix $$X'X$$ to be invertible. In order to guarantee the invertibility of $$X'X$$ we need the matrix $$X$$ to have a full rank, that is, all the columns in $$X$$ should be linearly independent. Whenever two explanatory variables are strongly correlated or any predictive variable has low variance, this can induce numerical problems when trying to determine the inverse matrix $$X'X$$. This is why we consider the exploratory data analysis to be an imporatnt part of our project. It is also important to validate the assumptions of the model, for example, the constant variance in the errors assumption, also known as homoscedasticity. This is something that we also considered when building our linear models.
 
 
 

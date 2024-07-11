@@ -26,7 +26,7 @@ The NYC subway system (which is administrated by the Metropolitan Transportation
 
 ## Data analysis
 
-Our data is divided by neighborhoods in NYC. We have  access to the daily rides in each of the metro stations in the city. We compared the average number of daily rides in each station between 2019 and 2020, and grouped each station to the neighborhood that they belong. We obtained a decline percentage by comparing the average daily metro rides in each neighborhood in 2019 and 2020. This is the response variable. 
+Our data is divided by neighborhoods in NYC. We have  access to the daily rides in each of the metro stations in the city. We compared the average number of daily rides in each station between 2019 and 2020, and grouped each station to the neighborhood that they belong. We obtained a decline percentage by comparing the average daily metro rides in each neighborhood in 2019 and 2020. This is the response variable, which we refer to as $$var_res$$. 
 
 ![]({{ site.baseurl }}/images/nyc_subway/nycSections.png)
 *Map of NYC divided by neighborhoods in the city's boroughs excluding Staten Island.*
@@ -63,7 +63,7 @@ We take distict and neighborhood as synonyms throughout the desctiption of the f
 
 - $$\textbf{born_nys}:$$ percentage of the population on the neighborhood who were born in NYC. By definitition,  this variable takes values in $$[0,100]$$. 
 
-- $$\textbf{prc_car_free}$$: percentage of living places in the neighborhood that do not have a car.porcentaje viviendas en el vecindario que no cuentan con un automóvil. Takes values in $$[0,100]$$.
+- $$\textbf{prc_car_free}$$: percentage of living places in the neighborhood that do not have a car. Takes values in $$[0,100]$$.
 
  - $$\textbf{disabled_pop}$$: percentage of the population in the distirct who have certain 
 disability.
@@ -91,9 +91,6 @@ disability.
 
 
 - $$\textbf{public_housing_prc}$$: percentage of living places which are subsidized by the NY government.
-
-
-- $$\textbf{houses_subway}$$: percentage of living places in the neighborhood such that they have a metro station within 12 miles or less.
 
 - $$\textbf{houses_park}$$: percentage of living units in the neighborhood that have a park 14 miles or closer.
 
@@ -124,7 +121,7 @@ We randomly selected 15% of the neighborhoods and kept them to test the model. W
 
 We implemented a classic regression model of the following form:
 
-$$Y_i=\beta_0+\beta_{1}X_{1i}+\dots\beta_{p-1}X_{p-1,i}+\epsilon_{i}\quad,$$
+$$Y_i=\beta_0+\beta_{1}X_{1,i}+\dots\beta_{p-1}X_{p-1,i}+\epsilon_{i}\quad,$$
 
 
 
@@ -142,29 +139,15 @@ $$\begin{equation}\mathbf{\beta}:=\begin{bmatrix}
            \beta_{p-1}
          \end{bmatrix},\end{equation}$$
 
-$$\mathbf{\beta}$$ is the vector of unknown coefficients; additionally we assume that the explanatory variables are knon constants for each $$i$$.
+$$\mathbf{\beta}$$ is the vector of unknown coefficients; additionally we assume that the explanatory variables are not constant for each $$i$$.
 On the other hand, the least squares estimator of $$\mathbf{\beta}$$ for the multiple regression model has the form
 
 $$\begin{equation}\mathbf{\hat{\beta}}=(X'X)^{-1}X'\textbf{Y},\end{equation}$$
 
 where $$X$$ is the design matrix and $$\textbf{Y}$$ is the vector containing the response variables.
 
-Notice that the existence of such estimator requires that the matrix $$X'X$$ is invertible.
+Notice that the existence of such estimator requires the matrix $$X'X$$ to be invertible. In order to guarantee the invertibility of $$X'X$$ we need the matrix $$X$$ to have a full rank, that is, all the columns in $$X$$ should be linearly independent. Whenever two explanatory variables are strongly correlated or any predictive varaible has low variance, this can induce numerical problems when trying to determine the inverse matrix $$X'X$$. This is why we consider the exploratory data analysis to be an imporatnt part of our project. It is also important to validate the assumptions of the model, for example, the constant variance in the errors assumption, also known as homoscedasticity. This is something that we also considered when building our linear models.
 
-
-
-
-
-
-
- Como podemos notar, la existencia de este estimador requiere que la matriz $X'X$ tenga inversa. Para garantizar invertibilidad, es necesario que la matriz de diseño, $X$, tenga rango completo, es decir, que sus columnas sean linealmente independientes. Por ejemplo, si una variable tiene muy poca varianza relativa a la magnitud de la variable, entonces es posible que su correspondiente columna en la matriz de diseño resulte linealmente dependiente de la primera columna de X, en cuyo caso el estimador de mínimos cuadrados no estaría definido. Otro posible problema sería que dos variables estén fuertemente correlacionadas entre sí, digamos, con correlación en valor absoluto mayor a $0.8$, lo cual daría lugar a inestabilidad en las operaciones numéricas para invertir $X'X$, debido a que $X$ tendría dos columnas (casi) linealmente dependientes. \\ 
-
-Es por esta razón que es fundamental hacer un análisis exploratorio de las variables que se utlizarán para consturir el modelo de regresión lineal múltiple. Lo cual motiva la necesidad de familiarizarnos con las variables explicativas que usaremos, para así detectar este tipo de problemas y poder comprender a mayor profundidad su naturaleza de manera previa al modelaje. 
-
-
-
-
-Finalmente, consideramos pertinente aclarar que en la siguiente sección se hacen algunos comentarios sobre las posibles razones detrás de la relación entre la variable de respuesta y las variables explicativas analizadas. Queremos recalcar que correlación no implica causalidad, y por lo mismo las ideas presentadas a continuación no deben de tomarse como afirmaciones de hechos causales, sino como posibles interpretaciones basadas en nuestro propio criterio de análisis. 
 
 
 

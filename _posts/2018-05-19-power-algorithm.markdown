@@ -326,8 +326,44 @@ Therefore, by our auxiliary proposition,  we have that
 $$\begin{equation}\lim_{k\to \infty}\vec{u}_{k}^{T}A\vec{u}_{k}=\vec{w}^{T}A\vec{w}=\lambda_1.\end{equation}$$
 
 
-And we are finished! Thank you for making it this far! I hope you enjoyed the argument, which involves many interesting ideas from linear algebra. 
+And we are finished! Thank you for making it this far! I hope you enjoyed the argument, which involves many interesting ideas from linear algebra.
 
 
 
 
+
+
+## Code in Python
+
+
+We present an implementation of some iterations of the algorithm. Only for practical purposes and to get a better hands-on understanding. Perhaps not the most efficient implementation. But it should be helpful to improve the understanding of the algorithm.
+
+{% highlight python%}
+def plotConvergence(N,C, u_0):
+    #N is the number of iterations that we wish to make
+    #u_0 the initial vector
+    #C is the matrix
+    iterations=list(range(1,N+1))
+    print(iterations)
+    convergence=[]
+    for i in range(N):
+        u_0=np.dot(C,u_0)/np.linalg.norm(np.dot(C,u_0))
+        l=np.dot(np.dot(u_0.transpose(),C),u_0)
+        #print(l)#if we want to debug or see the generated sequence
+        convergence.append(l[0])
+    # Plotting
+    plt.rcParams.update({'font.size': 12})
+    plt.figure(figsize=(10, 6))
+    plt.plot(iterations, convergence, label=r'Trajectory of $\ell_k$', linewidth=2.5)
+    plt.axhline(y = max(abs(np.linalg.eig(C)[0])), color = 'r', linestyle = '--', label=r'$\lambda_1$') # this works properly assuming that the dominant eigenvalue is positive
+    plt.xlabel('Iteration', fontsize='large')  # Using LaTeX notation for xlabel
+    plt.ylabel(r'Value of $\ell_k$', fontsize='large')  # Using LaTeX notation for ylabel
+    plt.legend(title='Convergence to the dominant eigenvalue', fontsize='large', title_fontsize='large')
+    plt.xlim(1, N)
+    plt.ylim(0, 10)
+    plt.xticks(fontsize='large', ticks=[i for i in range(N+1)])
+    plt.yticks(fontsize='large', ticks=[i for i in range(0,10)])# may need to adjust this for better visualization depending on the case
+    plt.grid(False)
+    plt.show()
+
+{% endhighlight %}

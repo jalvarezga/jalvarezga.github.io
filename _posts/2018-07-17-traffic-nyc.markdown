@@ -26,17 +26,17 @@ The NYC subway system (which is administrated by the Metropolitan Transportation
 
 ## Data analysis
 
+Our data is divided by neighborhoods in NYC. We have  access to the daily rides in each of the metro stations in the city. We compared the average number of daily rides in each station between 2019 and 2020, and grouped each station to the neighborhood that they belong. We obtained a decline percentage by comparing the average daily metro rides in each neighborhood in 2019 and 2020. This is the response variable. 
+
 ![]({{ site.baseurl }}/images/nyc_subway/nycSections.png)
 *Map of NYC divided by neighborhoods in the city's boroughs excluding Staten Island.*
 
 
-
-
 ![]({{ site.baseurl }}/images/nyc_subway/mapa_calor_res.png)
 *Heat map of the change in the use of the subway system after the pandemic.*
+We can appreciate that the neighborhood that experienced the greatest decline in the average metro usage was the Financial District of NYC, which is located at the southern tip of Manhattan. Comparing 2019 and 2020, the average daily metro usage was reduced in more than 80%.
 
-
-
+We considered many explanatory variables and we did a deep data analysis. Here we only present a brief picture of such analysis to summarize the project.
 
 ![]({{ site.baseurl }}/images/nyc_subway/work_travel_time.png)
 *Average time to work (in minutes) for people in each neighborhood in relation to the response variable.*
@@ -59,7 +59,7 @@ We can see that on average, the subway use got reduced the most in Manhattan. Qu
 
 
 ### Variables
-We take distict and neighborhood as synonyms throughout the desctiption of the feature variables (predictive variables).
+We take distict and neighborhood as synonyms throughout the desctiption of the feature variables (predictive variables). These are some of the variables that we had in the data.
 
 - $$\textbf{born_nys}:$$ percentage of the population on the neighborhood who were born in NYC. By definitition,  this variable takes values in $$[0,100]$$. 
 
@@ -80,14 +80,6 @@ disability.
 
 
 - $$\textbf{income}$$: average anual income for a peron in the district (reported in terms of 2020 us dollars).
-
-- $$\textbf{prc_asian}$$: percentage of the population in the district who are asian.
-
-- $$ \textbf{prc_hispanic}$$: percentage of hispanic people living in the neighborhood.
-
-- $$\textbf{prc_black}$$: percentage of african-american people living in the district.
-
-- $$\textbf{prc_white}$$: percentage of white people living in the district.
 
 - $$\textbf{population}$$: number of people living in the district.
 
@@ -113,7 +105,7 @@ disability.
 - $$\textbf{income_cat}$$: this a categorical version of the variable $$\textbf{income}$$. It is divided into 4 categories according to income thresholds that we fixed. It is divided into: low, medium, medium-high, and high income. 
 To choose the thresholds we used the quantiles of the income variable: the first quantile US $$\$49,460$$ ,  the median of $$\$57,680$$ usd and the third quantile of $$\$71,920$$usd.
 
-- $$\textbf{zones}$$: Categorical variable dividinf the neighborhoods according to their location:
+- $$\textbf{zones}$$: Categorical variable dividing the neighborhoods according to their location:
 Bronx, Brooklyn, Manhattan and Queens. 
 
 

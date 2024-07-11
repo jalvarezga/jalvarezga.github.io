@@ -2,7 +2,7 @@
 layout: post
 title:  Power iteration algorithm
 date:   2021-01-19 15:01:35 +0300
-image:  09.jpg
+image:  power_algorithm.png
 #tags:   Blog
 author: Joaquin
 ---
@@ -18,7 +18,7 @@ author: Joaquin
 
 ## Context and summary of this blog post
 
-This is the first project that I did using LaTeX! The power iteration algorithm is one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. In this post we will describe the algorithm with an adequate context and an argument showing what it does and why it works.
+This is the first project that I did using LaTeX! The power iteration algorithm is one of the algorithms that I enjoyed most during my undergraduate studies. I believe that it is elegant and simple. In this post we will describe the algorithm with an adequate context and an argument showing what it does and why it works. At the end we include some code in Python so that you can get even more familiarized with the algorithm.
 
 
 
@@ -339,6 +339,8 @@ And we are finished! Thank you for making it this far! I hope you enjoyed the ar
 We present an implementation of some iterations of the algorithm. Only for practical purposes and to get a better hands-on understanding. Perhaps not the most efficient implementation. But it should be helpful to improve the understanding of the algorithm.
 
 {% highlight python%}
+import numpy as np
+from matplotlib import pyplot as plt #necessary libraries
 def plotConvergence(N,C, u_0):
     #N is the number of iterations that we wish to make
     #u_0 the initial vector
@@ -365,5 +367,22 @@ def plotConvergence(N,C, u_0):
     plt.yticks(fontsize='large', ticks=[i for i in range(0,10)])# may need to adjust this for better visualization depending on the case
     plt.grid(False)
     plt.show()
-
 {% endhighlight %}
+As an example to try the plot function consider
+
+{% highlight python%}
+#defining a matrix
+B=np.array([[-1,-19,-4],[0,-2,0],[0,15,3]])
+print(B)
+print(B.shape)
+print(np.linalg.eig(B))
+#eigenvalues of B are -1,3, and 2. So our algorithm should approximate to 3.
+plotConvergence(20,B, np.array([[1],[1],[1]]))
+{% endhighlight %}
+You should obtain the following plot:
+
+
+
+
+![]({{ site.baseurl }}/images/power_algorithm.png)
+*Iterations of the power iteration algorithm generating a sequence that converges to the dominant eigenvalue.*

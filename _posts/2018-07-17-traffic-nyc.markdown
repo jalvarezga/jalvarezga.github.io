@@ -16,7 +16,7 @@ image:  nycSubwayMap.png
 
 <span style="color: red"> This is joint work with Julieta Rivero and Rodrigo Villela.</span>
 
-In this blog post you can find a summary of our project where we used linear regression models to make predictions with real-world data. 
+In this blog post you can find a summary of our project at ITAM where we used linear regression models to make predictions with real-world data. 
 
 ## Context
 

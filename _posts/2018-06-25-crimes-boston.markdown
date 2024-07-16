@@ -25,7 +25,7 @@ This is joint work with my colleagues Diego Velazquez and Marcelino Sanchez.
 
 
 
-<small><span style="color: red"> This is a summary of a project work for the Advanced Regression Analysis course at ITAM. In this blog post we will provide a general description of the project and our main findings without diving into the details. It is a natural extension to the project where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data</span></small>
+<small><span style="color: red"> This is a summary of a project work for the Advanced Regression Analysis course at ITAM. In this blog post we will provide a general description of the project and our main findings without diving into the details. It is a natural extension to the project where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data.</span></small>
 
 
 ### Context
@@ -262,7 +262,7 @@ where the $$X_{k,i}'$$ is the $$k-$$th demographic characteristic of the distric
 
 $$X_{1,i}=$$percentageUndergrads:  percentage of people in the district $$i$$ that have an undergraduate degree.
 
-$$X_{2,i}=$$ percentageMasters:porcentage of people in the district $$i$$ that hold a masters degree.
+$$X_{2,i}=$$ percentageMasters:percentage of people in the district $$i$$ that hold a masters degree.
 
 $$X_{7,i}=$$incomePerCapita: average annual income per person in the neighborhood $$i$$.
 

@@ -7,29 +7,7 @@ permalink: /research/
 
 
 
-
-
-## This section is under development!!!
-
 - J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [arXiv](https://arxiv.org/abs/2405.08975)   
-
-
-## This section is under development!!!
-
-
-
-
-
-I have an ever-increasing obsession with coffee. These are some of my favorite coffee shops.
-
-
-![]({{ site.baseurl }}/images/coffee/hule2.jpg)
-*Hule Records, CDMX.*
-
-
-#### Videos
-
-<iframe src="https://www.youtube.com/embed/iWowJBRMtpc" frameborder="0" allowfullscreen></iframe>
 
 
 

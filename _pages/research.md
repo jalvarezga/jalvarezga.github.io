@@ -12,12 +12,16 @@ permalink: /research/
 
 
 
-
-
 <div class="video-container">
-  <iframe width="560" height="315" src="https://youtu.be/DrO3UvC0y3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DrO3UvC0y3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <p class="video-caption">Magnitude-based pruning in action.</p>
 </div>
+
+
+
+
+
+
 
 
 

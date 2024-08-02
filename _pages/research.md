@@ -12,9 +12,10 @@ permalink: /research/
 
 
 
-
-
-
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nql000Lu_iE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p class="video-caption">Heroes.</p>
+</div>
 <!--- 
 <small>Photo by courtesy of [Allan Rodrigues](https://unsplash.com/@rodriguesallan).</small>!-->
 

@@ -1,0 +1,20 @@
+---
+layout: post
+title:  Trieste neuroscience workshop
+date:   2024-07-19 15:01:35 +0300
+image:  Junior_Scientists_Workshop.jpeg
+#tags:   Blog
+author: Joaquin
+---
+
+
+## An amazing experience to attend the neuroscience workshop! I've been fascinated to discover so many connections between how the human brain learns and how mahcines learn.
+
+I was impressed by the talent and dedication of so many researchers.
+
+
+![]({{ site.baseurl }}/images/Junior_Scientists_Workshop.jpeg)
+
+
+
+

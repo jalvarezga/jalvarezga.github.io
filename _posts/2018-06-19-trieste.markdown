@@ -8,9 +8,9 @@ author: Joaquin
 ---
 
 
-## An amazing experience to attend the neuroscience workshop! I've been fascinated to discover so many connections between how the human brain learns and how mahcines learn.
+## An amazing experience to attend the neuroscience workshop! I've been fascinated to discover so many connections between how the human brain learns and how machines learn.
 
-I was impressed by the talent and dedication of so many researchers.
+I was impressed by the talent and dedication of so many researchers. People were very kind and there were so many interesting talks.
 
 
 ![]({{ site.baseurl }}/images/Junior_Scientists_Workshop.jpeg)

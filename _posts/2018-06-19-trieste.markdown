@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Trieste neuroscience workshop
+title:  Neuroscience workshop in Trieste
 date:   2024-07-19 15:01:35 +0300
 image:  Junior_Scientists_Workshop.jpeg
 #tags:   Blog

@@ -12,12 +12,19 @@ permalink: /research/
 
 
 
+
+
+## Complementary material and animations
+
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DrO3UvC0y3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <p class="video-caption">Magnitude-based pruning in action.</p>
 </div>
 
-
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/xRQMBpzK9Zs?feature=share" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p class="video-caption">Confident magnitude-based pruning image segmentation example.</p>
+</div>
 
 
 

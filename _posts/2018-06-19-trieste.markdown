@@ -8,9 +8,9 @@ author: Joaquin
 ---
 
 
-## What an amazing experience to attend the neuroscience workshop! I've been fascinated to discover so many connections between how the human brain learns and how machines learn.
+## It was an amazing experience to attend to the neuroscience workshop! I've been fascinated to discover connections between how the human brain learns and how machines learn.
 
-I was impressed by the talent and dedication of so many researchers. People were very kind and there were so many interesting talks.
+I was impressed by the talent and dedication of so many researchers. People were very kind and there were so many interesting talks. Trieste is an incredible place. I loved the environement of the workshop, and the diversity of the people who were there. Hope I can engage in more experiences like this one.
 
 
 ![]({{ site.baseurl }}/images/Junior_Scientists_Workshop.jpeg)

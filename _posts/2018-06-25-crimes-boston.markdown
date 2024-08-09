@@ -115,7 +115,7 @@ metroTren: percentage of people in the neighborhood whose main transport is the 
 *Red points are district centroids. Light blue points are locations where a crime occured.*
 
 ![]({{ site.baseurl }}/images/boston/crimesByDistrict.png)
-*A satellite image of Boston whith crime points stratified by neighborhood. The points are spread throughout almost all of the city.*
+*A satellite image of Boston with crime points stratified by neighborhood. The points are spread throughout almost all of the city.*
 
 
 

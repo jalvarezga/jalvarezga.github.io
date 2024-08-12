@@ -9,7 +9,7 @@ permalink: /research/
 
 - J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [arXiv](https://arxiv.org/abs/2405.08975)   
 
-
+- J. Alvarez. Confident magnitude-based neural network pruning. 2024. [arXiv](https://arxiv.org/abs/2408.04759)
 
 
 
@@ -18,7 +18,7 @@ permalink: /research/
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DrO3UvC0y3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p class="video-caption">Magnitude-based pruning in action.</p>
+  <p class="video-caption">Magnitude-based pruning in action. By inducing sparsity we can visualize that the magnitude of the weights in the corner are zeroed fasater, capturing the visual attention at the center of the images in the MNIST dataset.</p>
 </div>
 
 <div class="video-container">

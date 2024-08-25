@@ -7,9 +7,9 @@ permalink: /research/
 
 
 
-- J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [arXiv](https://arxiv.org/abs/2405.08975)   
+- J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [[arXiv](https://arxiv.org/abs/2405.08975)]   
 
-- J. Alvarez. Confident magnitude-based neural network pruning. 2024. [arXiv](https://arxiv.org/abs/2408.04759)
+- J. Alvarez. Confident magnitude-based neural network pruning. 2024. [[arXiv](https://arxiv.org/abs/2408.04759)], [[code](https://github.com/jalvarezga/confident-pruning)]
 
 
 

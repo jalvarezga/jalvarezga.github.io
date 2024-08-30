@@ -24,8 +24,9 @@ image:  seyfettin-coffee-unsplash.jpg
 
 ### Context
 
-In 2005 Vidmantas Bentkus introduced a novel [probability concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical applications in machine learning as shown by Angelopoulos, Bates et. al. in [2021](https://arxiv.org/abs/2110.01052).
-Bentkus' result may not be straightforward to grasp. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article.
+In 2005 Vidmantas Bentkus introduced a novel [probability concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical applications in machine learning, for example consider the work of Angelopoulos, Bates et. al. in [2021](https://arxiv.org/abs/2110.01052).
+
+Bentkus' result may not be straightforward to grasp. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article, providing further details.
 
 
 
@@ -144,8 +145,12 @@ By the above argument (Case 1), we know that $$k\begin{equation*}\geq r\implies 
 Which lead to $$\begin{equation*}k\geq r  \implies \alpha, \beta \geq 0\end{equation*}.$$
 
 Now switching the roles of $$r$$ and $$k$$ in that argument, we get that
-$$k<r\implies[ \alpha\leq 0 \quad \& \quad \beta\leq 0]$$ Thus,
-$$k<r\implies \alpha\beta\geq0$$
+$$k<r\implies[ \alpha\leq 0 \quad \& \quad \beta\leq 0].$$ 
+
+
+Thus, $$k<r\implies \alpha\beta\geq0$$.
+
+
 By cases 1 and 2, $$2\delta=\sum_{k,r=-\infty}^{\infty}\alpha\beta\geq0$$, because $$2\delta$$ is just a series in which the terms are always non-negative. Therefore $$\delta\geq 0$$.
 
 
@@ -228,7 +233,7 @@ $$(z*w)_{2}=\sum_{k=-\infty}^{\infty}z_{2-k}w_k=z_1w_1=p^2=t_2$$
 
 $$(z*w)_n=t_n=0\quad\forall n\in \mathbb{Z}-\{0,1,2\}$$
 
-$$\underline{Hypothesis of induction}$$: $$Bin(m,p)$$ is log concave for any $$p\in (0,1)$$, and some $$m\in \mathbb{N}$$.
+$$\underline{\text{Hypothesis of induction}}$$: $$Bin(m,p)$$ is log concave for any $$p\in (0,1)$$, and some $$m\in \mathbb{N}$$. 
 
 We will prove that $$Bin(m+1,p)$$  mass probability function is also log concave for any $$p\in (0,1)$$.
 
@@ -260,6 +265,6 @@ Finally, once that we have that Binomial probability mass functions are log conc
 
 ### Final Remarks
 
-Why does this seemingly irrelevant lemma actually matter? The answer to this is that, when we want to prove Bentkus inequality for the special case of the binomial random variable, this result allows us to justify that the log concave-hull for the binomial random variable is indeed a log-concave function, that is, on a logarithmic scale, the log-concave hull is a convex function. We need convexity as a part of the proof provided by Bentkus. 
+Why does this lemma actually matter? The answer to this is that, when we want to prove Bentkus inequality for the special case of the binomial random variable, this result allows us to justify that the log concave-hull for the binomial random variable is indeed a log-concave function, that is, on a logarithmic scale, the log-concave hull is a convex function. We need convexity as a part of the proof provided by Bentkus. 
 
 

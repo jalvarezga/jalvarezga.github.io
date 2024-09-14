@@ -6,7 +6,7 @@ image: delft.jpg
 ---
 
 
-Alo! Thank you for taking the time to visit my website! My name is Joaquin Alvarez Galnares. I was born and raised in Mexico. I have an insatiable curiosity for machine learning. Despite the recent prominent progress in machine learning, many challenges persist. Why do AI algorithms mess up in certain instances? How can we design uncertainty-aware algorithms in order to make reliable predictions? I'm intrigued to find answers to these kind of questions. Outside of research, I enjoy walking, art, coffee, and yoga.
+Alo! Thank you for taking the time to visit my website! My name is Joaquin Alvarez Galnares. I was born and raised in Mexico. I have an insatiable curiosity for machine learning. Despite the recent prominent progress in machine learning, many challenges persist. Why do AI algorithms mess up in certain instances? How can we design uncertainty-aware algorithms in order to make reliable predictions? I'm intrigued to find answers to these kind of questions. Outside of research, I enjoy walking, art, coffee, kombucha and yoga.
 
 
 

@@ -24,7 +24,7 @@ image:  seyfettin-coffee-unsplash.jpg
 
 ### Context
 
-In 2005 Vidmantas Bentkus introduced a novel [probability concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical applications in machine learning, for example consider the work of Angelopoulos, Bates et. al. in [2021](https://arxiv.org/abs/2110.01052).
+In 2005 Vidmantas Bentkus introduced a novel [probability concentration inequality](https://arxiv.org/abs/math/0410159). Astonishingly, this inequality has very practical applications in machine learning, for example consider the work of Bates, Angelopoulos, et. al. in [2021](https://arxiv.org/abs/2101.02703).
 
 Bentkus' result may not be straightforward to grasp. Here we will develop a self-contained proof of the Lemma 4.1 in Bentkus' original article, providing further details.
 

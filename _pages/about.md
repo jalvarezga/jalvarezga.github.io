@@ -13,6 +13,14 @@ Outside of research, I enjoy walking, art, coffee, kombucha and yoga.
 
 
 
+
+
+![]({{ site.baseurl }}/images/van_gogh.jpg)*Vincent van Gogh's letter to his brother Theo, in 1882.*
+
+
+
+
+
 <sub><sup>Photo by courtesy of  [Seyfettin Dincturk](https://unsplash.com/@dincturk). Delft, Netherlands.</sup></sub>
 <sub><sup>Credits to Artem Sheludko for sharing his awesome artistic website templates.</sup></sub>
 <!---  By courtesy of https://unsplash.com/@mariuschristensen, Marius Christensen. -->

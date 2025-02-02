@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: oaxaquita.png
+image: oax2.png
 ---
 <sub><sup>Beautiful Oaxaca, Mexico.</sup></sub>
 

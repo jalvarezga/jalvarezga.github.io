@@ -42,41 +42,56 @@
 
 
 
+
 /* Position the toggle button in the top-right corner */
 #toggle-container {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1000;
-  /* Add a max-width to prevent overlapping */
-  max-width: calc(100% - 60px); /* This ensures it doesn't overlap with other elements */
 }
 
-/* For mobile, adjust the placement of the toggle button */
-@media only screen and (max-width: 600px) {
-  #toggle-container {
-    top: 10px; /* Adjust the top position for smaller screens */
-    right: 10px; /* Adjust the right position to give space */
-  }
-
-  /* Optionally, you can also make the toggle smaller on mobile */
-  #toggle {
-    width: 50px;
-    height: 28px;
-  }
-
-  #toggle span:before {
-    width: 22px;
-    height: 22px;
-  }
+#toggle {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
 }
 
+#toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
+#toggle span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
 
-/* Night mode styles */
+#toggle span:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+/* Style for night mode */
 body.night {
   background-color: #333;
-  color: white; /* Default text color for night mode */
+  color: white;
 }
 
 body.night #toggle span {
@@ -86,26 +101,3 @@ body.night #toggle span {
 body.night #toggle span:before {
   transform: translateX(26px);
 }
-
-/* Specific adjustments for text visibility in night mode */
-body.night h1, body.night h2, body.night h3, body.night h4, body.night h5, body.night h6 {
-  color: white; /* Ensure headings are visible */
-}
-
-body.night p, body.night a {
-  color: #ddd; /* Adjust link and paragraph text color */
-}
-
-body.night .bio, body.night .say-hello {
-  color: #ccc; /* Adjust bio or any specific sections */
-}
-
-body.night a {
-  color: #6f8e9e; /* Change link color to something readable in night mode */
-  text-decoration: underline;
-}
-
-body.night a:hover {
-  color: #9fbac2; /* Hover effect for links */
-}
-

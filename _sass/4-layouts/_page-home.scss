@@ -42,15 +42,17 @@
 
 
 
-
 /* Position the toggle button in the top-right corner */
 #toggle-container {
   position: fixed;
   top: 10px;
   right: 20px;
   z-index: 1000;
+  /* Ensuring it doesn't overlap with other elements */
+  max-width: calc(100% - 60px); /* Adjust if necessary */
 }
 
+/* Style for the toggle button itself */
 #toggle {
   position: relative;
   display: block;
@@ -100,4 +102,22 @@ body.night #toggle span {
 
 body.night #toggle span:before {
   transform: translateX(26px);
+}
+
+/* Adjust the toggle button position for smaller screens */
+@media only screen and (max-width: 600px) {
+  #toggle-container {
+    top: 10px; /* Adjust for better spacing on mobile */
+    right: 10px; /* Ensure it's not too close to the edge */
+  }
+
+  #toggle {
+    width: 50px; /* Make the toggle button a bit smaller on mobile */
+    height: 28px; /* Adjust height */
+  }
+
+  #toggle span:before {
+    width: 22px; /* Adjust the circle size for mobile */
+    height: 22px; /* Adjust the circle size */
+  }
 }

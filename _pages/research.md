@@ -2,17 +2,11 @@
 layout: page
 title: Research
 permalink: /research/
-
 ---
 
-
-
-- J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [[arXiv](https://arxiv.org/abs/2405.08975)]   
+- J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [[arXiv](https://arxiv.org/abs/2405.08975)]
 
 - J. Alvarez. Confident magnitude-based neural network pruning. 2024. [[arXiv](https://arxiv.org/abs/2408.04759)], [[code](https://github.com/jalvarezga/confident-pruning)]
-
-
-
 
 ## Complementary material and animations
 
@@ -26,44 +20,17 @@ permalink: /research/
   <p class="video-caption">Confident magnitude-based pruning image segmentation example. For large values of the sparsification ratio the predicted masks with the pruned model (fourth column) deviate substantially from the predicted masks with the dense neural network (third column).</p>
 </div>
 
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=t7gx3c5Tm8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p class="video-caption">The video shows the role of two hyperparameters when calibrating an ensemble  that aggregates two image segmentation algorithms. Red is false negative, green yellow is false positive. Green is true positive. Uncolored regions are true negatives.</p>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--- 
+<!---
 <small>Photo by courtesy of [Allan Rodrigues](https://unsplash.com/@rodriguesallan).</small>!-->
-
-
-
 
 <!---  By courtesy of https://unsplash.com/photos/a-jet-engine-sitting-on-top-of-an-airport-tarmac-hEMYZwpDwdo, Allan Rodrigues from Unsplash. -->
 
-<!---  
+<!---
 A paragraph looks like this — dolor amet cray stumptown fingerstache neutra food truck seitan poke cardigan waistcoat VHS snackwave celiac hella. Godard seitan shoreditch flexitarian next level trust fund man braid vegan listicle keytar bitters. Disrupt cray fashion axe unicorn lomo shaman poke glossier keffiyeh snackwave austin tattooed seitan hexagon lo-fi. Lumbersexual irony vaporware, butcher shaman church-key iceland.
 
 ***
@@ -171,7 +138,7 @@ Offal post-ironic before they sold out mixtape you probably haven't heard of the
 <small>2001 - 2008</small>
 
 Chillwave helvetica swag quinoa messenger bag hexagon poutine selfies thundercats small batch hell of godard roof party XOXO. Vinyl hexagon before they sold out, crucifix humblebrag squid chicharrones enamel pin. Iceland humblebrag farm-to-table, lyft pug tilde irony.
-Hot chicken shoreditch tousled listicle, actually meggings vape. Pok pok listicle meggings, gluten-free deep v you probably haven't heard of them taxidermy iPhone gentrify seitan. Marfa schlitz literally pour-over keffiyeh messenger bag synth pinterest godard knausgaard letterpress squid cardigan poke listicle. 
+Hot chicken shoreditch tousled listicle, actually meggings vape. Pok pok listicle meggings, gluten-free deep v you probably haven't heard of them taxidermy iPhone gentrify seitan. Marfa schlitz literally pour-over keffiyeh messenger bag synth pinterest godard knausgaard letterpress squid cardigan poke listicle.
 
 #### La croix you probably...
 <small>1995 - 2000</small>

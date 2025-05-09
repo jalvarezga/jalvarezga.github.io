@@ -1,0 +1,16 @@
+---
+layout: post
+title:  Second talk
+date:   2025-05-06 15:01:35 +0300
+image:  coloquio6mayo2025.png
+#tags:   Blog
+author: Joaquin
+---
+
+Gave my second talk in a Mathimatics colloquia at ITAM, about our recent work on AI for healthcare. 
+
+![]({{ site.baseurl }}/images/coloquio6mayo2025.png)
+
+
+
+

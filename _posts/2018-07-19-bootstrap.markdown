@@ -11,6 +11,7 @@ author: Joaquin
   type="text/javascript">
 </script>
 
+![]({{ site.baseurl }}/images/bootstrap/violinPlot.png)
 
 ## The context of what we are doing to do
 

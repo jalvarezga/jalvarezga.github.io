@@ -5,7 +5,7 @@ date:   2022-07-17 15:01:35 +0300
 image:  nycSubwayMap.png
 #tags:   ITAM Project
 ---
-
+![]({{ site.baseurl }}/images/nyc_subway/nycSubwayMap.png)
 
 <script
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"

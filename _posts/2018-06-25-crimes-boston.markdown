@@ -6,7 +6,7 @@ image:  /boston/crimePoints.png
 #tags:   ITAM Project
 ---
 
-
+![]({{ site.baseurl }}/images//boston/crimePoints.png)
 
 
 

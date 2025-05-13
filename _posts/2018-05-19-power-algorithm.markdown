@@ -2,7 +2,7 @@
 layout: post
 title: Power iteration algorithm
 date: 2021-01-19 15:01:35 +0300
-image: power_algorithm.png
+#image: power_algorithm.png# we comment the image here so that it is not visible in the home page
 #tags:   Blog
 author: Joaquin
 ---
@@ -317,5 +317,5 @@ plotConvergence(20,B, np.array([[1],[1],[1]]))
 {% endhighlight %}
 You should obtain the following plot:
 
-![]({{ site.baseurl }}/images/power_algorithm.png)
-_Iterations of the power iteration algorithm generating a sequence that converges to the dominant eigenvalue._
+![]({{ site.baseurl }}/images/power*algorithm.png)
+\_Iterations of the power iteration algorithm generating a sequence that converges to the dominant eigenvalue.*

@@ -2,7 +2,7 @@
 layout: post
 title:  2024 ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization
 date:   2024-11-03 15:01:35 +0300
-image:  /EAAMO/EAAMO.jpg
+#image:  /EAAMO/EAAMO.jpg
 #tags:   Blog
 author: Joaquin
 ---

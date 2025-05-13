@@ -6,9 +6,8 @@
     <div class="article__wrapper">
 
         {% if post.image %}
-        <a href="{{post.url | prepend: site.baseurl}}">
-          <img class="article__image" src="{{site.baseurl}}/images/{{post.image}}" alt="{{ post.title }}">
-        </a>
+          <a href="{{post.url | prepend: site.baseurl}}" class="article__image" style="background-image: url({{site.baseurl}}/images/{{post.image}})">
+          </a>
         {% else %}
           {% assign without-image = 'article-without-image' %}
         {% endif %}

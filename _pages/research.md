@@ -22,7 +22,7 @@ permalink: /research/
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/t7gx3c5Tm8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <p class="video-caption">The video shows the role of two hyperparameters when calibrating an ensemble  that aggregates two image segmentation algorithms. Red is false negative, green yellow is false positive. Green is true positive. Uncolored regions are true negatives.</p>
+  <p class="video-caption">The video shows the role of two hyper-parameters when calibrating an ensemble that aggregates two image segmentation algorithms. Red is false negative, yellow is false positive. Green is true positive. Uncolored regions are true negatives.</p>
 </div>
 
 <!---

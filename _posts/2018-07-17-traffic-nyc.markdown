@@ -19,28 +19,28 @@ In this blog post you can find a summary of our project at ITAM where we used li
 
 ## Context
 
-The NYC subway system (which is administrated by the Metropolitan Transportation Authority, also known as the MTA) publishes data from the usage of the services that it provides, which can be accessed [here](https://new.mta.info/open-data) or [here](https://opendata.cityofnewyork.us/). We used this data to determine how the subway traffic patterns changed throughout the city due to the global pandemic. We built regression models which predict the the usage decline per neighborhood. Indeed, as you might expect, the pandemic caused a huge decline in the subway rides across all New York City. The government of the City of New York has a data culture which allows us to undertand the city beyond conventional ways. We take advantage of this situation to get a deeper understanding of the relationship between the metro traffic and the demographic characteristics of the neighborhoods in NYC.
+The NYC subway system (which is administrated by the Metropolitan Transportation Authority, also known as the MTA) publishes data from the usage of the services that it provides, which can be accessed [here](https://new.mta.info/open-data) or [here](https://opendata.cityofnewyork.us/). We used this data to determine how the subway traffic patterns changed throughout the city due to the global pandemic. We built regression models which predict the usage decline per neighborhood. Indeed, as you might expect, the pandemic caused a huge decline in the subway rides across all New York City. The government of the City of New York has a data culture which allows us to undertand the city beyond conventional ways. We take advantage of this situation to get a deeper understanding of the relationship between the metro traffic and the demographic characteristics of the neighborhoods in NYC.
 
 ## Data analysis
 
 Our data is divided by neighborhoods in NYC. We have access to the daily rides in each of the metro stations in the city. We compared the average number of daily rides in each station between 2019 and 2020, and grouped each station to the neighborhood that they belong. We obtained a decline percentage by comparing the average daily metro rides in each neighborhood in 2019 and 2020. This is the response variable, which we refer to as $$\textbf{var_res}$$.
 
-![]({{ site.baseurl }}/images/nyc_subway/nycSections.png)
-_Map of NYC divided by neighborhoods in the city's boroughs excluding Staten Island._
+![]({{ site.baseurl }}/images/nyc*subway/nycSections.png)
+\_Map of NYC divided by neighborhoods in the city's boroughs excluding Staten Island.*
 
-![]({{ site.baseurl }}/images/nyc_subway/mapa_calor_res.png)
-_Heat map of the change in the use of the subway system after the pandemic._
+![]({{ site.baseurl }}/images/nyc*subway/mapa_calor_res.png)
+\_Heat map of the change in the use of the subway system after the pandemic.*
 We can appreciate that the neighborhood that experienced the greatest decline in the average metro usage was the Financial District of NYC, which is located at the southern tip of Manhattan. Comparing 2019 and 2020, the average daily metro usage was reduced in more than 80%.
 
 We considered many explanatory variables and we did a deep data analysis. Here we only present a brief picture of such analysis to summarize the project.
 
-![]({{ site.baseurl }}/images/nyc_subway/work_travel_time.png)
-_Average time to work (in minutes) for people in each neighborhood in relation to the response variable._
+![]({{ site.baseurl }}/images/nyc*subway/work_travel_time.png)
+\_Average time to work (in minutes) for people in each neighborhood in relation to the response variable.*
 
 We can clearly appreciate a negative linear relationship between the variables. A possible reason for this relationship might be that for people whose time to work is very close, they can easily substitute the metro for walking or bycicle, for example, given that their commute to work is likely very short.
 
-![]({{ site.baseurl }}/images/nyc_subway/eda_zonas.png)
-_Change in the use of the subway divided by zones in NYC._
+![]({{ site.baseurl }}/images/nyc*subway/eda_zonas.png)
+\_Change in the use of the subway divided by zones in NYC.*
 
 We can see that on average, the subway use got reduced the most in Manhattan. Queens has a lot of variance in the response variable, due to the fact that the whiskers in its box plot are very large. Whereas we see that the Bronx had low changes in the use of the subway with low variance.
 
@@ -94,8 +94,8 @@ We take distict and neighborhood as synonyms throughout the desctiption of the f
 
 We randomly selected 15% of the neighborhoods and kept them to test the model. We trained the model with the 85% of the remaining neighborhoods.
 
-![]({{ site.baseurl }}/images/nyc_subway/map_test_pred.png)
-_Green neighborhoods were used only for training. Yellow neighborhoods were not used for training and were used to test the performance of the model. We identified that Queens Village's change in the use of the subway was an outlier observation._
+![]({{ site.baseurl }}/images/nyc*subway/map_test_pred.png)
+\_Green neighborhoods were used only for training. Yellow neighborhoods were not used for training and were used to test the performance of the model. We identified that Queens Village's change in the use of the subway was an outlier observation.*
 
 ## Regression model
 

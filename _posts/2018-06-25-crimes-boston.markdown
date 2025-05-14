@@ -51,11 +51,11 @@ Hence, we consider our response variable as crime rates in a logarithmic scale.
 With respect to the feature variables, the 2019 census of Boston offers a lot of details about each district. For example, distance to the closest park for each home within each district, average annual income in usd, average time to work, proportion of houses that own a car, etc.
 
 ![]({{ site.baseurl }}/images/boston/plot1.png)
-_Scatter plot showing the the response variable and the percentage of houses with a married couple in each district._
+_Scatter plot showing the response variable and the percentage of houses with a married couple in each district._
 These two variables have a correlation of -0.15969. Though not quite strong, it is interesting to note that the correlation is negative.
 
 ![]({{ site.baseurl }}/images/boston/plot2.png)
-_Scatter plot showing the the response variable and income per capita in each neighborhood in Boston._
+_Scatter plot showing the response variable and income per capita in each neighborhood in Boston._
 
 These two variables are strongly correlated, they actually have a correlation of 0.61378.
 

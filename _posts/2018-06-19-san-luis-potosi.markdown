@@ -8,7 +8,7 @@ author: Joaquin
 ---
 ![]({{ site.baseurl }}/images/EAAMO/EAAMO.jpg)
 
-Had the opportunity to participate in EAAMO Conference, 2024. This year's edition took place in beautiful San Luis Potosi, Mexico. Loved the talks focusing on ML fairness. Everyone at the conference was incredibly friendly. I am very thankful with Professor Jessie Finocchiaro and Professor Francisco Marmolejo Cossio for the opportunity, he is a leader and advocate of equity and inclusion of underrepresented minorities in Computer Science. 
+Had the opportunity to participate in EAAMO Conference, 2024. This year's edition took place in beautiful San Luis Potosi, Mexico. Loved the talks focusing on ML fairness. Everyone at the conference was incredibly friendly. I am very thankful with Professor Jessie Finocchiaro and Professor Francisco Marmolejo Cossio for the opportunity ❤️.
 
 
 ![]({{ site.baseurl }}/images/EAAMO/EAAMO2.jpg)

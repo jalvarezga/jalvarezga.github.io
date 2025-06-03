@@ -318,4 +318,4 @@ plotConvergence(20,B, np.array([[1],[1],[1]]))
 You should obtain the following plot:
 
 ![]({{ site.baseurl }}/images/power*algorithm.png)
-\_Iterations of the power iteration algorithm generating a sequence that converges to the dominant eigenvalue.*
+_Iterations of the power iteration algorithm generating a sequence that converges to the dominant eigenvalue._

@@ -1,41 +1,50 @@
 .article {
+  width: 100%;
+  display: block;
+  clear: both;
   margin: 0 auto 30px auto;
   padding: 0;
   border-bottom: 1px solid #eee;
+}
 
-  .article__content {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
+.article__wrapper {
+  display: block; // Ensure no flex or grid layout
+}
 
-  .article__title {
-    font-size: 1.4rem;
-    margin: 0;
-    line-height: 1.4;
-    font-weight: 500;
+.article__content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
+  text-align: left;
+}
 
-    a {
-      color: $dark;
-      text-decoration: none;
-      transition: color 0.2s ease;
+.article__title {
+  font-size: 1.4rem;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 500;
 
-      &:hover {
-        color: $brand-color;
-      }
+  a {
+    color: $dark;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $brand-color;
     }
   }
+}
 
-  .article__meta {
-    font-size: 0.9rem;
-    color: $gray;
-    margin-top: 5px;
-  }
+.article__meta {
+  font-size: 0.9rem;
+  color: $gray;
+  margin-top: 5px;
+}
 
-  .article__wrapper,
-  .article__image,
-  .article__footer,
-  .article-tags {
-    display: none !important;
-  }
+// Hide unused elements for minimalism
+.article__image,
+.article__footer,
+.article-tags {
+  display: none !important;
 }

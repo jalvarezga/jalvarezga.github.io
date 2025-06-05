@@ -5,6 +5,7 @@
   margin: 0 auto 10px auto;// tighter spacing
   padding: 0;
   border-bottom: 1px solid #eee;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
 .article__wrapper {
@@ -17,6 +18,7 @@
   padding: 20px 0;
   width: 100%;
   text-align: left;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
 .article__title {
@@ -24,6 +26,7 @@
   margin: 0;
   line-height: 1.4;
   font-weight: 500;
+  font-family: Georgia, 'Times New Roman', serif;
 
   a {
     color: $dark;

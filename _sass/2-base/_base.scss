@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: $base-font-family;
+  font-family: Georgia, 'Times New Roman', serif;
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $text-color;
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: Georgia, 'Times New Roman', serif;
   line-height: initial;
   letter-spacing: 0.5px;
 }

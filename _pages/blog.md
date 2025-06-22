@@ -4,8 +4,6 @@ title: Blog
 permalink: /blog/
 ---
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
   {% include article-content.html %}
 {% endfor %}
-
-{% include pagination.html %}

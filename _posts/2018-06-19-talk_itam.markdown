@@ -7,6 +7,6 @@ date: 2025-05-06 15:01:35 +0300
 author: Joaquin
 ---
 
-Gave my second colloquium talk in the Mathematics colloquium at ITAM, about our recent work on AI for healthcare.
+Gave a colloquium talk in the Mathematics colloquium at ITAM, about our recent work on AI for healthcare.
 
 ![]({{ site.baseurl }}/images/coloquio6mayo2025.png)

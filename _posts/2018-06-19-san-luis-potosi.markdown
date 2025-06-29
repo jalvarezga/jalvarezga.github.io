@@ -8,7 +8,7 @@ author: Joaquin
 ---
 ![]({{ site.baseurl }}/images/EAAMO/EAAMO.jpg)
 
-Had the opportunity to participate in EAAMO Conference, 2024. This year's edition took place in beautiful San Luis Potosi, Mexico.
+Beautiful San Luis Potosi, Mexico.
 
 
 

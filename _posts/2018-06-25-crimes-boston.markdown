@@ -17,7 +17,7 @@ This is joint work with my colleagues Diego Velazquez and Marcelino Sanchez.
 
 [comment]: <> (Necessaty code to add LaTeX notation in this environment)
 
-<small><span style="color: red"> This roject is a natural extension to [the project](https://jalvarezga.github.io/2022/07/17/traffic-nyc/) where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data.</span></small>
+<small><span style="color: red"> This project is a natural extension to [the project](https://jalvarezga.github.io/2022/07/17/traffic-nyc/) where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data.</span></small>
 
 ### Context
 

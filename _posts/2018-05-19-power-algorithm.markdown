@@ -14,7 +14,7 @@ author: Joaquin
 
 ![]({{ site.baseurl }}/images/power_algorithm.png)
 
-# By courtesy of [Juan Carlos Aguilar](https://facultad.itam.mx/en/facultad/juan-carlos-aguilar-villegas)'s Numerical Calculus course at ITAM.
+# By courtesy of Juan Carlos Aguilar's Numerical Calculus course at ITAM.
 
 ## Context and summary of this blog post
 

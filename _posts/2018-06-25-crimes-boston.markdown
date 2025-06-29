@@ -17,7 +17,7 @@ This is joint work with my colleagues Diego Velazquez and Marcelino Sanchez.
 
 [comment]: <> (Necessaty code to add LaTeX notation in this environment)
 
-<small><span style="color: red"> This is a summary of a project work for the Advanced Regression Analysis course at ITAM. In this blog post we will provide a general description of the project and our main findings without diving into the details. It is a natural extension to [the project](https://jalvarezga.github.io/2022/07/17/traffic-nyc/) where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data.</span></small>
+<small><span style="color: red"> This roject is a natural extension to [the project](https://jalvarezga.github.io/2022/07/17/traffic-nyc/) where we predicted the metro activity in NYC, because in such project we did not account for spatial correlation, whereas in this project our model allows us to account for the spatial correlation of the data.</span></small>
 
 ### Context
 
@@ -90,7 +90,7 @@ _Red points are district centroids. Light blue points are locations where a crim
 ![]({{ site.baseurl }}/images/boston/crimesByDistrict.png)
 _A satellite image of Boston with crime points stratified by neighborhood. The points are spread throughout almost all of the city._
 
-# Model proposal: a Gaussian process
+# Gaussian process
 
 We are going to consider point referenced data using a Gaussian process to incorporate a spatial dependence structure within the data. If
 $$s_i\in \mathbb{R}^2$$ denotes the coordinates of the $$i-th$$ district in Boston, the regresion model that we will be using is given by:

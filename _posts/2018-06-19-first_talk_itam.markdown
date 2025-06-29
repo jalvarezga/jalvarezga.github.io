@@ -8,4 +8,4 @@ author: Joaquin
 ---
 
 ![]({{ site.baseurl }}/images/coloquio22ago2024.png)
-My first colloquium talk in the Mathematics colloquium at ITAM about pruning neural networks with statistical uncertainty quantification.
+

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trieste for 6th  Youth in High Dimensions
-date: 2025-07-10 15:01:35 +0300
+date: 2025-07-09 15:01:35 +0300
 #image:  Junior_Scientists_Workshop.jpeg
 #tags:   Blog
 author: Joaquin

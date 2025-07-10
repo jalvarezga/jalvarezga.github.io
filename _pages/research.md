@@ -4,11 +4,15 @@ title: Research
 permalink: /research/
 ---
 
+
+
+
+## Undergrad research
+
 - J. Alvarez. A distribution-free valid p-value for finite samples of bounded random variables. 2024. [[arXiv](https://arxiv.org/abs/2405.08975)]
 
 - J. Alvarez. Confident magnitude-based neural network pruning. 2024. [[arXiv](https://arxiv.org/abs/2408.04759)], [[code](https://github.com/jalvarezga/confident-pruning)]
 
-## Complementary material and animations
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DrO3UvC0y3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

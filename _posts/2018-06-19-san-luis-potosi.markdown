@@ -5,6 +5,7 @@ date:   2024-11-03 15:01:35 +0300
 #image:  /EAAMO/EAAMO.jpg
 #tags:   Blog
 author: Joaquin
+categories: undergrad
 ---
 ![]({{ site.baseurl }}/images/EAAMO/EAAMO.jpg)
 

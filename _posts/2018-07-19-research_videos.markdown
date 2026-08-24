@@ -5,6 +5,7 @@ date: 2025-06-19 15:01:35 +0300
 #image:  violinPlot.png
 #tags:   Blog
 author: Joaquin
+categories: undergrad
 ---
 
 

@@ -5,6 +5,7 @@ date: 2021-01-19 15:01:35 +0300
 #image: power_algorithm.png# we comment the image here so that it is not visible in the home page
 #tags:   Blog
 author: Joaquin
+categories: undergrad
 ---
 
 <script

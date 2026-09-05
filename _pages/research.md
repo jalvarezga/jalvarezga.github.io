@@ -5,7 +5,7 @@ permalink: /research/
 ---
 
 
-
+- J. Alvarez, M. Sesia, J. Deshmukh, L. Lindemann. Conformal Prediction Regions for Continuous-Time Trajectories under Random Sampling. 2026. [[arXiv](https://arxiv.org/abs/2608.29559)], [[code](https://github.com/jalvarezga/Continuous-Time-Conformal-Prediction)]
 
 ## Undergrad research
 
